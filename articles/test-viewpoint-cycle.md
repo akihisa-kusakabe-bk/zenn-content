@@ -98,27 +98,7 @@ published: false
 
 テスト観点を軸にした品質向上の仕組みを、私たちは以下のサイクル図にまとめました。
 
-```mermaid
-flowchart LR
-    subgraph テスト["テスト (Testing)"]
-        direction TB
-        P[計画\nPlan] --> D[設計\nDesign]
-        D --> E[実行\nExecute]
-        E --> R[記録\nRecord]
-        R --> P
-    end
-
-    subgraph QC["QC (Quality Control)"]
-        direction TB
-        A[分析\nAnalyze] --> V[評価\nEvaluate]
-        V --> I[改善\nImprove]
-        I --> U[更新\nUpdate]
-        U --> A
-    end
-
-    R <-->|テスト観点\nカタログ| A
-```
-
+![品質向上サイクル — テスト観点カタログを中心に、テスト（左）とQC（右）が連動して回る](/images/quality-cycle.png)
 *品質向上サイクル — テスト観点カタログを中心に、テスト（左）とQC（右）が連動して回る*
 
 この図が示していることは、実はとてもシンプルです。
