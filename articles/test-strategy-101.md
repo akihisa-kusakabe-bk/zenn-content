@@ -42,13 +42,7 @@ published: false
 
 テスト戦略は、以下の5つのステップで構成されます。上から順番に考えていくことで、抜け漏れなく戦略を組み立てられます。
 
-```mermaid
-flowchart LR
-    A["Step 1\n目的を定義する"] --> B["Step 2\nリスクを特定する"]
-    B --> C["Step 3\nテストレベルを設計する"]
-    C --> D["Step 4\nテスト観点を整理する"]
-    D --> E["Step 5\n終了条件を決める"]
-```
+![テスト戦略の5ステップ](/images/test-strategy-101/strategy-5steps.png)
 
 それぞれのステップを、具体例を交えて解説していきます。
 
@@ -128,22 +122,7 @@ flowchart LR
 
 テストレベルとは、テストを行う粒度のことです。大きく4つに分かれます。
 
-```mermaid
-graph TB
-    subgraph " "
-        direction TB
-        A["🔺 受け入れテスト\nユーザー視点の検証 / ビジネス要件との合致 / 最終関門"]
-        B["🔸 システムテスト\nシステム全体の動作 / QAが主導 / 低速・重要"]
-        C["🟣 結合テスト\nモジュール間の連携 / API・DB接続 / 中速・中量"]
-        D["🔵 単体テスト\n関数・メソッド単位 / 開発者が書く / 高速・大量"]
-    end
-    A --- B --- C --- D
-
-    style A fill:#fef2f2,stroke:#dc2626,color:#1a1a1a
-    style B fill:#fffbeb,stroke:#f59e0b,color:#1a1a1a
-    style C fill:#f5f3ff,stroke:#7c3aed,color:#1a1a1a
-    style D fill:#eff6ff,stroke:#2563eb,color:#1a1a1a
-```
+![テストレベルのピラミッド](/images/test-strategy-101/test-levels.png)
 
 ### 戦略的に考える：どのレベルでどのリスクを潰すか
 
@@ -234,22 +213,7 @@ graph TB
 
 ここまでの5ステップを、1枚の地図にまとめます。
 
-```mermaid
-graph TB
-    S1["🔴 Step 1：目的\n何を守るか / 品質特性の選択 / 達成基準"]
-    S2["🟠 Step 2：リスク\n影響度 × 発生確率 / 4つの情報源 / 優先順位"]
-    S3["🟣 Step 3：レベル\n単体 / 結合 / システム / 受け入れ"]
-    S4["🔵 Step 4：観点\n正常系 / 異常系 / 境界値 / 状態遷移 / …"]
-    S5["🟢 Step 5：終了条件\n定量基準 / 定性基準 / 合意形成"]
-
-    S1 --> S2 --> S3 --> S4 --> S5
-
-    style S1 fill:#fef2f2,stroke:#dc2626,color:#1a1a1a
-    style S2 fill:#fffbeb,stroke:#f59e0b,color:#1a1a1a
-    style S3 fill:#f5f3ff,stroke:#7c3aed,color:#1a1a1a
-    style S4 fill:#eff6ff,stroke:#2563eb,color:#1a1a1a
-    style S5 fill:#f0fdf4,stroke:#16a34a,color:#1a1a1a
-```
+![テスト戦略の全体像](/images/test-strategy-101/strategy-overview.png)
 
 この5ステップを上から順に埋めていけば、テスト戦略の骨格ができあがります。最初から完璧を目指す必要はありません。**まず骨格を作り、チームでレビューし、プロジェクトの中で磨いていく**——この進め方が最も失敗しにくい方法です。
 

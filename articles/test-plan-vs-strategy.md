@@ -41,6 +41,8 @@ published: false
 
 旅行にたとえるとわかりやすくなります。
 
+![旅行のたとえ：戦略と計画](/images/test-plan-vs-strategy/travel-analogy.png)
+
 | | テスト戦略 | テスト計画 |
 |---|---|---|
 | 旅行で言うと | 旅の目的地と目的 | 旅の段取り |
@@ -160,15 +162,7 @@ published: false
 
 テスト戦略とテスト計画は、独立した別物ではありません。**戦略が計画の上位にあり、計画は戦略を具体化したもの**です。
 
-```mermaid
-graph TB
-    A["テスト戦略（方針）"] --> B["戦略に基づいて\nこの方針を、今回のリリースではどう実行するか？"]
-    B --> C["テスト計画（段取り）"]
-
-    style A fill:#eff6ff,stroke:#2563eb,color:#1a1a1a
-    style B fill:#f9fafb,stroke:#d1d5db,color:#6b7280
-    style C fill:#f0fdf4,stroke:#16a34a,color:#1a1a1a
-```
+![戦略と計画の階層関係](/images/test-plan-vs-strategy/strategy-plan-hierarchy.png)
 
 > **戦略（方針）**
 > 「決済の信頼性を最優先で担保する。異常系テストを厚くし、決済フローのE2Eテストを自動化する」
@@ -255,6 +249,8 @@ graph TB
 ### 対策1：スプリントごとに「品質リスクトップ3」を更新する
 
 戦略書そのものを毎スプリント書き直す必要はありません。代わりに、スプリント計画の中で**「今回の品質リスクトップ3」を毎回チームで確認**します。
+
+![アジャイルでの品質サイクル](/images/test-plan-vs-strategy/agile-quality-cycle.png)
 
 :::details スプリント計画会での5分間
 **QA：** 「今スプリントのリスクトップ3です。1つ目、決済APIの外部連携先が変更されます。2つ目、認証フローにリファクタが入ります。3つ目、新しいチームメンバーが実装する画面が2つあります」
