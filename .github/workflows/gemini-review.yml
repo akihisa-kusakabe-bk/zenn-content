@@ -1,0 +1,116 @@
+name: Gemini Article Review
+
+on:
+  workflow_dispatch:
+    inputs:
+      article:
+        description: "レビュー対象の記事"
+        required: true
+        type: choice
+        options:
+          - test-strategy-101.md
+          - strategic-thinking-for-testers.md
+          - test-plan-vs-strategy.md
+          - test-viewpoint-cycle.md
+          - trust-building-for-testers.md
+
+permissions:
+  discussions: write
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Extract article title
+        id: meta
+        run: |
+          TITLE=$(grep '^title:' "articles/${{ inputs.article }}" | sed 's/^title: *"//' | sed 's/"$//')
+          echo "title=$TITLE" >> "$GITHUB_OUTPUT"
+
+      - name: Read article content
+        id: article
+        run: |
+          CONTENT=$(cat "articles/${{ inputs.article }}")
+          EOF_MARKER=$(dd if=/dev/urandom bs=15 count=1 2>/dev/null | base64)
+          echo "content<<${EOF_MARKER}" >> "$GITHUB_OUTPUT"
+          echo "$CONTENT" >> "$GITHUB_OUTPUT"
+          echo "${EOF_MARKER}" >> "$GITHUB_OUTPUT"
+
+      - name: Call Gemini API
+        id: gemini
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ARTICLE_CONTENT: ${{ steps.article.outputs.content }}
+        run: |
+          PROMPT="あなたはプロの編集者です。以下のブログ記事をレビューしてください。
+
+          ## レビュー観点
+          1. **構成**: 記事全体の流れ・論理展開は自然か
+          2. **読みやすさ**: 文章は明快か、冗長な箇所はないか
+          3. **説得力**: 主張に根拠があるか、具体例は効果的か
+          4. **改善提案**: より良くするための具体的な提案
+
+          日本語で回答してください。各観点ごとに整理して、具体的な箇所を引用しながらフィードバックしてください。
+
+          ---
+
+          ${ARTICLE_CONTENT}"
+
+          PAYLOAD=$(jq -n --arg prompt "$PROMPT" '{
+            contents: [{
+              parts: [{
+                text: $prompt
+              }]
+            }],
+            generationConfig: {
+              temperature: 0.7,
+              maxOutputTokens: 4096
+            }
+          }')
+
+          RESPONSE=$(curl -s -X POST \
+            "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}" \
+            -H "Content-Type: application/json" \
+            -d "$PAYLOAD")
+
+          FEEDBACK=$(echo "$RESPONSE" | jq -r '.candidates[0].content.parts[0].text // "Error: レスポンスを取得できませんでした"')
+
+          EOF_MARKER=$(dd if=/dev/urandom bs=15 count=1 2>/dev/null | base64)
+          echo "feedback<<${EOF_MARKER}" >> "$GITHUB_OUTPUT"
+          echo "$FEEDBACK" >> "$GITHUB_OUTPUT"
+          echo "${EOF_MARKER}" >> "$GITHUB_OUTPUT"
+
+      - name: Create Discussion
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TITLE: "[Gemini Review] ${{ steps.meta.outputs.title }}"
+          FEEDBACK: ${{ steps.gemini.outputs.feedback }}
+        run: |
+          BODY="## Gemini Review: ${{ steps.meta.outputs.title }}
+
+          **対象記事**: \`articles/${{ inputs.article }}\`
+          **レビュー日**: $(date '+%Y-%m-%d')
+
+          ---
+
+          ${FEEDBACK}"
+
+          ESCAPED_BODY=$(echo "$BODY" | jq -Rsa .)
+          ESCAPED_TITLE=$(echo "$TITLE" | jq -Rsa .)
+
+          gh api graphql -f query="
+            mutation {
+              createDiscussion(input: {
+                repositoryId: \"$(gh api repos/${{ github.repository }} --jq '.node_id')\"
+                categoryId: \"DIC_kwDOSo2NM84C96yw\"
+                title: ${ESCAPED_TITLE}
+                body: ${ESCAPED_BODY}
+              }) {
+                discussion {
+                  url
+                }
+              }
+            }
+          "
