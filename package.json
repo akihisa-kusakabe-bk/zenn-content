@@ -1,0 +1,21 @@
+{
+  "name": "zenn-content",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preview": "npx zenn-cli preview",
+    "new:article": "npx zenn-cli new:article"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akihisa-kusakabe-bk/zenn-content.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akihisa-kusakabe-bk/zenn-content/issues"
+  },
+  "homepage": "https://github.com/akihisa-kusakabe-bk/zenn-content#readme"
+}
