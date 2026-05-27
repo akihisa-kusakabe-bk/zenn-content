@@ -38,12 +38,18 @@ jobs:
           echo "$CONTENT" >> "$GITHUB_OUTPUT"
           echo "${EOF_MARKER}" >> "$GITHUB_OUTPUT"
 
-      - name: Call Gemini API
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      - name: Call Gemini API via Vertex AI
         id: gemini
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           ARTICLE_CONTENT: ${{ steps.article.outputs.content }}
         run: |
+          ACCESS_TOKEN=$(gcloud auth print-access-token)
+
           SYSTEM_INSTRUCTION='あなたは企業のテックブログ編集部に所属する、慈愛に満ちた「頼れる先輩エディター」（通称アウトプット先輩）です。
 
           あなたのミッションは、同僚が書いた記事のレビューを通じて、同僚のモチベーションを最大化しつつ、記事の品質（読みやすさ、信頼性、構成）を高めることです。
@@ -105,7 +111,8 @@ jobs:
             }')
 
           RESPONSE=$(curl -s -X POST \
-            "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}" \
+            "https://us-central1-aiplatform.googleapis.com/v1/projects/bitkey-llm-agent-host/locations/us-central1/publishers/google/models/gemini-2.0-flash:generateContent" \
+            -H "Authorization: Bearer ${ACCESS_TOKEN}" \
             -H "Content-Type: application/json" \
             -d "$PAYLOAD")
 
