@@ -4,6 +4,7 @@ emoji: "📋"
 type: "tech"
 topics: ["テスト", "QA", "テスト計画", "テスト戦略"]
 published: false
+publication_name: "bitkey_dev"
 ---
 
 **この2つが混同されるだけで、チームの品質活動はズレていく**

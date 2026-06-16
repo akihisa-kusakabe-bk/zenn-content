@@ -4,6 +4,7 @@ emoji: "🎯"
 type: "tech"
 topics: ["テスト", "QA", "チーム開発", "戦略的思考"]
 published: false
+publication_name: "bitkey_dev"
 ---
 
 **テストの「うまさ」は、手の速さではなく、頭の使い方で決まる**

@@ -4,6 +4,7 @@ emoji: "🤝"
 type: "tech"
 topics: ["テスト", "QA", "チーム開発", "信頼構築"]
 published: false
+publication_name: "bitkey_dev"
 ---
 
 **テスターの信頼構築——再現性のあるパターン**

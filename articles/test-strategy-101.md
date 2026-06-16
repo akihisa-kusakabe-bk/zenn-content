@@ -4,6 +4,7 @@ emoji: "🗺️"
 type: "tech"
 topics: ["テスト", "QA", "テスト戦略", "品質管理"]
 published: false
+publication_name: "bitkey_dev"
 ---
 
 **初めてテスト戦略に関わるあなたへ——迷わない地図を渡します**
