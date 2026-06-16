@@ -3,8 +3,10 @@ title: "テスト観点を軸にした品質サイクルのすすめ"
 emoji: "🔄"
 type: "tech"
 topics: ["テスト", "QA", "テスト観点", "品質改善"]
-published: false
+published: true
 ---
+
+<!-- レビュー依頼中: FBお願いします -->
 
 **テスト観点を軸にした品質サイクルのすすめ**
 
