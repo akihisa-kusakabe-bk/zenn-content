@@ -3,7 +3,7 @@ title: "開発者に「この人の話は聞こう」と思わせる技術——
 emoji: "🤝"
 type: "tech"
 topics: ["テスト", "QA", "チーム開発", "信頼構築"]
-published: true
+published: false
 publication_name: "bitkey_dev"
 ---
 
