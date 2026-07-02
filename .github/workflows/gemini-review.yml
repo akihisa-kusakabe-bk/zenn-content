@@ -1,21 +1,13 @@
 name: Gemini Article Review
 
 on:
-  workflow_dispatch:
-    inputs:
-      article:
-        description: "レビュー対象の記事"
-        required: true
-        type: choice
-        options:
-          - test-strategy-101.md
-          - strategic-thinking-for-testers.md
-          - test-plan-vs-strategy.md
-          - test-viewpoint-cycle.md
-          - trust-building-for-testers.md
+  pull_request:
+    paths:
+      - 'articles/**'
 
 permissions:
-  discussions: write
+  pull-requests: write
+  contents: read
 
 jobs:
   review:
@@ -23,27 +15,50 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Extract article title
-        id: meta
+      - name: Get changed articles
+        id: changed
         run: |
-          TITLE=$(grep '^title:' "articles/${{ inputs.article }}" | sed 's/^title: *"//' | sed 's/"$//')
-          echo "title=$TITLE" >> "$GITHUB_OUTPUT"
+          FILES=$(gh pr diff ${{ github.event.pull_request.number }} --name-only | grep '^articles/' | head -5)
+          if [ -z "$FILES" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "skip=false" >> "$GITHUB_OUTPUT"
+          echo "files<<EOF" >> "$GITHUB_OUTPUT"
+          echo "$FILES" >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Read article content
+      - name: Build review content
+        if: steps.changed.outputs.skip == 'false'
         id: article
         run: |
-          CONTENT=$(cat "articles/${{ inputs.article }}")
+          CONTENT=""
+          for FILE in ${{ steps.changed.outputs.files }}; do
+            TITLE=$(grep '^title:' "$FILE" | sed 's/^title: *"//' | sed 's/"$//')
+            CONTENT="${CONTENT}
+          ## ${TITLE} (${FILE})
+
+          $(cat "$FILE")
+
+          ---
+          "
+          done
+
           EOF_MARKER=$(dd if=/dev/urandom bs=15 count=1 2>/dev/null | base64)
           echo "content<<${EOF_MARKER}" >> "$GITHUB_OUTPUT"
           echo "$CONTENT" >> "$GITHUB_OUTPUT"
           echo "${EOF_MARKER}" >> "$GITHUB_OUTPUT"
 
       - name: Authenticate to Google Cloud
+        if: steps.changed.outputs.skip == 'false'
         uses: google-github-actions/auth@v2
         with:
           credentials_json: ${{ secrets.GCP_SA_KEY }}
 
       - name: Call Gemini API via Vertex AI
+        if: steps.changed.outputs.skip == 'false'
         id: gemini
         env:
           ARTICLE_CONTENT: ${{ steps.article.outputs.content }}
@@ -123,35 +138,12 @@ jobs:
           echo "$FEEDBACK" >> "$GITHUB_OUTPUT"
           echo "${EOF_MARKER}" >> "$GITHUB_OUTPUT"
 
-      - name: Create Discussion
+      - name: Post review to PR
+        if: steps.changed.outputs.skip == 'false'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TITLE: "[Gemini Review] ${{ steps.meta.outputs.title }}"
           FEEDBACK: ${{ steps.gemini.outputs.feedback }}
         run: |
-          BODY="## Gemini Review: ${{ steps.meta.outputs.title }}
-
-          **対象記事**: \`articles/${{ inputs.article }}\`
-          **レビュー日**: $(date '+%Y-%m-%d')
-
-          ---
+          gh pr comment ${{ github.event.pull_request.number }} --body "## 📝 アウトプット先輩のレビュー
 
           ${FEEDBACK}"
-
-          ESCAPED_BODY=$(echo "$BODY" | jq -Rsa .)
-          ESCAPED_TITLE=$(echo "$TITLE" | jq -Rsa .)
-
-          gh api graphql -f query="
-            mutation {
-              createDiscussion(input: {
-                repositoryId: \"$(gh api repos/${{ github.repository }} --jq '.node_id')\"
-                categoryId: \"DIC_kwDOSo2NM84C96yw\"
-                title: ${ESCAPED_TITLE}
-                body: ${ESCAPED_BODY}
-              }) {
-                discussion {
-                  url
-                }
-              }
-            }
-          "
