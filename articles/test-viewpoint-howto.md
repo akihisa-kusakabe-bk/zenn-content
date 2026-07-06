@@ -9,7 +9,7 @@ publication_name: "bitkey_dev"
 
 **テスト観点が書けない——その壁を壊す**
 
-「テスト観点で語れ」「足りない観点を指摘しなさい」——[前回の記事](https://zenn.dev/93ch/articles/trust-building-for-testers)でそう書きました。でも、こう思った人もいるんじゃないでしょうか。
+「テスト観点で語れ」「足りない観点を指摘しなさい」——[前回の記事](https://zenn.dev/bitkey_dev/articles/trust-building-for-testers)でそう書きました。でも、こう思った人もいるんじゃないでしょうか。
 
 「で、テスト観点ってどうやって書くの？」
 
@@ -34,7 +34,7 @@ publication_name: "bitkey_dev"
 
 テスト観点とは、「何を、どの視点で、どんな条件でテストするか」を構造化したもの。テストケースの上位概念で、テスト設計の骨格です。
 
-詳しくは[テスト観点を軸にした品質サイクルのすすめ](https://zenn.dev/93ch/articles/test-viewpoint-cycle)にまとめています。ここでは「書き方」に集中します。
+詳しくは[テスト観点を軸にした品質サイクルのすすめ](https://zenn.dev/bitkey_dev/articles/test-viewpoint-cycle)にまとめています。ここでは「書き方」に集中します。
 
 ## 壁①：何を書けばいいかわからない
 
