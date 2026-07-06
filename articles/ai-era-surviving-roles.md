@@ -1,8 +1,8 @@
 ---
-title: "AI時代に「活きる」役割——3アミーゴの中で最後に残るのは誰か"
+title: "AIに仕事を奪われるQA、奪われないQA——テストエンジニアのリスキリング3ステップ"
 emoji: "🤖"
 type: "tech"
-topics: ["QA", "キャリア", "AI", "品質保証", "テスト"]
+topics: ["QA", "テスト", "AI", "リスキリング", "テスト設計"]
 published: false
 publication_name: "bitkey_dev"
 ---
