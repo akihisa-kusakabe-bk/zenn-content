@@ -134,6 +134,8 @@ AIが生成したコードの品質を、人手のレビューだけで担保す
 
 足りないのは経験ではなく、**経験を言語化して上流の意思決定に使う方法**です。
 
+実は、このシリーズで書いてきた記事は、すべてこの「言語化」を支援するために書いたものです。[テスト観点の書き方](https://zenn.dev/bitkey_dev/articles/test-viewpoint-howto)、[テスト戦略と計画の違い](https://zenn.dev/bitkey_dev/articles/test-plan-vs-strategy)、[テスト≠QAの整理](https://zenn.dev/bitkey_dev/articles/test-equals-qa)——どれも「経験はあるけど言葉にできない」を「言葉にできる」に変えるための道具です。
+
 ## リスキリングの3ステップ
 
 テスト実行から上流へシフトするために、具体的に何をすればいいのか。3段階で整理します。
