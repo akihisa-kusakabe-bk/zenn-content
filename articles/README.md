@@ -8,7 +8,7 @@
 | [strategic-thinking-for-testers.md](strategic-thinking-for-testers.md) | チームを勝たせる！テスターが知るべき「戦略的思考」 | 2026-06-16 |
 | [test-plan-vs-strategy.md](test-plan-vs-strategy.md) | 今さら聞けない「テスト計画」と「テスト戦略」の違い | 2026-06-16 |
 | [regression-vs-discovery.md](regression-vs-discovery.md) | 「バグを見つける」と「壊れていないことを確認する」は別の仕事 | 2026-07-01 |
-| [ai-era-surviving-roles.md](ai-era-surviving-roles.md) | AI時代に「活きる」役割——3アミーゴの中で最後に残るのは誰か | 2026-07-06 |
+| [ai-era-surviving-roles.md](ai-era-surviving-roles.md) | AIに仕事を奪われるQA、奪われないQA——テストエンジニアのリスキリング3ステップ | 2026-07-06 |
 
 ## In Review
 
