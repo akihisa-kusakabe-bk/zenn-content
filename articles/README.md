@@ -1,21 +1,33 @@
 # Articles
 
-| ファイル | タイトル | 状態 | 更新日 |
-|---|---|---|---|
-| [test-viewpoint-cycle.md](test-viewpoint-cycle.md) | テスト観点を軸にした品質サイクルのすすめ | published | 2026-06-16 |
-| [test-strategy-101.md](test-strategy-101.md) | 失敗しない「テスト戦略」の全体像、1から教えます | draft | 2026-06-16 |
-| [strategic-thinking-for-testers.md](strategic-thinking-for-testers.md) | チームを勝たせる！テスターが知るべき「戦略的思考」 | draft | 2026-06-16 |
-| [test-plan-vs-strategy.md](test-plan-vs-strategy.md) | 今さら聞けない「テスト計画」と「テスト戦略」の違い | draft | 2026-06-16 |
-| [trust-building-for-testers.md](trust-building-for-testers.md) | 開発者に「この人の話は聞こう」と思わせる技術——テスターの信頼構築パターン | published | 2026-07-01 |
-| [test-viewpoint-howto.md](test-viewpoint-howto.md) | 「テスト観点が書けない」を解決する——3つの壁と乗り越え方 | in-review | 2026-06-26 |
-| [test-equals-qa.md](test-equals-qa.md) | 「テスト＝QA」を卒業する日 | in-review | 2026-07-01 |
-| [regression-vs-discovery.md](regression-vs-discovery.md) | 「バグを見つける」と「壊れていないことを確認する」は別の仕事 | draft | 2026-07-01 |
-| [ai-era-surviving-roles.md](ai-era-surviving-roles.md) | AI時代に「活きる」役割——3アミーゴの中で最後に残るのは誰か | draft | 2026-07-06 |
+## Published
+
+| ファイル | タイトル | 公開日 |
+|---|---|---|
+| [test-viewpoint-cycle.md](test-viewpoint-cycle.md) | テスト観点を軸にした品質サイクルのすすめ | 2026-06-16 |
+| [trust-building-for-testers.md](trust-building-for-testers.md) | 開発者に「この人の話は聞こう」と思わせる技術——テスターの信頼構築パターン | 2026-07-01 |
+
+## In Review
+
+| ファイル | タイトル | PR |
+|---|---|---|
+| [test-viewpoint-howto.md](test-viewpoint-howto.md) | 「テスト観点が書けない」を解決する——3つの壁と乗り越え方 | [#5](https://github.com/akihisa-kusakabe-bk/zenn-content/pull/5) |
+| [test-equals-qa.md](test-equals-qa.md) | 「テスト＝QA」を卒業する日 | [#7](https://github.com/akihisa-kusakabe-bk/zenn-content/pull/7) |
+
+## Draft
+
+| ファイル | タイトル | 更新日 |
+|---|---|---|
+| [test-strategy-101.md](test-strategy-101.md) | 失敗しない「テスト戦略」の全体像、1から教えます | 2026-06-16 |
+| [strategic-thinking-for-testers.md](strategic-thinking-for-testers.md) | チームを勝たせる！テスターが知るべき「戦略的思考」 | 2026-06-16 |
+| [test-plan-vs-strategy.md](test-plan-vs-strategy.md) | 今さら聞けない「テスト計画」と「テスト戦略」の違い | 2026-06-16 |
+| [regression-vs-discovery.md](regression-vs-discovery.md) | 「バグを見つける」と「壊れていないことを確認する」は別の仕事 | 2026-07-01 |
+| [ai-era-surviving-roles.md](ai-era-surviving-roles.md) | AI時代に「活きる」役割——3アミーゴの中で最後に残るのは誰か | 2026-07-06 |
 
 ## 状態の定義
 
 | 状態 | 意味 |
 |---|---|
-| draft | 下書き（`published: false`） |
-| in-review | PRでレビュー中 |
-| published | 公開済み（`published: true` & mainにマージ済み） |
+| Draft | 下書き（`published: false`） |
+| In Review | PRでレビュー中 |
+| Published | 公開済み（`published: true`） |
