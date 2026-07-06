@@ -10,6 +10,7 @@
 | [test-viewpoint-howto.md](test-viewpoint-howto.md) | 「テスト観点が書けない」を解決する——3つの壁と乗り越え方 | in-review | 2026-06-26 |
 | [test-equals-qa.md](test-equals-qa.md) | 「テスト＝QA」を卒業する日 | in-review | 2026-07-01 |
 | [regression-vs-discovery.md](regression-vs-discovery.md) | 「バグを見つける」と「壊れていないことを確認する」は別の仕事 | draft | 2026-07-01 |
+| [ai-era-surviving-roles.md](ai-era-surviving-roles.md) | AI時代に「活きる」役割——3アミーゴの中で最後に残るのは誰か | draft | 2026-07-06 |
 
 ## 状態の定義
 
