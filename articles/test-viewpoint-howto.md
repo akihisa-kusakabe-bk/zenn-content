@@ -7,7 +7,7 @@ published: false
 publication_name: "bitkey_dev"
 ---
 
-**テスト観点が書けない、その壁を壊す**
+**テスト観点が書けない・・・・、その壁、壊せます。**
 
 [前回の記事](https://zenn.dev/bitkey_dev/articles/trust-building-for-testers)で「テスト観点で語れ」「足りない観点を指摘しなさい」と書きました。でも、こう思った人もいるんじゃないでしょうか。
 
