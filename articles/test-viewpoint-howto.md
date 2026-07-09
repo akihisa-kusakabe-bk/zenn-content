@@ -3,7 +3,8 @@ title: "「テスト観点が書けない」を解決する。3つの壁と乗�
 emoji: "🧱"
 type: "tech"
 topics: ["テスト", "QA", "テスト観点", "テスト設計"]
-published: false
+published: true
+published_at: 2026-07-09 19:00
 publication_name: "bitkey_dev"
 ---
 
