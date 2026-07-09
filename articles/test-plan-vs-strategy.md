@@ -3,7 +3,8 @@ title: "今さら聞けない「テスト計画」と「テスト戦略」の違
 emoji: "📋"
 type: "tech"
 topics: ["テスト", "QA", "テスト計画", "テスト戦略", "テスト設計"]
-published: false
+published: true
+published_at: 2026-07-15 19:00
 publication_name: "bitkey_dev"
 ---
 
