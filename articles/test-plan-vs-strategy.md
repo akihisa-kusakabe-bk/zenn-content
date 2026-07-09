@@ -43,6 +43,8 @@ JSTQBやISO 29119の用語定義もありますが、ここでは専門用語を
 
 一言で言えば、**戦略は「方針」、計画は「段取り」**です。
 
+![テスト戦略 vs テスト計画](/images/test-plan-vs-strategy/strategy-vs-plan.png)
+
 ## 実務で見ると
 
 実務ではどう見えるか。
