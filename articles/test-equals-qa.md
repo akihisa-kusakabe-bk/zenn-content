@@ -4,7 +4,7 @@ emoji: "🎓"
 type: "tech"
 topics: ["QA", "テスト", "品質保証", "品質管理", "ソフトウェア品質"]
 published: true
-published_at: 2026-07-14 19:00
+published_at: 2026-07-14 11:30
 publication_name: "bitkey_dev"
 ---
 
