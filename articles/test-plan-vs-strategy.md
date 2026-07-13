@@ -321,6 +321,6 @@ JSTQBやISO 29119の用語定義もありますが、ここでは専門用語を
 ---
 
 **関連記事**
+- [「テスト＝QA」を卒業する日](https://zenn.dev/bitkey_dev/articles/test-equals-qa) — テスト・QC・QAの違い
 - [テスト観点を軸にした品質サイクルのすすめ](https://zenn.dev/bitkey_dev/articles/test-viewpoint-cycle) — テスト観点の運用サイクル
 - [「テスト観点が書けない」を解決する。3つの壁と乗り越え方](https://zenn.dev/bitkey_dev/articles/test-viewpoint-howto) — 観点の具体的な書き方
-- [「テスト＝QA」を卒業する日](https://zenn.dev/bitkey_dev/articles/test-equals-qa) — テスト・QC・QAの違い
