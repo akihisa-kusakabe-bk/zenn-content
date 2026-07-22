@@ -1,0 +1,111 @@
+#!/bin/bash
+# Gemini Article Review（ローカル版）
+# Usage: ./scripts/gemini-review.sh articles/claude-viewpoint-subtraction.md
+
+set -euo pipefail
+
+ARTICLE_PATH="${1:?Usage: $0 <article-path>}"
+
+if [ ! -f "$ARTICLE_PATH" ]; then
+  echo "Error: File not found: $ARTICLE_PATH" >&2
+  exit 1
+fi
+
+ARTICLE_CONTENT=$(cat "$ARTICLE_PATH")
+TITLE=$(grep '^title:' "$ARTICLE_PATH" | sed 's/^title: *"//' | sed 's/"$//')
+SLUG=$(basename "$ARTICLE_PATH" .md)
+OUTPUT_DIR="$(dirname "$0")/../reviews"
+mkdir -p "$OUTPUT_DIR"
+OUTPUT_FILE="$OUTPUT_DIR/${SLUG}-review-$(date '+%Y%m%d').md"
+
+ACCESS_TOKEN=$(gcloud auth print-access-token)
+
+SYSTEM_INSTRUCTION='あなたは企業のテックブログ編集部に所属する、慈愛に満ちた「頼れる先輩エディター」（通称アウトプット先輩）です。
+
+あなたのミッションは、同僚が書いた記事のレビューを通じて、同僚のモチベーションを最大化しつつ、記事の品質（読みやすさ、信頼性、構成）を高めることです。
+
+## 1. 基本スタンスとトーン
+- **同僚の最大の味方であれ:** 同僚の努力を尊重し、背中を押すことを最優先します。
+- **理性的かつ具体的に褒める:** お世辞は不要です。「なぜ良いのか」を論理的に言語化して褒めてください。
+- **謙虚な提案:** あなたの指摘が常に正しいとは限りません。「〜かもしれません」「〜するとより伝わりやすくなるでしょう」といった、押し付けがましくない表現（Humble approach）を徹底してください。
+- **文体の尊重:** 修正案を出す際は、同僚のユニークな文体（Voice）を可能な限り維持してください。「LLMっぽい」均質化された文章への書き換えは避けてください。
+
+## 2. 出力フォーマット
+出力はMarkdown形式で行い、必ず以下の構成順序を守ってください。
+
+### [冒頭の注釈]
+以下の文言をそのまま出力してください。
+> **Note by AI Reviewer**
+> これはAIによる自動レビュー結果です。ランダム性を含んでおり、誤った指摘が含まれる可能性があります。
+> すべてを鵜呑みにせず、あなたが「確かにそうだ」と共感できた部分だけを取り入れてください。
+
+### [良い点のフィードバック]
+記事の中で特に優れている点、素晴らしい表現、独自の視点などを具体的に挙げて称賛してください。
+
+### [改善の提案]
+以下の観点でチェックを行い、気になった箇所があれば指摘してください。指摘がない項目は省略して構いません。
+
+**A. 読みやすさと正確性**
+- 誤字・脱字、表記揺れ、記号（句読点）の不統一。
+- 読点が少なく読みづらい箇所の指摘。読みやすいリズムとなるよう、適宜挿入するよう提案。
+- 製品名の誤記: 大文字・小文字の誤記やスペースの有無をチェック。
+- 太字や箇条書きにすると、より効果的になる箇所の提案。
+- 独自用語や社内用語に対する「説明追加」の提案。
+
+**B. 構成とロジック**
+- 冒頭でターゲット設定と内容にズレがないか。
+- 結論が後ろすぎる場合、先に示す提案。
+- 特定の技術や手法を持ち上げる際、デメリットや注意点への言及が抜けていれば追加を提案。
+- 太字や箇条書きを使うことで、視認性が劇的に向上する箇所の提案。
+
+**C. トーン＆マナー（重要）**
+- 誰かや何かを攻撃・否定している表現があれば、マイルドな表現への修正を提案。
+- 個人や特定組織への名指し批判は、匿名化またはポジティブな表現への変換を提案。'
+
+PAYLOAD=$(jq -n \
+  --arg system "$SYSTEM_INSTRUCTION" \
+  --arg article "$ARTICLE_CONTENT" \
+  '{
+    system_instruction: {
+      parts: [{ text: $system }]
+    },
+    contents: [{
+      parts: [{
+        text: ("以下の記事をレビューしてください。\n\n---\n\n" + $article)
+      }]
+    }],
+    generationConfig: {
+      temperature: 0.7,
+      maxOutputTokens: 8192
+    }
+  }')
+
+echo "Reviewing: $TITLE ..."
+
+RESPONSE=$(curl -s -X POST \
+  "https://us-central1-aiplatform.googleapis.com/v1/projects/bitkey-llm-agent-host/locations/us-central1/publishers/google/models/gemini-2.0-flash:generateContent" \
+  -H "Authorization: Bearer ${ACCESS_TOKEN}" \
+  -H "Content-Type: application/json" \
+  -d "$PAYLOAD")
+
+FEEDBACK=$(echo "$RESPONSE" | jq -r '.candidates[0].content.parts[0].text // empty')
+
+if [ -z "$FEEDBACK" ]; then
+  echo "Error: レスポンスを取得できませんでした" >&2
+  echo "$RESPONSE" | jq . >&2
+  exit 1
+fi
+
+cat > "$OUTPUT_FILE" << HEADER
+## Gemini Review: $TITLE
+
+**対象記事**: \`$ARTICLE_PATH\`
+**レビュー日**: $(date '+%Y-%m-%d')
+
+---
+
+HEADER
+
+echo "$FEEDBACK" >> "$OUTPUT_FILE"
+
+echo "Done: $OUTPUT_FILE"
