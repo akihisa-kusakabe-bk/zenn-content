@@ -3,7 +3,7 @@ title: "AIでテスト観点を100個出すのは誰でもできる。65個「�
 emoji: "✂️"
 type: "tech"
 topics: ["テスト観点", "テスト設計", "QA", "AI", "生成AI"]
-published: false
+published: true
 publication_name: "bitkey_dev"
 ---
 
