@@ -8,10 +8,16 @@ on:
         required: true
         type: choice
         options:
-          - test-strategy-101.md
-          - strategic-thinking-for-testers.md
+          - claude-viewpoint-subtraction.md
+          - claude-test-strategy-zero.md
+          - claude-revive-test-plan.md
+          - claude-pair-exploratory-testing.md
+          - claude-handover-standardization.md
+          - regression-vs-discovery.md
           - test-plan-vs-strategy.md
           - test-viewpoint-cycle.md
+          - test-viewpoint-howto.md
+          - test-equals-qa.md
           - trust-building-for-testers.md
 
 permissions:
