@@ -6,7 +6,7 @@
 |---|---|---|
 | [regression-vs-discovery.md](regression-vs-discovery.md) | 「バグを見つける」と「壊れていないことを確認する」は別の仕事 | 2026-07-01 |
 | [claude-test-strategy-zero.md](claude-test-strategy-zero.md) | 「テスト戦略がない」をClaudeと30分で解消する | 2026-07-22 |
-| [claude-viewpoint-subtraction.md](claude-viewpoint-subtraction.md) | AIでテスト観点を100個出すのは誰でもできる。65個「捨てられるか」がQAの真価の分かれ目だ | 2026-07-22 |
+| [claude-viewpoint-subtraction.md](claude-viewpoint-subtraction.md) | ~~In Review [#11](https://github.com/akihisa-kusakabe-bk/zenn-content/pull/11)~~ | 2026-07-22 |
 | [claude-revive-test-plan.md](claude-revive-test-plan.md) | コピペ計画書をClaudeでリスク分析に変える | 2026-07-22 |
 | [claude-pair-exploratory-testing.md](claude-pair-exploratory-testing.md) | Claudeをペアテスターにした探索的テスト | 2026-07-22 |
 | [claude-handover-standardization.md](claude-handover-standardization.md) | AIを使った引き継ぎと標準化 - 属人化を仕組みで解消する | 2026-07-22 |
@@ -22,6 +22,7 @@
 
 | ファイル | タイトル | PR |
 |---|---|---|
+| [claude-viewpoint-subtraction.md](claude-viewpoint-subtraction.md) | AIでテスト観点を100個出すのは誰でもできる。65個「捨てられるか」がQAの真価の分かれ目だ | [#11](https://github.com/akihisa-kusakabe-bk/zenn-content/pull/11) |
 | [ai-era-surviving-roles.md](ai-era-surviving-roles.md) | AIに仕事を奪われるQA、奪われないQA——テストエンジニアのリスキリング3ステップ | [#10](https://github.com/akihisa-kusakabe-bk/zenn-content/pull/10) |
 
 ## Published
