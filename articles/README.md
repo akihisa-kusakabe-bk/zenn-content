@@ -4,9 +4,14 @@
 
 | ファイル | タイトル | 更新日 |
 |---|---|---|
-| [test-strategy-101.md](test-strategy-101.md) | 失敗しない「テスト戦略」の全体像、1から教えます | 2026-06-16 |
-| [strategic-thinking-for-testers.md](strategic-thinking-for-testers.md) | チームを勝たせる！テスターが知るべき「戦略的思考」 | 2026-06-16 |
 | [regression-vs-discovery.md](regression-vs-discovery.md) | 「バグを見つける」と「壊れていないことを確認する」は別の仕事 | 2026-07-01 |
+
+## Deprecated（廃止予定）
+
+| ファイル | タイトル | 廃止理由 |
+|---|---|---|
+| [test-strategy-101.md](test-strategy-101.md) | 失敗しない「テスト戦略」の全体像、1から教えます | test-plan-vs-strategy + claude-test-strategy-zero でカバー |
+| [strategic-thinking-for-testers.md](strategic-thinking-for-testers.md) | チームを勝たせる！テスターが知るべき「戦略的思考」 | test-plan-vs-strategy / test-equals-qa / trust-building と3本に被る |
 | [claude-test-strategy-zero.md](claude-test-strategy-zero.md) | 「テスト戦略がない」をClaudeと30分で解消する | 2026-07-21 |
 | [claude-viewpoint-subtraction.md](claude-viewpoint-subtraction.md) | AIにテスト観点を100個出させて、人間が「削る」仕事 | 2026-07-21 |
 | [claude-revive-test-plan.md](claude-revive-test-plan.md) | コピペ計画書をClaudeでリスク分析に変える | 2026-07-21 |
