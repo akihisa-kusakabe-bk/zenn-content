@@ -1,5 +1,5 @@
 ---
-title: "コピペ計画書をClaudeでリスク分析に変える"
+title: "コピペ計画書をAIでリスク分析に変えたら、30ページが5ページになった"
 emoji: "🔄"
 type: "tech"
 topics: ["テスト計画", "リスク分析", "Claude", "QA", "AI"]
