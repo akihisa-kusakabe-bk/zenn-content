@@ -8,6 +8,15 @@ published_at: 2026-07-17 11:30
 publication_name: "bitkey_dev"
 ---
 
+:::message
+📚 **「QAの成長段階」シリーズ**
+① [バグ報告しても「ふーん」で終わる理由](https://zenn.dev/bitkey_dev/articles/trust-building-for-testers)
+② [テスト観点が書けないのは「出し方の型」を知らないだけ](https://zenn.dev/bitkey_dev/articles/test-viewpoint-howto)
+③ [テスト観点を軸にした品質サイクルのすすめ](https://zenn.dev/bitkey_dev/articles/test-viewpoint-cycle)
+**④ テスト計画書がコピペになる本当の理由** ◀ この記事
+⑤ [「テスト＝QA」を卒業する日](https://zenn.dev/bitkey_dev/articles/test-equals-qa)
+:::
+
 **この2つが混同されるだけで、チームの品質活動はズレていく**
 
 「テスト計画を作って」と言われて、あなたが作るものは何ですか？

@@ -2,11 +2,20 @@
 title: "テスト観点が書けないのは「出し方の型」を知らないだけ"
 emoji: "🧱"
 type: "tech"
-topics: ["テスト", "QA", "テスト観点", "テスト設計"]
+topics: ["テスト", "QA", "テスト観点", "テスト設計", "テスト技法"]
 published: true
 published_at: 2026-07-09 19:00
 publication_name: "bitkey_dev"
 ---
+
+:::message
+📚 **「QAの成長段階」シリーズ**
+① [バグ報告しても「ふーん」で終わる理由](https://zenn.dev/bitkey_dev/articles/trust-building-for-testers)
+**② テスト観点が書けないのは「出し方の型」を知らないだけ** ◀ この記事
+③ [テスト観点を軸にした品質サイクルのすすめ](https://zenn.dev/bitkey_dev/articles/test-viewpoint-cycle)
+④ [テスト計画書がコピペになる本当の理由](https://zenn.dev/bitkey_dev/articles/test-plan-vs-strategy)
+⑤ [「テスト＝QA」を卒業する日](https://zenn.dev/bitkey_dev/articles/test-equals-qa)
+:::
 
 **テスト観点が書けない・・・・、その壁、壊せます。**
 
@@ -268,6 +277,12 @@ AIの出力をそのまま使う必要はありません。「あ、この視点
 画面を開いて要素を列挙する。仕様書から名詞と動詞を抜き出す。「どうなったらまずい？」を考える。迷ったらAIに壁打ちする。チームで出し合う。カタログに貯めて、使いながら育てる。
 
 最初から完璧な観点リストは作れません。でも、3つなら書ける。3つ書けたら、次は5つ。5つ書けたら、チームに見せて「足りない？」と聞く。そこから始まります。
+
+## 関連記事
+
+- [バグ報告しても「ふーん」で終わる理由](https://zenn.dev/bitkey_dev/articles/trust-building-for-testers) ── テスト観点で語ることが信頼構築の鍵
+- [テスト観点を軸にした品質サイクルのすすめ](https://zenn.dev/bitkey_dev/articles/test-viewpoint-cycle) ── 観点を軸に品質を回す仕組み
+- [テスト計画書がコピペになる本当の理由](https://zenn.dev/bitkey_dev/articles/test-plan-vs-strategy) ── 戦略と計画を分けることが形骸化解消の第一歩
 
 ---
 

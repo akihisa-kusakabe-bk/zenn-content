@@ -2,11 +2,20 @@
 title: "「テスト＝QA」を卒業する日"
 emoji: "🎓"
 type: "tech"
-topics: ["QA", "テスト", "品質保証", "品質管理", "ソフトウェア品質"]
+topics: ["QA", "テスト", "品質保証", "品質エンジニアリング", "ソフトウェア品質"]
 published: true
 published_at: 2026-07-14 11:30
 publication_name: "bitkey_dev"
 ---
+
+:::message
+📚 **「QAの成長段階」シリーズ**
+① [バグ報告しても「ふーん」で終わる理由](https://zenn.dev/bitkey_dev/articles/trust-building-for-testers)
+② [テスト観点が書けないのは「出し方の型」を知らないだけ](https://zenn.dev/bitkey_dev/articles/test-viewpoint-howto)
+③ [テスト観点を軸にした品質サイクルのすすめ](https://zenn.dev/bitkey_dev/articles/test-viewpoint-cycle)
+④ [テスト計画書がコピペになる本当の理由](https://zenn.dev/bitkey_dev/articles/test-plan-vs-strategy)
+**⑤ 「テスト＝QA」を卒業する日** ◀ この記事
+:::
 
 「QA」と名のつくチームに配属されたのに、やっていることはテストと不具合報告……そんな経験はないでしょうか。
 

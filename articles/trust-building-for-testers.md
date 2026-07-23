@@ -2,10 +2,19 @@
 title: "バグ報告しても「ふーん」で終わる理由"
 emoji: "🤝"
 type: "tech"
-topics: ["テスト", "QA", "チーム開発", "信頼構築"]
+topics: ["テスト", "QA", "チーム開発", "信頼構築", "テスター"]
 published: true
 publication_name: "bitkey_dev"
 ---
+
+:::message
+📚 **「QAの成長段階」シリーズ**
+**① バグ報告しても「ふーん」で終わる理由** ◀ この記事
+② [テスト観点が書けないのは「出し方の型」を知らないだけ](https://zenn.dev/bitkey_dev/articles/test-viewpoint-howto)
+③ [テスト観点を軸にした品質サイクルのすすめ](https://zenn.dev/bitkey_dev/articles/test-viewpoint-cycle)
+④ [テスト計画書がコピペになる本当の理由](https://zenn.dev/bitkey_dev/articles/test-plan-vs-strategy)
+⑤ [「テスト＝QA」を卒業する日](https://zenn.dev/bitkey_dev/articles/test-equals-qa)
+:::
 
 **テスターの信頼構築——再現性のあるパターン**
 
@@ -275,6 +284,12 @@ publication_name: "bitkey_dev"
 そして信頼構築は、才能やセンスではなく、行動パターンの問題です。バグ報告で足りないテスト観点を伝える。良いコードに言及する。リスクをテスト観点の仮説として指摘する。開発者の文脈を理解する。小さな貢献を積み重ねる。データを常に持っておく。
 
 どれも、明日からできることです。派手さはないけれど、毎日の小さな正確さが、半年後の信頼になります。
+
+## 関連記事
+
+- [テスト観点が書けないのは「出し方の型」を知らないだけ](https://zenn.dev/bitkey_dev/articles/test-viewpoint-howto) ── 観点の具体的な出し方と3つの壁の越え方
+- [テスト観点を軸にした品質サイクルのすすめ](https://zenn.dev/bitkey_dev/articles/test-viewpoint-cycle) ── 観点を軸に品質を回す仕組み
+- [「テスト＝QA」を卒業する日](https://zenn.dev/bitkey_dev/articles/test-equals-qa) ── テストの先にあるQAの本質
 
 ---
 
