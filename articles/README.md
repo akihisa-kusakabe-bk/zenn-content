@@ -10,6 +10,7 @@
 | [claude-revive-test-plan.md](claude-revive-test-plan.md) | コピペ計画書をAIでリスク分析に変えたら、30ページが5ページになった | 2026-07-22 |
 | [claude-pair-exploratory-testing.md](claude-pair-exploratory-testing.md) | Claudeをペアテスターにした探索的テスト | 2026-07-22 |
 | [claude-handover-standardization.md](claude-handover-standardization.md) | AIを使った引き継ぎと標準化 - 属人化を仕組みで解消する | 2026-07-22 |
+| [quality-analysis-starting-point.md](quality-analysis-starting-point.md) | 品質分析が回らないのは「手法」ではなく「データ」の問題 | 2026-07-27 |
 
 ## Deprecated（廃止予定）
 
