@@ -13,6 +13,7 @@
 | [quality-analysis-starting-point.md](quality-analysis-starting-point.md) | 品質分析が回らないのは「手法」ではなく「データ」の問題 | 2026-07-27 |
 | [qa-first-analysis-ritual.md](qa-first-analysis-ritual.md) | テストしかしていないQAチームが、来週から始められる分析習慣 | 2026-07-27 |
 | [qa-auto-review-pipeline.md](qa-auto-review-pipeline.md) | バグの振り返りを「仕組み」にしたら、チームが勝手に改善し始めた | 2026-07-27 |
+| [jstqb-syllabus-as-ai-skill.md](jstqb-syllabus-as-ai-skill.md) | JSTQBシラバスを丸ごとAIスキルに変換する ― プロンプトテンプレート標準化という発想 | 2026-07-29 |
 
 ## Deprecated（廃止予定）
 
