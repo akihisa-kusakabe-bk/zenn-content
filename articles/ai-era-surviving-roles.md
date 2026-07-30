@@ -3,7 +3,8 @@ title: "AIが飲み込むのは「ロール」ではなく「レイヤー」だ�
 emoji: "🤖"
 type: "tech"
 topics: ["QA", "テスト", "AI", "リスキリング", "テスト設計"]
-published: false
+published: true
+published_at: 2026-07-30 11:30
 publication_name: "bitkey_dev"
 ---
 
