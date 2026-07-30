@@ -27,7 +27,6 @@
 | ファイル | タイトル | PR |
 |---|---|---|
 | [claude-viewpoint-subtraction.md](claude-viewpoint-subtraction.md) | AIでテスト観点を100個出すのは誰でもできる。65個「捨てられるか」がQAの真価の分かれ目だ | [#11](https://github.com/akihisa-kusakabe-bk/zenn-content/pull/11) |
-| [ai-era-surviving-roles.md](ai-era-surviving-roles.md) | AIに仕事を奪われるQA、奪われないQA——テストエンジニアのリスキリング3ステップ | [#10](https://github.com/akihisa-kusakabe-bk/zenn-content/pull/10) |
 
 ## Published
 
@@ -38,6 +37,7 @@
 | [test-viewpoint-howto.md](test-viewpoint-howto.md) | テスト観点が書けないのは「出し方の型」を知らないだけ | 2026-07-09 |
 | [test-equals-qa.md](test-equals-qa.md) | 「テスト＝QA」を卒業する日 | 2026-07-14 |
 | [test-plan-vs-strategy.md](test-plan-vs-strategy.md) | テスト計画書がコピペになる本当の理由 | 2026-07-17 |
+| [ai-era-surviving-roles.md](ai-era-surviving-roles.md) | AIが飲み込むのは「ロール」ではなく「レイヤー」だ。QAエンジニアが今すぐ始めるべきリスキリング | 2026-07-30 |
 
 ## 状態の定義
 
