@@ -1,5 +1,5 @@
 ---
-title: "AIでテスト観点を100個出すのは誰でもできる。65個「捨てられるか」がQAの真価の分かれ目だ"
+title: "AIでテスト観点を100個出せる時代。65個「削れるか」がテスト設計力だ"
 emoji: "✂️"
 type: "tech"
 topics: ["テスト観点", "テスト設計", "QA", "AI", "生成AI"]
@@ -331,3 +331,4 @@ AIが100個出して、人間が35個に絞る。足し算はAI、引き算は�
 - [「テスト観点が書けない」を解決する。3つの壁と乗り越え方](https://zenn.dev/bitkey_dev/articles/test-viewpoint-howto): 観点の「出し方」はこちら。本記事の前編
 - [今さら聞けない「テスト計画」と「テスト戦略」の違い](https://zenn.dev/bitkey_dev/articles/test-plan-vs-strategy): 「何をテストしないか」はテスト戦略の核心
 - [テスト観点を軸にした品質サイクルのすすめ](https://zenn.dev/bitkey_dev/articles/test-viewpoint-cycle): 観点を活用した品質サイクル全体像
+- [AIが飲み込むのは「ロール」ではなく「レイヤー」だ](https://zenn.dev/bitkey_dev/articles/ai-era-surviving-roles): AI時代のQAエンジニアのリスキリング
