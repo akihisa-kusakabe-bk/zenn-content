@@ -4,6 +4,7 @@ emoji: "✂️"
 type: "tech"
 topics: ["テスト観点", "テスト設計", "QA", "AI", "生成AI"]
 published: true
+published_at: 2026-08-06 11:30
 publication_name: "bitkey_dev"
 ---
 
