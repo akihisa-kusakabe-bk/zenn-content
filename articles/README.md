@@ -28,12 +28,13 @@
 
 | ファイル | タイトル | PR |
 |---|---|---|
-| [claude-viewpoint-subtraction.md](claude-viewpoint-subtraction.md) | AIでテスト観点を100個出せる時代。65個「削れるか」がテスト設計力だ | [#11](https://github.com/akihisa-kusakabe-bk/zenn-content/pull/11) |
+| （なし） | | |
 
 ## Published
 
 | ファイル | タイトル | 公開日 |
 |---|---|---|
+| [claude-viewpoint-subtraction.md](claude-viewpoint-subtraction.md) | AIでテスト観点を100個出せる時代。65個「削れるか」がテスト設計力だ | 2026-08-06 |
 | [test-viewpoint-cycle.md](test-viewpoint-cycle.md) | テスト観点を軸にした品質サイクルのすすめ | 2026-06-16 |
 | [trust-building-for-testers.md](trust-building-for-testers.md) | バグ報告しても「ふーん」で終わる理由 | 2026-07-01 |
 | [test-viewpoint-howto.md](test-viewpoint-howto.md) | テスト観点が書けないのは「出し方の型」を知らないだけ | 2026-07-09 |
