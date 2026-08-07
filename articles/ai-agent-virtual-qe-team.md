@@ -9,7 +9,7 @@ publication_name: "bitkey_dev"
 
 ## QAチームが1人しかいない問題
 
-自分はビットキーでソフトウェア品質戦略を担当している。品質データの分析、Qaseの運用設計、ダッシュボードの構築、ベンダー管理、レポート作成。数えたら10種類の専門業務があった。全部1人でやっている。
+自分はビットキーでソフトウェア品質戦略を担当している。品質データの分析、Qase[^qase]の運用設計、ダッシュボードの構築、ベンダー管理、レポート作成。数えたら10種類の専門業務があった。全部1人でやっている。
 
 人を増やせればいいが、品質戦略の専門人材はそう簡単に採れない。
 
@@ -23,7 +23,7 @@ publication_name: "bitkey_dev"
 
 - **コンテキストが溢れる。** 品質データ分析の文脈でテスト設計の指示が混ざると、どちらも中途半端になる
 - **ツール権限が合わない。** データ分析にはBash実行が要るが、レポート作成にはWrite権限で十分。全部入りにすると事故が起きる
-- **モデルの使い分けができない。** テスト戦略の判断はOpusが必要だが、データ集計はSonnetで十分。コストが無駄になる
+- **モデルの使い分けができない。** テスト戦略の判断はOpus[^opus-sonnet]が必要だが、データ集計はSonnetで十分。コストが無駄になる
 
 **実際に起きた失敗：** 汎用AIにQaseのテストケースを一括更新させたとき、`custom_fields`（複数形）を使い続けた。APIはstatus:trueを返すのにデータが反映されない。正解は`custom_field`（単数形）。73プロジェクト/217,948件の処理でこのミスは致命的だった。
 
@@ -47,7 +47,7 @@ publication_name: "bitkey_dev"
 |---|---|---|---|
 | **司令塔** | qe-orchestrator | Opus | ユーザーの指示を解析し、最適なエージェントを選定・起動 |
 | **設計・分析** | test-design-architect | Opus | テスト計画・テスト設計の上位設計、品質評価 |
-| | quality-analyst | Sonnet | 品質データの多角分析、RCA、トレンド分析 |
+| | quality-analyst | Sonnet | 品質データの多角分析、RCA[^rca]、トレンド分析 |
 | | ai-reverse-engineer | Sonnet | ソースコードから仕様・ドメインモデルを可視化 |
 | **データ・インフラ** | data-analyst | Sonnet | データ収集・クレンジング・KPI計算 |
 | | qase-specialist | Sonnet | Qaseの設定・運用・API連携 |
@@ -58,9 +58,41 @@ publication_name: "bitkey_dev"
 
 Opus3体（判断系）+ Sonnet7体（処理系）の構成。
 
+```mermaid
+graph TD
+    U[ユーザー] --> ORC[qe-orchestrator]
+
+    subgraph L2["設計・分析"]
+        TDA[test-design-architect]
+        QA[quality-analyst]
+        ARE[ai-reverse-engineer]
+    end
+
+    subgraph L3["データ・インフラ"]
+        DA[data-analyst]
+        QS[qase-specialist]
+        DD[dashboard-designer]
+    end
+
+    subgraph L4["アウトプット"]
+        IR[insight-reporter]
+        VM[vendor-manager]
+    end
+
+    ORC --> L2
+    ORC --> L3
+    ORC --> L4
+    TDA <--> ARE
+    DA --> DD --> IR
+
+    EE[extension-engineer]
+```
+
+orchestratorがハブになり、各レイヤーにタスクを振り分ける。設計・分析レイヤーのtest-design-architectとai-reverse-engineerだけは双方向。extension-engineerはどこにも依存しない独立型。
+
 ## エージェント定義ファイルの実物
 
-Claude Codeのカスタムエージェント機能を使っている。`~/.claude/agents/` にMarkdownファイルを置くだけ。
+Claude Codeのカスタムエージェント機能[^custom-agent]を使っている。`~/.claude/agents/` にMarkdownファイルを置くだけ。
 
 **司令塔の例：**
 
@@ -95,7 +127,7 @@ model: sonnet
 数字の裏にある「なぜ」を見つけることが仕事です。
 ```
 
-ポイントは `tools` の制限。quality-analystにはWriteもEditもない。**読んで分析するだけ、書き換えはしない。** この制限を入れた途端、出力の安定性が上がった。具体的に言うと:
+ポイントは `tools` の制限[^tools]。quality-analystにはWriteもEditもない。**読んで分析するだけ、書き換えはしない。** この制限を入れた途端、出力の安定性が上がった。具体的に言うと:
 
 - **Before（Write権限あり）：** 分析途中で「結果をファイルに保存しますね」と勝手にCSVを書き出したり、既存の分析レポートを上書きしたりする。同じ入力でも、ファイル操作の有無で出力構造が毎回変わる
 - **After（Read only）：** 入力に対して「分析結果をテキストで返す」以外の選択肢がなくなる。同じデータを渡せば、同じ構造の分析が返ってくる。再実行しても結果の形式がブレない
@@ -139,7 +171,7 @@ model: sonnet
 
 ### ステップ3：定義ファイル作成（2日目）
 
-Markdownでfrontmatter + 本文を書く。ここで**擬人化**がポイント。「あなたはデータアナリストです」より「あなたは品質データを掘り下げる探偵です」の方が、出力のトーンが安定する。
+Markdownでfrontmatter[^frontmatter] + 本文を書く。ここで**擬人化**がポイント。「あなたはデータアナリストです」より「あなたは品質データを掘り下げる探偵です」の方が、出力のトーンが安定する。
 
 ### ステップ4：共通リファレンス作成（2日目）
 
@@ -157,6 +189,21 @@ Qaseのプロジェクト一覧、品質メトリクスの定義、用語集な�
 | Qase棚卸し（217,948件） | やる気が起きない | 自動バッチで3分類 |
 | テスト設計レビュー | 属人的なコメント（観点の抜け漏れは経験頼み） | S/A/B/C/Dの定量グレード（同じ設計書を2回投げても同じ評価が出る再現性） |
 | 品質ダッシュボード更新 | 半日仕事 | data-analyst → dashboard-designerの連鎖で30分 |
+
+### パイプラインの実際の動き
+
+「週次レポート作って」と入力したときの流れ：
+
+```mermaid
+graph LR
+    A["「週次レポート作って」"] --> B[qe-orchestrator]
+    B --> C[data-analyst]
+    C -->|集計データ| D[dashboard-designer]
+    D -->|HTML| E[insight-reporter]
+    E -->|完成レポート| F[ユーザー]
+```
+
+自分がやることは最初の1行だけ。あとは3体が順に動いて、最終成果物が出てくる。
 
 ## 運用してみての実感
 
@@ -201,6 +248,13 @@ Qaseのプロジェクト一覧、品質メトリクスの定義、用語集な�
 10体のときに学んだ「分解して名前をつける」原則は、33体になっても変わらない。むしろ、10体で原則を固めたからこそ、33体にスケールできた。
 
 もしあなたも「1人で何役もこなしている」なら、まず自分の業務を全部書き出すところから始めてみてほしい。10個を超えたら、エージェント化の余地がある。
+
+[^qase]: クラウドベースのテスト管理プラットフォーム。テストケースの管理、テスト実行の記録、レポート生成などの機能を持つ。https://qase.io
+[^opus-sonnet]: Claude（Anthropic社のAI）のモデルティア。Opusは最も推論力が高く複雑な判断に向くが高コスト。Sonnetはバランス型で高速・低コスト。
+[^rca]: Root Cause Analysis（根本原因分析）。問題の表面的な症状ではなく、根本的な原因を特定する分析手法。
+[^custom-agent]: Claude Codeの機能。`~/.claude/agents/` にMarkdownファイルを配置すると、専門知識・ツール権限・使用モデルを指定した専用AIエージェントとして呼び出せる。
+[^tools]: Claude Codeが持つツール群。Read（ファイル読み取り）、Write（新規作成）、Edit（編集）、Bash（シェルコマンド実行）、Glob（ファイル検索）、Grep（テキスト検索）、WebFetch（Web取得）などがある。エージェント定義で使えるツールを制限できる。
+[^frontmatter]: Markdownファイルの先頭に `---` で囲んで記述するYAML形式のメタデータ。エージェント名、使用モデル、ツール権限などを定義する。
 
 ## 関連記事
 
