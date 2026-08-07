@@ -12,7 +12,7 @@
 | [quality-analysis-starting-point.md](quality-analysis-starting-point.md) | 品質分析が回らないのは「手法」ではなく「データ」の問題 | 2026-07-27 |
 | [qa-first-analysis-ritual.md](qa-first-analysis-ritual.md) | テストしかしていないQAチームが、来週から始められる分析習慣 | 2026-07-27 |
 | [qa-auto-review-pipeline.md](qa-auto-review-pipeline.md) | バグの振り返りを「仕組み」にしたら、チームが勝手に改善し始めた | 2026-07-27 |
-| [ai-agent-virtual-qe-team.md](ai-agent-virtual-qe-team.md) | AIエージェント10体で「仮想QEチーム」を組んだ話 | 2026-08-04 |
+
 | [quality-definition-before-ai.md](quality-definition-before-ai.md) | 「品質」を定義できないと、AIに何も任せられない | 2026-08-04 |
 | [ai-test-review-insights.md](ai-test-review-insights.md) | AIにテストレビューさせたら何が見えたか | 2026-08-04 |
 
@@ -33,7 +33,7 @@
 
 | ファイル | タイトル | PR |
 |---|---|---|
-| （なし） | | |
+| [ai-agent-virtual-qe-team.md](ai-agent-virtual-qe-team.md) | AIエージェント10体で「仮想QEチーム」を組んだ話 | TBD |
 
 ## Published
 
