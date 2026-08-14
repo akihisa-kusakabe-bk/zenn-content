@@ -150,7 +150,7 @@ model: sonnet
 数字の裏にある「なぜ」を見つけることが仕事です。
 ```
 
-ポイントは `tools` の制限[^tools]。
+ポイントは `tools` の制限。
 
 :::details toolsの種類と意味
 | ツール名 | 何ができるか |
@@ -340,7 +340,6 @@ model: sonnet
 [^qase]: クラウドベースのテスト管理プラットフォーム。テストケースの管理、テスト実行の記録、レポート生成などの機能を持つ。https://qase.io
 [^opus-sonnet]: Claude（Anthropic社のAI）のモデルティア。Opusは最も推論力が高く複雑な判断に向くが高コスト。Sonnetはバランス型で高速・低コスト。
 [^custom-agent]: Claude Codeの機能。`~/.claude/agents/` にMarkdownファイルを配置すると、専門知識・ツール権限・使用モデルを指定した専用AIエージェントとして呼び出せる。
-[^tools]: Claude Codeが持つツール群。Read（ファイル読み取り）、Write（新規作成）、Edit（編集）、Bash（シェルコマンド実行）、Glob（ファイル検索）、Grep（テキスト検索）、WebFetch（Web取得）などがある。エージェント定義で使えるツールを制限できる。
 
 ## 関連記事
 
