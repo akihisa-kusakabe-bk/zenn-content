@@ -3,7 +3,8 @@ title: "AIエージェント10体で「仮想QAチーム」を組んだ話"
 emoji: "🤖"
 type: "tech"
 topics: ["QA", "AIエージェント", "Claude", "品質戦略", "テスト設計"]
-published: false
+published: true
+published_at: 2026-08-18 11:30
 publication_name: "bitkey_dev"
 ---
 
