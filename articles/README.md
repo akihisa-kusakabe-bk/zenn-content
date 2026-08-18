@@ -4,6 +4,7 @@ Zennに公開中の記事。`published: true` のもののみ。
 
 | ファイル | タイトル | 公開日 |
 |---|---|---|
+| [ai-agent-virtual-qe-team.md](ai-agent-virtual-qe-team.md) | AIエージェント10体で「仮想QEチーム」を組んだ話 | 2026-08-18 |
 | [claude-viewpoint-subtraction.md](claude-viewpoint-subtraction.md) | AIでテスト観点を100個出せる時代。65個「削れるか」がテスト設計力だ | 2026-08-06 |
 | [ai-era-surviving-roles.md](ai-era-surviving-roles.md) | AIが飲み込むのは「ロール」ではなく「レイヤー」だ。QAエンジニアが今すぐ始めるべきリスキリング | 2026-07-30 |
 | [test-plan-vs-strategy.md](test-plan-vs-strategy.md) | テスト計画書がコピペになる本当の理由 | 2026-07-17 |

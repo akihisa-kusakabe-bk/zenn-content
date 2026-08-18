@@ -6,7 +6,6 @@ Zenn未公開の記事。公開時に `articles/` へ移動する。
 
 | ファイル | タイトル | 更新日 |
 |---|---|---|
-| [ai-agent-virtual-qe-team.md](ai-agent-virtual-qe-team.md) | AIエージェント10体で「仮想QEチーム」を組んだ話 | 2026-08-04 |
 | [quality-definition-before-ai.md](quality-definition-before-ai.md) | 「品質」を定義できないと、AIに何も任せられない | 2026-08-04 |
 | [ai-test-review-insights.md](ai-test-review-insights.md) | AIにテストレビューさせたら何が見えたか | 2026-08-04 |
 | [qa-auto-review-pipeline.md](qa-auto-review-pipeline.md) | バグの振り返りを「仕組み」にしたら、チームが勝手に改善し始めた | 2026-07-27 |
