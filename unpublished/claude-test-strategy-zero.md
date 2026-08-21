@@ -1,5 +1,5 @@
 ---
-title: "「テスト戦略がない」をClaudeと30分で解消する"
+title: "「テスト戦略がない」を30分で解消した。Claudeとの壁打ち記録"
 emoji: "⚡"
 type: "tech"
 topics: ["テスト戦略", "Claude", "QA", "AI", "テスト設計"]

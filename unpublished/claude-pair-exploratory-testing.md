@@ -1,5 +1,5 @@
 ---
-title: "Claudeをペアテスターにした探索的テスト"
+title: "1人で探索的テストは限界がある。Claudeをペアにしたら変わった"
 emoji: "🔍"
 type: "tech"
 topics: ["探索的テスト", "Claude", "QA", "AI", "ペアテスト"]
