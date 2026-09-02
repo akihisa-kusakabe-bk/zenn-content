@@ -14,7 +14,7 @@ Zenn未公開の記事。公開時に `articles/` へ移動する。
 | [claude-revive-test-plan.md](claude-revive-test-plan.md) | コピペ計画書をAIでリスク分析に変えたら、30ページが5ページになった | 2026-08-17 |
 | [claude-pair-exploratory-testing.md](claude-pair-exploratory-testing.md) | 1人で探索的テストは限界がある。Claudeをペアにしたら変わった | 2026-08-21 |
 | [claude-handover-standardization.md](claude-handover-standardization.md) | 「あの人に聞かないとわからない」をAIで仕組みに変えた話 | 2026-08-21 |
-| [regression-vs-discovery.md](regression-vs-discovery.md) | 「バグを見つける」と「壊れていないことを確認する」は別の仕事 | 2026-08-17 |
+| [regression-vs-discovery.md](regression-vs-discovery.md) | 「バグを見つける」と「壊れていないことを確認する」は別の仕事 | 2026-09-02 |
 
 ## On Hold（保留）
 
