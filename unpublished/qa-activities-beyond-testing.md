@@ -50,37 +50,41 @@ QAも同じだ。テスト実行は健康診断。それ以外の活動が、食
 ここで大事なのは、これが一方通行じゃないということだ。**下流の学びが上流に戻るフィードバックループ**が回って初めて「仕組み」になる。
 
 ```mermaid
-flowchart TD
+flowchart LR
     subgraph UP["上流：作る前"]
-        REQ["要件レビュー\n（仕様の曖昧さを潰す）"]
-        DES["設計レビュー\n（テストしやすさを確保）"]
-        RISK["変更リスク評価\n（どこが壊れやすいか予測）"]
+        direction TB
+        REQ["要件レビュー"]
+        DES["設計レビュー"]
+        RISK["変更リスク評価"]
     end
 
     subgraph MID["中流：作りながら"]
-        DESIGN["テスト設計\n（何を・どこまでテストするか）"]
-        GATE["品質ゲート\n（次工程に進めてよいか判定）"]
-        CICD["CI/CD品質指標\n（自動で品質チェック）"]
-        ET["探索的テスト\n（未知のバグを探す）"]
+        direction TB
+        DESIGN["テスト設計"]
+        ET["探索的テスト"]
+        GATE["品質ゲート"]
+        CICD["CI/CD品質指標"]
     end
 
     subgraph DOWN["下流＋横断"]
-        MET["メトリクス・可視化\n（品質を数値で把握）"]
-        RCA["バグ分析（RCA）\n（なぜ作り込まれたか掘る）"]
-        TREND["不具合傾向の蓄積\n（バグパターン→観点カタログ）"]
-        PI["プロセス改善\n（開発の仕組みを変える）"]
+        direction TB
+        RCA["バグ分析"]
+        MET["メトリクス・可視化"]
+        TREND["不具合傾向の蓄積"]
+        PI["プロセス改善"]
     end
 
-    REQ -->|"テスト可能な要件"| DESIGN
-    DES -->|"テスト容易な設計"| DESIGN
-    RISK -->|"重点テスト箇所"| DESIGN
-    DESIGN -->|"テスト観点"| ET
-    DESIGN -->|"品質基準"| GATE
+    REQ --> DESIGN
+    DES --> DESIGN
+    RISK --> DESIGN
+    DESIGN --> ET
+    DESIGN --> GATE
     GATE --> CICD
-    CICD -->|"品質データ"| MET
-    ET -->|"発見バグ"| RCA
-    RCA -->|"根本原因・パターン"| TREND
-    MET -->|"品質傾向"| PI
+    ET --> RCA
+    CICD --> MET
+    RCA --> TREND
+    MET --> PI
+
     TREND -.->|"観点カタログ"| DESIGN
     TREND -.->|"バグ集中箇所"| RISK
     PI -.->|"改善施策"| REQ
