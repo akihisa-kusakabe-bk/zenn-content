@@ -51,13 +51,19 @@ QAも同じだ。テスト実行は健康診断。それ以外の活動が、食
 
 ```mermaid
 flowchart LR
-    UP["上流：作る前\n要件レビュー\n設計レビュー\n変更リスク評価"]
-    MID["中流：作りながら\nテスト設計\n品質ゲート\n探索的テスト\nCI/CD品質指標"]
-    DOWN["下流＋横断\nバグ分析\nメトリクス・可視化\n不具合傾向の蓄積\nプロセス改善"]
+    UP(["上流：作る前\n要件レビュー\n設計レビュー\n変更リスク評価"])
+    MID(["中流：作りながら\nテスト設計\n品質ゲート\n探索的テスト\nCI/CD品質指標"])
+    DOWN(["下流＋横断\nバグ分析\nメトリクス・可視化\n不具合傾向の蓄積\nプロセス改善"])
 
-    UP -->|"成果物"| MID -->|"成果物"| DOWN
+    UP -->|"成果物"| MID
+    MID -->|"成果物"| DOWN
     DOWN -.->|"フィードバック"| MID
     DOWN -.->|"フィードバック"| UP
+
+    style UP fill:#3b82f6,color:#fff,stroke:#60a5fa
+    style MID fill:#10b981,color:#fff,stroke:#34d399
+    style DOWN fill:#f59e0b,color:#fff,stroke:#fbbf24
+    linkStyle 2,3 stroke:#ef4444,stroke-width:2px
 ```
 
 実線は「成果物の流れ」、点線は「フィードバック」だ。各活動の詳しいつながりは下のI/Oテーブルで確認してほしい。
