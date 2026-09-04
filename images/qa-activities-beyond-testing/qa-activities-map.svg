@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 470" style="font-family:'Hiragino Kaku Gothic ProN','Yu Gothic','Noto Sans JP',sans-serif">
+  <defs>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,1 L9,5 L0,9" fill="#94a3b8"/>
+    </marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,1 L9,5 L0,9" fill="#dc2626"/>
+    </marker>
+    <filter id="s"><feDropShadow dx="0" dy="1" stdDeviation="3" flood-opacity="0.07"/></filter>
+  </defs>
+
+  <rect width="680" height="470" rx="14" fill="#f8fafc"/>
+
+  <!-- ===== 上流 ===== -->
+  <g filter="url(#s)">
+    <rect x="28" y="24" width="370" height="94" rx="10" fill="#fff" stroke="#bfdbfe" stroke-width="1.5"/>
+    <rect x="28" y="24" width="6" height="94" rx="3" fill="#3b82f6"/>
+  </g>
+  <text x="50" y="52" font-size="16" font-weight="700" fill="#1e3a5f">上流：作る前</text>
+  <text x="50" y="76" font-size="12.5" fill="#475569">要件レビュー・設計レビュー</text>
+  <text x="50" y="96" font-size="12.5" fill="#475569">変更リスク評価</text>
+
+  <!-- Forward arrow 1 -->
+  <line x1="213" y1="118" x2="213" y2="172" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#ag)"/>
+  <text x="225" y="151" font-size="11" fill="#94a3b8">要件・設計・リスク情報</text>
+
+  <!-- ===== 中流 ===== -->
+  <g filter="url(#s)">
+    <rect x="28" y="176" width="370" height="94" rx="10" fill="#fff" stroke="#a7f3d0" stroke-width="1.5"/>
+    <rect x="28" y="176" width="6" height="94" rx="3" fill="#10b981"/>
+  </g>
+  <text x="50" y="204" font-size="16" font-weight="700" fill="#064e3b">中流：作りながら</text>
+  <text x="50" y="228" font-size="12.5" fill="#475569">テスト設計・品質ゲート</text>
+  <text x="50" y="248" font-size="12.5" fill="#475569">探索的テスト・CI/CD品質指標</text>
+
+  <!-- Forward arrow 2 -->
+  <line x1="213" y1="270" x2="213" y2="324" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#ag)"/>
+  <text x="225" y="303" font-size="11" fill="#94a3b8">発見バグ・品質データ</text>
+
+  <!-- ===== 下流 ===== -->
+  <g filter="url(#s)">
+    <rect x="28" y="328" width="370" height="94" rx="10" fill="#fff" stroke="#fde68a" stroke-width="1.5"/>
+    <rect x="28" y="328" width="6" height="94" rx="3" fill="#f59e0b"/>
+  </g>
+  <text x="50" y="356" font-size="16" font-weight="700" fill="#78350f">下流＋横断</text>
+  <text x="50" y="380" font-size="12.5" fill="#475569">バグ分析（RCA）・メトリクス・可視化</text>
+  <text x="50" y="400" font-size="12.5" fill="#475569">不具合傾向の蓄積・プロセス改善</text>
+
+  <!-- ===== Feedback arrows ===== -->
+
+  <!-- 下流 → 中流: 観点カタログ -->
+  <path d="M398,388 L438,388 L438,223 L402,223" fill="none" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="6 3" marker-end="url(#ar)"/>
+  <text x="448" y="296" font-size="11" fill="#dc2626" font-weight="600">観点</text>
+  <text x="448" y="312" font-size="11" fill="#dc2626" font-weight="600">カタログ</text>
+
+  <!-- 下流 → 上流: 改善施策・作り込み原因 -->
+  <path d="M398,368 L498,368 L498,71 L402,71" fill="none" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="6 3" marker-end="url(#ar)"/>
+  <text x="508" y="202" font-size="11" fill="#dc2626" font-weight="600">改善施策・</text>
+  <text x="508" y="218" font-size="11" fill="#dc2626" font-weight="600">作り込み原因</text>
+
+  <!-- Legend -->
+  <line x1="30" y1="444" x2="58" y2="444" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#ag)"/>
+  <text x="64" y="448" font-size="10.5" fill="#94a3b8">成果物の流れ</text>
+  <line x1="170" y1="444" x2="198" y2="444" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="6 3" marker-end="url(#ar)"/>
+  <text x="204" y="448" font-size="10.5" fill="#dc2626">フィードバック</text>
+</svg>
