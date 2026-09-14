@@ -3,8 +3,8 @@ title: "テスト「以外」のQA活動を全部並べてみた"
 emoji: "🗂️"
 type: "tech"
 topics: ["QA", "テスト", "品質保証", "品質エンジニアリング", "ソフトウェア品質"]
-published: false
-published_at: 2026-09-09 11:30
+published: true
+published_at: 2026-09-15 11:30
 publication_name: "bitkey_dev"
 ---
 
