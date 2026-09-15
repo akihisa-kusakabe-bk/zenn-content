@@ -2,20 +2,24 @@
 
 Zenn未公開の記事。公開時に `articles/` へ移動する。
 
+## 執筆中 🔥
+
+| ファイル | タイトル | 更新日 |
+|---|---|---|
+| [claude-revive-test-plan.md](claude-revive-test-plan.md) | **30ページのコピペ計画書、Claude Codeで5ページにした** | 2026-09-15 |
+| [claude-test-strategy-zero.md](claude-test-strategy-zero.md) | **テスト戦略をClaude Codeと30分で作った話** | 2026-09-15 |
+
 ## 下書き・ネタ
 
 | ファイル | タイトル | 更新日 |
 |---|---|---|
-| [quality-definition-before-ai.md](quality-definition-before-ai.md) | 「品質って何？」に答えられないチームは、AIを使いこなせない | 2026-08-21 |
-| [ai-test-review-insights.md](ai-test-review-insights.md) | AIにテストレビューを任せたら、人間の"見落とし"が可視化された | 2026-08-21 |
 | [qa-auto-review-pipeline.md](qa-auto-review-pipeline.md) | バグの振り返りを「仕組み」にしたら、チームが勝手に改善し始めた | 2026-09-03 |
 | [quality-analysis-starting-point.md](quality-analysis-starting-point.md) | 品質分析が回らないのは「手法」ではなく「データ」の問題 | 2026-09-03 |
-| [claude-test-strategy-zero.md](claude-test-strategy-zero.md) | 「テスト戦略がない」を30分で解消した。Claudeとの壁打ち記録 | 2026-08-21 |
-| [claude-revive-test-plan.md](claude-revive-test-plan.md) | コピペ計画書をAIでリスク分析に変えたら、30ページが5ページになった | 2026-09-03 |
 | [claude-pair-exploratory-testing.md](claude-pair-exploratory-testing.md) | 1人で探索的テストは限界がある。Claudeをペアにしたら変わった | 2026-08-21 |
 | [claude-handover-standardization.md](claude-handover-standardization.md) | 「あの人に聞かないとわからない」をAIで仕組みに変えた話 | 2026-08-21 |
-| [qa-activities-beyond-testing.md](qa-activities-beyond-testing.md) | テスト「以外」のQA活動を全部並べてみた | 2026-09-04 |
 | [regression-vs-discovery.md](regression-vs-discovery.md) | 「バグを見つける」と「壊れていないことを確認する」は別の仕事 | 2026-09-02 |
+| [quality-definition-before-ai.md](quality-definition-before-ai.md) | 「品質って何？」に答えられないチームは、AIを使いこなせない | 2026-08-21 |
+| [ai-test-review-insights.md](ai-test-review-insights.md) | AIにテストレビューを任せたら、人間の"見落とし"が可視化された | 2026-08-21 |
 
 
 ## On Hold（保留）
