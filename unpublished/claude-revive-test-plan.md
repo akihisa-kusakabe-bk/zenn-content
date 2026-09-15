@@ -306,14 +306,9 @@ Claude Codeを使えば、変更差分と過去バグデータの突合は数分
 
 次にテスト計画書を作るとき、まず変更差分をClaude Codeに渡すところから始めてみてほしい。「今回のリスクは何か」から始めるだけで、計画書が使えるものになる。
 
-## 次のステップ
-
-5ページの計画書ができたら、次は「なぜこの方法が効くのか」を理解しておくといい。計画書がコピペになる構造的な原因と、戦略と計画を分離して運用する方法を書いた。
-
-- [テスト計画書がコピペになる本当の理由](https://zenn.dev/bitkey_dev/articles/test-plan-vs-strategy)
-
 ## 関連記事
 
+- [テスト計画書がコピペになる本当の理由](https://zenn.dev/bitkey_dev/articles/test-plan-vs-strategy)
 - [テスト戦略をClaude Codeと30分で作った話](https://zenn.dev/bitkey_dev/articles/claude-test-strategy-zero)
 - [AIでテスト観点を100個出せる時代。65個「削れるか」がテスト設計力だ](https://zenn.dev/bitkey_dev/articles/claude-viewpoint-subtraction)
 - [「テスト＝QA」を卒業する日](https://zenn.dev/bitkey_dev/articles/test-equals-qa)
