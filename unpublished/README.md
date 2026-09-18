@@ -6,6 +6,7 @@ Zenn未公開の記事。公開時に `articles/` へ移動する。
 
 | ファイル | タイトル | 更新日 |
 |---|---|---|
+| [claude-code-skill-design.md](claude-code-skill-design.md) | **Claude Codeスキル自作の全技法** | 2026-09-18 |
 | [claude-revive-test-plan.md](claude-revive-test-plan.md) | **30ページのコピペ計画書、Claude Codeで5ページにした** | 2026-09-15 |
 | [claude-test-strategy-zero.md](claude-test-strategy-zero.md) | **テスト戦略をClaude Codeと30分で作った話** | 2026-09-15 |
 
