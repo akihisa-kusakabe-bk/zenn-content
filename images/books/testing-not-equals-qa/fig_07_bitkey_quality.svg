@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 1050" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif">
+  <defs>
+    <style>
+      .title { font-size: 26px; font-weight: 700; fill: #111; }
+      .section-label { font-size: 13px; fill: #888; font-weight: 500; }
+    </style>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#F9A825"/>
+    </marker>
+    <marker id="arrW" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#fff"/>
+    </marker>
+  </defs>
+
+  <rect width="740" height="1050" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="370" y="48" text-anchor="middle" class="title">ビットキーの品質戦略全体図</text>
+  <text x="370" y="75" text-anchor="middle" class="section-label">— 第7章の核心：「測る」から始まり「測る」に戻る —</text>
+
+  <!-- ===== ORGANIZATION STRUCTURE ===== -->
+  <text x="370" y="115" text-anchor="middle" font-size="16" font-weight="700" fill="#333">品質体制</text>
+
+  <!-- 3 teams -->
+  <rect x="40" y="135" width="200" height="85" rx="10" fill="#E8E8E8" stroke="#CCC" stroke-width="1"/>
+  <text x="140" y="162" text-anchor="middle" font-size="14" font-weight="700" fill="#333">プロダクト開発</text>
+  <text x="140" y="182" text-anchor="middle" font-size="11" fill="#666">PdM / Dev / Design</text>
+  <text x="140" y="200" text-anchor="middle" font-size="11" fill="#666">コードを書く・設計する</text>
+
+  <rect x="270" y="135" width="200" height="85" rx="10" fill="#00897B"/>
+  <text x="370" y="162" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">品質戦略室</text>
+  <text x="370" y="182" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.85)">品質の仕組みをつくる</text>
+  <text x="370" y="200" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.65)">判断・設計レイヤーに集中</text>
+
+  <rect x="500" y="135" width="200" height="85" rx="10" fill="#F5F5F5" stroke="#AAA" stroke-width="1"/>
+  <text x="600" y="162" text-anchor="middle" font-size="14" font-weight="700" fill="#333">HW品質保証</text>
+  <text x="600" y="182" text-anchor="middle" font-size="11" fill="#555">信頼性試験 / 環境試験</text>
+  <text x="600" y="200" text-anchor="middle" font-size="11" fill="#555">出荷検査</text>
+
+  <!-- Connection lines -->
+  <line x1="240" y1="177" x2="270" y2="177" stroke="#78909C" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="255" y="170" text-anchor="middle" font-size="9" fill="#AAA">協業</text>
+  <line x1="470" y1="177" x2="500" y2="177" stroke="#78909C" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="485" y="170" text-anchor="middle" font-size="9" fill="#AAA">共有</text>
+
+  <!-- External partner -->
+  <rect x="270" y="230" width="200" height="35" rx="6" fill="#F5F5F5" stroke="#DDD" stroke-width="1"/>
+  <text x="370" y="253" text-anchor="middle" font-size="12" fill="#F5F5F5">外部パートナー（テスト実行）</text>
+  <line x1="370" y1="220" x2="370" y2="230" stroke="#78909C" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- ===== TIMELINE: 品質戦略室の成長 ===== -->
+  <text x="370" y="305" text-anchor="middle" font-size="16" font-weight="700" fill="#333">品質戦略室の成長タイムライン</text>
+
+  <!-- Timeline axis -->
+  <line x1="80" y1="330" x2="660" y2="330" stroke="#CCC" stroke-width="2"/>
+
+  <!-- Phase markers -->
+  <circle cx="130" cy="330" r="8" fill="#00897B"/>
+  <circle cx="290" cy="330" r="8" fill="#2980B9"/>
+  <circle cx="450" cy="330" r="8" fill="#F9A825"/>
+  <circle cx="610" cy="330" r="8" fill="#00897B"/>
+
+  <!-- Phase 1: 0-3ヶ月 -->
+  <text x="130" y="355" text-anchor="middle" font-size="11" font-weight="600" fill="#555">0〜3ヶ月</text>
+  <rect x="60" y="365" width="140" height="80" rx="8" fill="#F0F0F0" stroke="#CCC" stroke-width="1"/>
+  <text x="130" y="388" text-anchor="middle" font-size="12" font-weight="700" fill="#333">測る</text>
+  <text x="130" y="408" text-anchor="middle" font-size="10" fill="#666">テストケースの棚卸し</text>
+  <text x="130" y="424" text-anchor="middle" font-size="10" fill="#666">バグデータの収集</text>
+  <text x="130" y="440" text-anchor="middle" font-size="10" fill="#F5F5F5">→ 第5章</text>
+
+  <!-- Phase 2: 3-6ヶ月 -->
+  <text x="290" y="355" text-anchor="middle" font-size="11" font-weight="600" fill="#555">3〜6ヶ月</text>
+  <rect x="220" y="365" width="140" height="80" rx="8" fill="#E8E8E8" stroke="#BBB" stroke-width="1"/>
+  <text x="290" y="388" text-anchor="middle" font-size="12" font-weight="700" fill="#333">決める</text>
+  <text x="290" y="408" text-anchor="middle" font-size="10" fill="#666">品質方針の策定</text>
+  <text x="290" y="424" text-anchor="middle" font-size="10" fill="#666">テスト戦略の文書化</text>
+  <text x="290" y="440" text-anchor="middle" font-size="10" fill="#E8F5E9">→ 第4章＋第5章</text>
+
+  <!-- Phase 3: 6-12ヶ月 -->
+  <text x="450" y="355" text-anchor="middle" font-size="11" font-weight="600" fill="#555">6〜12ヶ月</text>
+  <rect x="380" y="365" width="140" height="80" rx="8" fill="#F5F5F5" stroke="#AAA" stroke-width="1"/>
+  <text x="450" y="388" text-anchor="middle" font-size="12" font-weight="700" fill="#333">回す</text>
+  <text x="450" y="408" text-anchor="middle" font-size="10" fill="#555">品質サイクル運用開始</text>
+  <text x="450" y="424" text-anchor="middle" font-size="10" fill="#555">観点カタログ導入</text>
+  <text x="450" y="440" text-anchor="middle" font-size="10" fill="#E8F5E9">→ 第5章</text>
+
+  <!-- Phase 4: 12ヶ月以降 -->
+  <text x="610" y="355" text-anchor="middle" font-size="11" font-weight="600" fill="#555">12ヶ月以降</text>
+  <rect x="540" y="365" width="140" height="80" rx="8" fill="#F5F5F5" stroke="#00897B" stroke-width="1"/>
+  <text x="610" y="388" text-anchor="middle" font-size="12" font-weight="700" fill="#333">広げる</text>
+  <text x="610" y="408" text-anchor="middle" font-size="10" fill="#555">AIエージェント活用</text>
+  <text x="610" y="424" text-anchor="middle" font-size="10" fill="#555">外部パートナー協業</text>
+  <text x="610" y="440" text-anchor="middle" font-size="10" fill="#888">→ 第6章</text>
+
+  <!-- ===== IoT特有のリスク ===== -->
+  <text x="370" y="495" text-anchor="middle" font-size="16" font-weight="700" fill="#333">IoTプロダクト特有のリスク</text>
+
+  <!-- Comparison table -->
+  <!-- Header -->
+  <rect x="40" y="510" width="220" height="35" fill="#00897B"/>
+  <text x="150" y="533" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">IoT（ビットキー）</text>
+  <rect x="260" y="510" width="60" height="35" fill="#F9A825"/>
+  <text x="290" y="533" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">vs</text>
+  <rect x="320" y="510" width="220" height="35" fill="#2980B9"/>
+  <text x="430" y="533" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">一般的Webアプリ</text>
+
+  <!-- Rows -->
+  <rect x="40" y="545" width="220" height="40" fill="#F0F0F0" stroke="#DDD" stroke-width="1"/>
+  <text x="150" y="570" text-anchor="middle" font-size="11" fill="#333">バグ＝鍵が開かない（締め出し）</text>
+  <rect x="260" y="545" width="60" height="40" fill="#F5F5F5" stroke="#DDD" stroke-width="1"/>
+  <text x="290" y="570" text-anchor="middle" font-size="10" fill="#888">物理影響</text>
+  <rect x="320" y="545" width="220" height="40" fill="#FAFAFA" stroke="#DDD" stroke-width="1"/>
+  <text x="430" y="570" text-anchor="middle" font-size="11" fill="#666">画面エラー（再読み込み）</text>
+
+  <rect x="40" y="585" width="220" height="40" fill="#F0F0F0" stroke="#DDD" stroke-width="1"/>
+  <text x="150" y="610" text-anchor="middle" font-size="11" fill="#333">FW更新失敗＝文鎮化（回収）</text>
+  <rect x="260" y="585" width="60" height="40" fill="#F5F5F5" stroke="#DDD" stroke-width="1"/>
+  <text x="290" y="610" text-anchor="middle" font-size="10" fill="#888">更新失敗</text>
+  <rect x="320" y="585" width="220" height="40" fill="#FAFAFA" stroke="#DDD" stroke-width="1"/>
+  <text x="430" y="610" text-anchor="middle" font-size="11" fill="#666">デプロイ失敗（ロールバック）</text>
+
+  <rect x="40" y="625" width="220" height="40" fill="#F0F0F0" stroke="#DDD" stroke-width="1"/>
+  <text x="150" y="650" text-anchor="middle" font-size="11" fill="#333">HW×FW×アプリ×クラウド</text>
+  <rect x="260" y="625" width="60" height="40" fill="#F5F5F5" stroke="#DDD" stroke-width="1"/>
+  <text x="290" y="650" text-anchor="middle" font-size="10" fill="#888">組合せ</text>
+  <rect x="320" y="625" width="220" height="40" fill="#FAFAFA" stroke="#DDD" stroke-width="1"/>
+  <text x="430" y="650" text-anchor="middle" font-size="11" fill="#666">フロント×バックエンド</text>
+
+  <rect x="40" y="665" width="220" height="40" fill="#F0F0F0" stroke="#DDD" stroke-width="1"/>
+  <text x="150" y="690" text-anchor="middle" font-size="11" fill="#333">物理デバイスを現地で回収</text>
+  <rect x="260" y="665" width="60" height="40" fill="#F5F5F5" stroke="#DDD" stroke-width="1"/>
+  <text x="290" y="690" text-anchor="middle" font-size="10" fill="#888">回収</text>
+  <rect x="320" y="665" width="220" height="40" fill="#FAFAFA" stroke="#DDD" stroke-width="1"/>
+  <text x="430" y="690" text-anchor="middle" font-size="11" fill="#666">サーバー側で即修正</text>
+
+  <!-- ===== RESULTS: Before/After ===== -->
+  <text x="370" y="745" text-anchor="middle" font-size="16" font-weight="700" fill="#333">テスト観点カタログの効果</text>
+
+  <!-- Before -->
+  <rect x="40" y="765" width="320" height="100" rx="10" fill="#E8E8E8" stroke="#CCC" stroke-width="1"/>
+  <text x="200" y="790" text-anchor="middle" font-size="14" font-weight="700" fill="#333">Before</text>
+  <text x="60" y="815" font-size="12" fill="#555">テストケース: 21.5万件</text>
+  <text x="60" y="835" font-size="12" fill="#555">起点: 過去のテストケースをコピー</text>
+  <text x="60" y="855" font-size="12" fill="#555">新人の立ち上がり: 3ヶ月</text>
+
+  <!-- After -->
+  <rect x="380" y="765" width="320" height="100" rx="10" fill="#00897B"/>
+  <text x="540" y="790" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">After</text>
+  <text x="400" y="815" font-size="12" fill="rgba(255,255,255,0.85)">テストケース: 約5万件（75%削減）</text>
+  <text x="400" y="835" font-size="12" fill="rgba(255,255,255,0.85)">起点: カタログから観点を選択</text>
+  <text x="400" y="855" font-size="12" fill="rgba(255,255,255,0.85)">新人の立ち上がり: 1ヶ月</text>
+
+  <!-- Arrow between -->
+  <line x1="360" y1="815" x2="380" y2="815" stroke="#78909C" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <!-- ===== KEY TAKEAWAYS ===== -->
+  <rect x="40" y="890" width="660" height="85" rx="10" fill="#F5F5F5" stroke="#DDD" stroke-width="1"/>
+  <text x="370" y="917" text-anchor="middle" font-size="14" font-weight="700" fill="#333">持ち帰ってほしい3つ</text>
+  <text x="60" y="940" font-size="12" fill="#555">1. 「測る」から始める — 華やかな施策より地味なデータ収集</text>
+  <text x="60" y="960" font-size="12" fill="#555">2. 名前が行動を変える — 「テストチーム」と「品質戦略室」では期待値が変わる</text>
+
+  <!-- Page reference -->
+  <text x="370" y="1030" text-anchor="middle" font-size="11" fill="#AAA">『QA＝テストではない』第7章</text>
+</svg>

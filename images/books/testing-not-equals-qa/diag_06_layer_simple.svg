@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 380" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <rect width="700" height="380" fill="#ffffff"/>
+  <defs>
+    <marker id="arrowL" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <polygon points="8,0 0,3 8,6" fill="#F9A825"/>
+    </marker>
+    <marker id="arrowR" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#F9A825"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="350" y="36" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a1a">ロール × レイヤー（簡易版）</text>
+
+  <!-- Grid origin -->
+  <g transform="translate(110, 56)">
+    <!-- Column headers -->
+    <rect x="120" y="0" width="150" height="36" rx="4" fill="#F5F5F5" stroke="#78909C" stroke-width="1.5"/>
+    <text x="195" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">Dev</text>
+    <rect x="270" y="0" width="150" height="36" rx="4" fill="#F5F5F5" stroke="#78909C" stroke-width="1.5"/>
+    <text x="345" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">QA</text>
+    <rect x="420" y="0" width="150" height="36" rx="4" fill="#F5F5F5" stroke="#78909C" stroke-width="1.5"/>
+    <text x="495" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">PO</text>
+
+    <!-- Row 1: 設計 (lightest) -->
+    <rect x="0" y="40" width="120" height="60" rx="4" fill="#f8f8f8" stroke="#78909C" stroke-width="1.5"/>
+    <text x="60" y="75" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">設計</text>
+    <rect x="120" y="40" width="150" height="60" rx="4" fill="#f8f8f8" stroke="#78909C" stroke-width="1.5"/>
+    <text x="195" y="75" text-anchor="middle" font-size="15" fill="#1a1a1a">人間</text>
+    <rect x="270" y="40" width="150" height="60" rx="4" fill="#f8f8f8" stroke="#78909C" stroke-width="1.5"/>
+    <text x="345" y="75" text-anchor="middle" font-size="15" fill="#1a1a1a">人間</text>
+    <rect x="420" y="40" width="150" height="60" rx="4" fill="#f8f8f8" stroke="#78909C" stroke-width="1.5"/>
+    <text x="495" y="75" text-anchor="middle" font-size="15" fill="#1a1a1a">人間</text>
+
+    <!-- Row 2: 判断 (medium) -->
+    <rect x="0" y="100" width="120" height="60" rx="4" fill="#FFF8E1" stroke="#78909C" stroke-width="1.5"/>
+    <text x="60" y="135" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">判断</text>
+    <rect x="120" y="100" width="150" height="60" rx="4" fill="#FFF8E1" stroke="#78909C" stroke-width="1.5"/>
+    <text x="195" y="135" text-anchor="middle" font-size="15" fill="#1a1a1a">人間+AI</text>
+    <rect x="270" y="100" width="150" height="60" rx="4" fill="#FFF8E1" stroke="#78909C" stroke-width="1.5"/>
+    <text x="345" y="135" text-anchor="middle" font-size="15" fill="#1a1a1a">人間+AI</text>
+    <rect x="420" y="100" width="150" height="60" rx="4" fill="#e8e8e8" stroke="#78909C" stroke-width="1.5"/>
+    <text x="495" y="135" text-anchor="middle" font-size="15" fill="#1a1a1a">人間+AI</text>
+
+    <!-- Row 3: 実行 (darkest) -->
+    <rect x="0" y="160" width="120" height="60" rx="4" fill="#FFF8E1" stroke="#78909C" stroke-width="1.5"/>
+    <text x="60" y="195" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">実行</text>
+    <rect x="120" y="160" width="150" height="60" rx="4" fill="#FFF8E1" stroke="#78909C" stroke-width="1.5"/>
+    <text x="195" y="195" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">AI</text>
+    <rect x="270" y="160" width="150" height="60" rx="4" fill="#FFF8E1" stroke="#78909C" stroke-width="1.5"/>
+    <text x="345" y="195" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">AI</text>
+    <rect x="420" y="160" width="150" height="60" rx="4" fill="#F5F5F5" stroke="#78909C" stroke-width="1.5"/>
+    <text x="495" y="195" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">AI</text>
+
+    <!-- Arrow annotation at bottom -->
+    <line x1="150" y1="250" x2="540" y2="250" stroke="#78909C" stroke-width="1.5" marker-start="url(#arrowL)" marker-end="url(#arrowR)"/>
+    <text x="345" y="275" text-anchor="middle" font-size="13" fill="#555">AIが飲み込む境界線</text>
+
+    <!-- Dashed border between 判断 and 実行 -->
+    <line x1="120" y1="160" x2="570" y2="160" stroke="#7E57C2" stroke-width="2" stroke-dasharray="6,4"/>
+  </g>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 420" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <rect width="740" height="420" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="370" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a1a">リスクマトリクス</text>
+  <text x="370" y="58" text-anchor="middle" font-size="13" fill="#666">リスクの高さ ＝ 発生確率 × 影響度</text>
+
+  <!-- Grid -->
+  <!-- Y axis label -->
+  <text x="35" y="230" text-anchor="middle" font-size="13" font-weight="bold" fill="#333" transform="rotate(-90,35,230)">影響度</text>
+
+  <!-- X axis label -->
+  <text x="400" y="400" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">発生確率</text>
+
+  <!-- Y axis ticks -->
+  <text x="80" y="120" text-anchor="end" font-size="12" fill="#555">高</text>
+  <text x="80" y="200" text-anchor="end" font-size="12" fill="#555">中</text>
+  <text x="80" y="280" text-anchor="end" font-size="12" fill="#555">低</text>
+
+  <!-- X axis ticks -->
+  <text x="170" y="370" text-anchor="middle" font-size="12" fill="#555">低</text>
+  <text x="340" y="370" text-anchor="middle" font-size="12" fill="#555">中</text>
+  <text x="510" y="370" text-anchor="middle" font-size="12" fill="#555">高</text>
+
+  <!-- Grid cells -->
+  <!-- Row 1 (High impact) -->
+  <rect x="95" y="85" width="170" height="70" fill="#FFF8E1" stroke="#fff" stroke-width="2"/>
+  <text x="180" y="125" text-anchor="middle" font-size="12" fill="#444">中リスク</text>
+
+  <rect x="265" y="85" width="170" height="70" fill="#FFF8E1" stroke="#fff" stroke-width="2"/>
+  <text x="350" y="125" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">高リスク</text>
+
+  <rect x="435" y="85" width="170" height="70" fill="#F9A825" stroke="#fff" stroke-width="2"/>
+  <text x="520" y="118" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">最高リスク</text>
+  <text x="520" y="140" text-anchor="middle" font-size="11" fill="#FFF8E1">重点テスト対象</text>
+
+  <!-- Row 2 (Medium impact) -->
+  <rect x="95" y="155" width="170" height="70" fill="#FFF8E1" stroke="#fff" stroke-width="2"/>
+  <text x="180" y="195" text-anchor="middle" font-size="12" fill="#555">低リスク</text>
+
+  <rect x="265" y="155" width="170" height="70" fill="#bbb" stroke="#fff" stroke-width="2"/>
+  <text x="350" y="195" text-anchor="middle" font-size="12" fill="#444">中リスク</text>
+
+  <rect x="435" y="155" width="170" height="70" fill="#FFF8E1" stroke="#fff" stroke-width="2"/>
+  <text x="520" y="195" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">高リスク</text>
+
+  <!-- Row 3 (Low impact) -->
+  <rect x="95" y="225" width="170" height="70" fill="#E8F5E9" stroke="#fff" stroke-width="2"/>
+  <text x="180" y="265" text-anchor="middle" font-size="12" fill="#777">最低リスク</text>
+
+  <rect x="265" y="225" width="170" height="70" fill="#FFF8E1" stroke="#fff" stroke-width="2"/>
+  <text x="350" y="265" text-anchor="middle" font-size="12" fill="#555">低リスク</text>
+
+  <rect x="435" y="225" width="170" height="70" fill="#bbb" stroke="#fff" stroke-width="2"/>
+  <text x="520" y="265" text-anchor="middle" font-size="12" fill="#444">中リスク</text>
+
+  <!-- Example annotation -->
+  <rect x="95" y="310" width="510" height="40" rx="4" fill="#f5f5f5" stroke="#ccc" stroke-width="1"/>
+  <text x="350" y="335" text-anchor="middle" font-size="12" fill="#444">この表が1枚あれば「なぜこの機能を重点テストするのか」を説明できる</text>
+</svg>

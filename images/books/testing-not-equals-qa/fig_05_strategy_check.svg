@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 350" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <rect width="740" height="350" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="370" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a1a">テスト戦略がある状態 vs ない状態</text>
+
+  <!-- Two columns -->
+  <!-- Left: No strategy -->
+  <rect x="40" y="60" width="310" height="240" rx="8" fill="#F5F5F5" stroke="#F9A825" stroke-width="1.5"/>
+  <rect x="40" y="60" width="310" height="36" rx="8" fill="#F9A825"/>
+  <rect x="40" y="88" width="310" height="8" fill="#F9A825"/>
+  <text x="195" y="84" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">戦略がない ✗</text>
+
+  <text x="60" y="122" font-size="12" fill="#555">● テスト計画書を毎回ゼロから書く</text>
+  <text x="60" y="146" font-size="12" fill="#555">● 方針がスプリントごとにブレる</text>
+  <text x="60" y="170" font-size="12" fill="#555">● 「何をテストしないか」が決まらない</text>
+  <text x="60" y="194" font-size="12" fill="#555">● 「全部テストします」＝</text>
+  <text x="72" y="212" font-size="12" fill="#555">「どこが危ないかわかりません」</text>
+
+  <rect x="60" y="235" width="270" height="50" rx="4" fill="#FFF8E1" stroke="#bbb" stroke-width="1"/>
+  <text x="195" y="258" text-anchor="middle" font-size="12" fill="#F5F5F5">「時間が半分になったら？」</text>
+  <text x="195" y="276" text-anchor="middle" font-size="13" font-weight="bold" fill="#F5F5F5">→ 答えられない</text>
+
+  <!-- Right: Has strategy -->
+  <rect x="390" y="60" width="310" height="240" rx="8" fill="#f5f5f5" stroke="#78909C" stroke-width="1.5"/>
+  <rect x="390" y="60" width="310" height="36" rx="8" fill="#2980B9"/>
+  <rect x="390" y="88" width="310" height="8" fill="#2980B9"/>
+  <text x="545" y="84" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">戦略がある ✓</text>
+
+  <text x="410" y="122" font-size="12" fill="#333">● テストケースに意図がある</text>
+  <text x="410" y="146" font-size="12" fill="#333">● テスト計画書が短い（差分のみ）</text>
+  <text x="410" y="170" font-size="12" fill="#333">● テストしない範囲が明確</text>
+  <text x="410" y="194" font-size="12" fill="#333">● リスクベースで優先順位がある</text>
+
+  <rect x="410" y="235" width="270" height="50" rx="4" fill="#F5F5F5" stroke="#F9A825" stroke-width="1"/>
+  <text x="545" y="258" text-anchor="middle" font-size="12" fill="#444">「時間が半分になったら？」</text>
+  <text x="545" y="276" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">→ 即答できる</text>
+
+  <!-- Bottom message -->
+  <text x="370" y="335" text-anchor="middle" font-size="13" fill="#555">この問いに答えられる状態がテスト戦略のある状態</text>
+</svg>

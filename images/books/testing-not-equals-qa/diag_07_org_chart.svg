@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <rect width="760" height="520" fill="#ffffff"/>
+  <defs>
+    <marker id="arrowBi" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#F9A825"/>
+    </marker>
+    <marker id="arrowBiR" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <polygon points="8,0 0,3 8,6" fill="#F9A825"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="380" y="36" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a1a">ビットキーの品質体制図</text>
+
+  <!-- Outer container: 開発組織 -->
+  <rect x="40" y="54" width="680" height="300" rx="8" fill="none" stroke="#00897B" stroke-width="2"/>
+  <text x="60" y="78" font-size="14" font-weight="bold" fill="#1a1a1a">開発組織</text>
+
+  <!-- Box 1: プロダクト開発チーム -->
+  <rect x="70" y="94" width="260" height="90" rx="6" fill="#f8f8f8" stroke="#78909C" stroke-width="1.5"/>
+  <text x="200" y="118" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">プロダクト開発チーム</text>
+  <text x="200" y="148" text-anchor="middle" font-size="13" fill="#555">PdM / Dev / Design</text>
+
+  <!-- Box 2: 品質戦略室 -->
+  <rect x="70" y="210" width="260" height="120" rx="6" fill="#E8F5E9" stroke="#78909C" stroke-width="1.5"/>
+  <text x="200" y="238" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">品質戦略室</text>
+  <text x="200" y="264" text-anchor="middle" font-size="12" fill="#555">テスト戦略 / 品質定義 / メトリクス</text>
+  <text x="200" y="284" text-anchor="middle" font-size="12" fill="#555">テスト設計 / 品質サイクル運用</text>
+  <text x="200" y="304" text-anchor="middle" font-size="12" fill="#555">AIエージェント活用</text>
+
+  <!-- Vertical connector: 開発チーム → 品質戦略室 -->
+  <line x1="200" y1="184" x2="200" y2="210" stroke="#78909C" stroke-width="1.5"/>
+
+  <!-- Box 3: HW品証チーム -->
+  <rect x="420" y="210" width="270" height="120" rx="6" fill="#F5F5F5" stroke="#78909C" stroke-width="1.5"/>
+  <text x="555" y="238" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">HW品質保証（品証）チーム</text>
+  <text x="555" y="268" text-anchor="middle" font-size="12" fill="#555">信頼性試験 / 環境試験</text>
+  <text x="555" y="288" text-anchor="middle" font-size="12" fill="#555">出荷検査</text>
+
+  <!-- External partner box -->
+  <rect x="420" y="94" width="270" height="90" rx="6" fill="#f8f8f8" stroke="#78909C" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="555" y="130" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">外部パートナー</text>
+  <text x="555" y="155" text-anchor="middle" font-size="12" fill="#777">テスト実行</text>
+
+  <!-- Connection annotations at bottom -->
+  <g transform="translate(0, 380)">
+    <!-- 品質戦略室 ←→ HW品証 -->
+    <line x1="200" y1="10" x2="555" y2="10" stroke="#78909C" stroke-width="1.5" marker-start="url(#arrowBiR)" marker-end="url(#arrowBi)"/>
+    <rect x="290" y="-2" width="170" height="22" rx="3" fill="#fff"/>
+    <text x="375" y="14" text-anchor="middle" font-size="12" fill="#555">品質の定義を共有</text>
+
+    <!-- 品質戦略室 ←→ Dev -->
+    <line x1="200" y1="50" x2="555" y2="50" stroke="#78909C" stroke-width="1.5" marker-start="url(#arrowBiR)" marker-end="url(#arrowBi)"/>
+    <rect x="290" y="38" width="170" height="22" rx="3" fill="#fff"/>
+    <text x="375" y="54" text-anchor="middle" font-size="12" fill="#555">テスト設計の協業</text>
+
+    <!-- 品質戦略室 ←→ 外部パートナー -->
+    <line x1="200" y1="90" x2="555" y2="90" stroke="#78909C" stroke-width="1.5" marker-start="url(#arrowBiR)" marker-end="url(#arrowBi)"/>
+    <rect x="290" y="78" width="170" height="22" rx="3" fill="#fff"/>
+    <text x="375" y="94" text-anchor="middle" font-size="12" fill="#555">テスト実行の協業</text>
+
+    <!-- Labels on the left and right -->
+    <text x="130" y="14" text-anchor="middle" font-size="11" fill="#777">品質戦略室</text>
+    <text x="130" y="54" text-anchor="middle" font-size="11" fill="#777">品質戦略室</text>
+    <text x="130" y="94" text-anchor="middle" font-size="11" fill="#777">品質戦略室</text>
+    <text x="630" y="14" text-anchor="middle" font-size="11" fill="#777">HW品証</text>
+    <text x="630" y="54" text-anchor="middle" font-size="11" fill="#777">Dev</text>
+    <text x="630" y="94" text-anchor="middle" font-size="11" fill="#777">外部パートナー</text>
+  </g>
+</svg>

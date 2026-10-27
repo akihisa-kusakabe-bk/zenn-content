@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 520" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#F9A825"/>
+    </marker>
+  </defs>
+
+  <rect width="750" height="520" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="375" y="36" text-anchor="middle" font-size="21" font-weight="bold" fill="#1a1a1a">品質負債のフィードバックループ</text>
+
+  <!-- Center circle path (invisible, for reference) -->
+  <!-- Boxes at 4 positions: top, right, bottom, left -->
+
+  <!-- Top box -->
+  <rect x="240" y="65" width="270" height="60" rx="8" fill="#F5F5F5" stroke="#E74C3C" stroke-width="2"/>
+  <text x="375" y="92" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">上流品質が空白</text>
+  <text x="375" y="112" text-anchor="middle" font-size="12" fill="#555">要件・設計レビューが機能しない</text>
+
+  <!-- Right box -->
+  <rect x="490" y="190" width="230" height="80" rx="8" fill="#F5F5F5" stroke="#E74C3C" stroke-width="2"/>
+  <text x="605" y="215" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a1a">テストで全部</text>
+  <text x="605" y="235" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a1a">見つけようとする</text>
+  <text x="605" y="258" text-anchor="middle" font-size="12" fill="#555">テスト工数膨張</text>
+
+  <!-- Bottom box -->
+  <rect x="240" y="340" width="270" height="60" rx="8" fill="#F5F5F5" stroke="#E74C3C" stroke-width="2"/>
+  <text x="375" y="367" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">QAが門番化</text>
+  <text x="375" y="387" text-anchor="middle" font-size="12" fill="#555">品質＝QAの仕事という固定観念</text>
+
+  <!-- Left box -->
+  <rect x="30" y="190" width="230" height="80" rx="8" fill="#f0f0f0" stroke="#E74C3C" stroke-width="2"/>
+  <text x="145" y="220" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a1a">開発が品質を</text>
+  <text x="145" y="242" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a1a">他人事に</text>
+  <text x="145" y="262" text-anchor="middle" font-size="12" fill="#555">品質意識の低下</text>
+
+  <!-- Clockwise arrows -->
+  <!-- Top → Right -->
+  <path d="M 510 120 Q 560 140 530 190" fill="none" stroke="#78909C" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Right → Bottom -->
+  <path d="M 540 270 Q 520 310 505 340" fill="none" stroke="#78909C" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Bottom → Left -->
+  <path d="M 240 380 Q 190 370 225 270" fill="none" stroke="#78909C" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Left → Top -->
+  <path d="M 200 190 Q 210 150 245 125" fill="none" stroke="#78909C" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Center label -->
+  <text x="375" y="240" text-anchor="middle" font-size="16" font-weight="bold" fill="#999">悪循環</text>
+
+  <!-- Circular arrow hint in center -->
+  <path d="M 350 210 A 30 30 0 1 1 400 210" fill="none" stroke="#ccc" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Annotation -->
+  <text x="375" y="480" text-anchor="middle" font-size="13" fill="#555">品質投資の誤認 ── テスト工数 ≠ 品質保証</text>
+  <rect x="160" y="460" width="430" height="30" rx="4" fill="none" stroke="#ddd" stroke-width="1"/>
+</svg>

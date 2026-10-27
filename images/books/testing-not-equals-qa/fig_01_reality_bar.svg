@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 280" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <rect width="740" height="280" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="370" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a1a">多くの組織の現実</text>
+
+  <!-- Current state bar -->
+  <text x="60" y="85" text-anchor="end" font-size="14" fill="#555">現状</text>
+
+  <!-- Test 80% -->
+  <rect x="80" y="65" width="432" height="36" rx="3" fill="#2980B9"/>
+  <text x="296" y="89" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">テスト 80%</text>
+
+  <!-- QC 20% -->
+  <rect x="512" y="65" width="108" height="36" rx="3" fill="#27AE60"/>
+  <text x="566" y="89" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">QC 20%</text>
+
+  <!-- QA 0% -->
+  <rect x="620" y="65" width="40" height="36" rx="3" fill="#FFF3E0" stroke="#E67E22" stroke-width="1"/>
+  <text x="640" y="89" text-anchor="middle" font-size="11" fill="#E67E22">0%</text>
+
+  <!-- Arrow -->
+  <text x="370" y="130" text-anchor="middle" font-size="20" fill="#333">↓</text>
+
+  <!-- Ideal bar -->
+  <text x="60" y="165" text-anchor="end" font-size="14" fill="#555">目標</text>
+
+  <!-- Test 33% -->
+  <rect x="80" y="145" width="180" height="36" rx="3" fill="#2980B9"/>
+  <text x="170" y="169" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">テスト 33%</text>
+
+  <!-- QC 33% -->
+  <rect x="260" y="145" width="180" height="36" rx="3" fill="#27AE60"/>
+  <text x="350" y="169" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">QC 33%</text>
+
+  <!-- QA 34% -->
+  <rect x="440" y="145" width="220" height="36" rx="3" fill="#E67E22"/>
+  <text x="550" y="169" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">QA 34%</text>
+
+  <!-- Explanation -->
+  <text x="370" y="215" text-anchor="middle" font-size="13" fill="#555">テスト実行に80%を費やし、QA活動がゼロの組織が多い</text>
+  <text x="370" y="238" text-anchor="middle" font-size="13" fill="#555">テストの質を上げてQAの余白を生み出すのが目標</text>
+
+  <line x1="80" y1="260" x2="660" y2="260" stroke="#ddd" stroke-width="1"/>
+</svg>

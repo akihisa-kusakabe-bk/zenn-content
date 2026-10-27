@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 750" font-family="'Hiragino Kaku Gothic ProN', 'YuGothic', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#444"/>
+    </marker>
+  </defs>
+
+  <rect width="750" height="750" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="375" y="42" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">品質方針ワークショップの進め方</text>
+
+  <!-- Step 1 -->
+  <rect x="80" y="70" width="590" height="100" rx="10" fill="#E8F5E9" stroke="#EC407A" stroke-width="2"/>
+  <text x="110" y="100" font-size="14" font-weight="bold" fill="#444">Step 1</text>
+  <text x="200" y="100" font-size="16" font-weight="bold" fill="#1a1a1a">品質観の可視化（30分）</text>
+  <text x="110" y="130" font-size="14" fill="#333">付箋に「自分が思う品質」を書き出し → 全員で共有 → グルーピング</text>
+  <text x="110" y="154" font-size="13" fill="#555">※ 正解はない。まず全員の認識を出し切ることが目的</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="375" y1="170" x2="375" y2="200" stroke="#444" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 2 -->
+  <rect x="80" y="200" width="590" height="100" rx="10" fill="#E8F5E9" stroke="#EC407A" stroke-width="2"/>
+  <text x="110" y="230" font-size="14" font-weight="bold" fill="#444">Step 2</text>
+  <text x="200" y="230" font-size="16" font-weight="bold" fill="#1a1a1a">優先順位づけ（10分）</text>
+  <text x="110" y="260" font-size="14" fill="#333">ドット投票（1人3票）→ 上位3つを選出</text>
+  <text x="110" y="284" font-size="13" fill="#555">※ 全会一致は不要。投票で「チームの重心」を可視化する</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="375" y1="300" x2="375" y2="330" stroke="#444" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 3 -->
+  <rect x="80" y="330" width="590" height="100" rx="10" fill="#E8F5E9" stroke="#EC407A" stroke-width="2"/>
+  <text x="110" y="360" font-size="14" font-weight="bold" fill="#444">Step 3</text>
+  <text x="200" y="360" font-size="16" font-weight="bold" fill="#1a1a1a">合意形成（20分）</text>
+  <text x="110" y="390" font-size="14" fill="#333">上位3つを明文化 → テスト可能な粒度に落とし込む</text>
+  <text x="110" y="414" font-size="13" fill="#555">※ 「安全であること」→「致命的バグがリリース後に発見されないこと」</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="375" y1="430" x2="375" y2="460" stroke="#444" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 4 -->
+  <rect x="80" y="460" width="590" height="100" rx="10" fill="#e8e8e8" stroke="#EC407A" stroke-width="2"/>
+  <text x="110" y="490" font-size="14" font-weight="bold" fill="#444">Step 4</text>
+  <text x="200" y="490" font-size="16" font-weight="bold" fill="#1a1a1a">目標への落とし込み（15分）</text>
+  <text x="110" y="520" font-size="14" fill="#333">方針ごとに測定可能な目標を2〜3つ設定</text>
+  <text x="110" y="544" font-size="13" fill="#555">※ 「重大バグ0件/四半期」「テストカバレッジ80%以上」など</text>
+
+  <!-- Arrow 4→Final -->
+  <line x1="375" y1="560" x2="375" y2="610" stroke="#444" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Final outcome -->
+  <rect x="130" y="610" width="490" height="90" rx="10" fill="#F5F5F5" stroke="#EC407A" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="375" y="648" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">品質方針を社内チャットツールに固定ポスト</text>
+  <text x="375" y="678" text-anchor="middle" font-size="14" fill="#444">四半期ごとに見直し → 必要に応じてワークショップを再実施</text>
+</svg>

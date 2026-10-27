@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" font-family="'Hiragino Kaku Gothic ProN', 'YuGothic', sans-serif">
+  <rect width="720" height="420" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="360" y="38" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">テスト / QC / QA の関係</text>
+
+  <!-- QA ellipse (outermost) -->
+  <ellipse cx="360" cy="230" rx="310" ry="170" fill="#FFF3E0" stroke="#E67E22" stroke-width="2"/>
+  <text x="360" y="90" text-anchor="middle" font-size="20" font-weight="bold" fill="#E67E22">QA（品質保証）</text>
+  <text x="360" y="116" text-anchor="middle" font-size="16" fill="#BF5B04">＝ 仕込む</text>
+
+  <!-- QC ellipse (middle) -->
+  <ellipse cx="360" cy="260" rx="210" ry="115" fill="#E8F5E9" stroke="#27AE60" stroke-width="2"/>
+  <text x="360" y="178" text-anchor="middle" font-size="18" font-weight="bold" fill="#1B7A3D">QC（品質管理）</text>
+  <text x="360" y="202" text-anchor="middle" font-size="16" fill="#27AE60">＝ 診る</text>
+
+  <!-- Test ellipse (innermost) -->
+  <ellipse cx="360" cy="300" rx="140" ry="65" fill="#E3F2FD" stroke="#2980B9" stroke-width="2"/>
+  <text x="360" y="290" text-anchor="middle" font-size="18" font-weight="bold" fill="#1A5276">テスト（テスト実行）</text>
+  <text x="360" y="316" text-anchor="middle" font-size="16" fill="#2980B9">＝ 測る</text>
+
+  <!-- Key message -->
+  <rect x="200" y="385" width="320" height="30" rx="4" fill="#2980B9"/>
+  <text x="360" y="406" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">テスト ⊂ QC ⊂ QA</text>
+</svg>

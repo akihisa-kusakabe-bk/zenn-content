@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 1050" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif">
+  <defs>
+    <style>
+      .title { font-size: 26px; font-weight: 700; fill: #111; }
+      .section-label { font-size: 13px; fill: #888; font-weight: 500; }
+    </style>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#F9A825"/>
+    </marker>
+    <marker id="arrRed" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#E74C3C"/>
+    </marker>
+  </defs>
+
+  <rect width="740" height="1050" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="370" y="48" text-anchor="middle" class="title">3つの品質負債と悪循環サイクル</text>
+  <text x="370" y="75" text-anchor="middle" class="section-label">— 第2章の核心：QA＝テストの等式が連鎖する負債を生む —</text>
+
+  <!-- ===== 3 DEBTS in triangle layout ===== -->
+  <text x="370" y="115" text-anchor="middle" font-size="16" font-weight="700" fill="#333">品質負債の構造</text>
+
+  <!-- Debt 1: 門番化 (top center) -->
+  <rect x="220" y="140" width="300" height="130" rx="14" fill="#E74C3C"/>
+  <text x="370" y="172" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">負債1：門番化</text>
+  <line x1="260" y1="185" x2="480" y2="185" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <text x="370" y="210" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.85)">QAが品質の最終判断者になる</text>
+  <text x="370" y="232" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.65)">1人抜けたら品質が崩壊する</text>
+  <text x="370" y="258" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.5)">勉強のたとえ：先生がいないと勉強できない</text>
+
+  <!-- Debt 2: 上流空白 (bottom left) -->
+  <rect x="40" y="340" width="300" height="130" rx="14" fill="#F9A825"/>
+  <text x="190" y="372" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">負債2：上流空白</text>
+  <line x1="80" y1="385" x2="300" y2="385" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <text x="190" y="410" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.85)">テスト以前に品質を確認しない</text>
+  <text x="190" y="432" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.65)">要件・設計の問題が下流で爆発</text>
+  <text x="190" y="458" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.5)">勉強のたとえ：授業中に理解せず試験で勝負</text>
+
+  <!-- Debt 3: テスト工数誤認 (bottom right) -->
+  <rect x="400" y="340" width="300" height="130" rx="14" fill="#78909C"/>
+  <text x="550" y="372" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">負債3：テスト工数誤認</text>
+  <line x1="440" y1="385" x2="660" y2="385" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <text x="550" y="410" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.85)">テスト量＝品質投資と思い込む</text>
+  <text x="550" y="432" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.65)">量が増えても品質は上がらない</text>
+  <text x="550" y="458" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.5)">勉強のたとえ：問題集を解く量だけ増やす</text>
+
+  <!-- Cycle arrows between debts -->
+  <!-- Debt1 → Debt2 -->
+  <path d="M260,270 Q170,300 160,340" fill="none" stroke="#E74C3C" stroke-width="2.5" marker-end="url(#arrRed)"/>
+  <text x="170" y="300" font-size="10" fill="#F5F5F5" text-anchor="middle">門番がいるから</text>
+  <text x="170" y="313" font-size="10" fill="#F5F5F5" text-anchor="middle">上流を見ない</text>
+
+  <!-- Debt2 → Debt3 -->
+  <path d="M340,420 Q370,430 400,420" fill="none" stroke="#E74C3C" stroke-width="2.5" marker-end="url(#arrRed)"/>
+  <text x="370" y="445" font-size="10" fill="#E8F5E9" text-anchor="middle">下流で問題発覚→</text>
+  <text x="370" y="458" font-size="10" fill="#E8F5E9" text-anchor="middle">テスト量で対処</text>
+
+  <!-- Debt3 → Debt1 -->
+  <path d="M580,340 Q590,300 480,270" fill="none" stroke="#E74C3C" stroke-width="2.5" marker-end="url(#arrRed)"/>
+  <text x="570" y="300" font-size="10" fill="#888" text-anchor="middle">量が増え→</text>
+  <text x="570" y="313" font-size="10" fill="#888" text-anchor="middle">属人化が加速</text>
+
+  <!-- Center: 悪循環 label -->
+  <circle cx="370" cy="370" r="35" fill="#F5F5F5" stroke="#CCC" stroke-width="1.5"/>
+  <text x="370" y="366" text-anchor="middle" font-size="13" font-weight="700" fill="#333">悪循環</text>
+  <text x="370" y="382" text-anchor="middle" font-size="10" fill="#888">連鎖する</text>
+
+  <!-- ===== COMPOUND EFFECT ===== -->
+  <text x="370" y="530" text-anchor="middle" font-size="16" font-weight="700" fill="#333">負債の連鎖効果</text>
+
+  <!-- Timeline bars showing debt growth -->
+  <text x="60" y="565" font-size="12" font-weight="600" fill="#555">1年目</text>
+  <rect x="130" y="552" width="120" height="18" rx="4" fill="#AAA"/>
+  <text x="190" y="565" text-anchor="middle" font-size="10" fill="#fff">小さな不便</text>
+
+  <text x="60" y="600" font-size="12" font-weight="600" fill="#555">2年目</text>
+  <rect x="130" y="587" width="250" height="18" rx="4" fill="#F9A825"/>
+  <text x="255" y="600" text-anchor="middle" font-size="10" fill="#fff">属人化・手戻り増加</text>
+
+  <text x="60" y="635" font-size="12" font-weight="600" fill="#555">3年目</text>
+  <rect x="130" y="622" width="420" height="18" rx="4" fill="#E74C3C"/>
+  <text x="340" y="635" text-anchor="middle" font-size="10" fill="#fff">リリース遅延・品質崩壊・退職リスク</text>
+
+  <text x="60" y="670" font-size="12" font-weight="600" fill="#555">5年目</text>
+  <rect x="130" y="657" width="560" height="18" rx="4" fill="#E74C3C"/>
+  <text x="410" y="670" text-anchor="middle" font-size="10" fill="#fff">組織的な品質危機 — 返済不能</text>
+
+  <!-- Arrow label -->
+  <text x="700" y="615" text-anchor="end" font-size="11" fill="#999" transform="rotate(-90,700,615)">コスト →</text>
+
+  <!-- ===== INVESTMENT ALLOCATION ===== -->
+  <text x="370" y="725" text-anchor="middle" font-size="16" font-weight="700" fill="#333">投資配分の比較</text>
+
+  <!-- Before bar -->
+  <text x="60" y="760" font-size="13" font-weight="600" fill="#555">負債あり</text>
+  <rect x="150" y="745" width="440" height="28" rx="6" fill="#F9A825"/>
+  <text x="370" y="764" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">テスト実行 90%</text>
+  <rect x="590" y="745" width="44" height="28" rx="6" fill="#F5F5F5"/>
+  <text x="612" y="764" text-anchor="middle" font-size="10" fill="#333">QC</text>
+  <rect x="634" y="745" width="11" height="28" rx="3" fill="#E0E0E0"/>
+
+  <!-- After bar -->
+  <text x="60" y="810" font-size="13" font-weight="600" fill="#555">返済後</text>
+  <rect x="150" y="795" width="160" height="28" rx="6" fill="#F9A825"/>
+  <text x="230" y="814" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">テスト 33%</text>
+  <rect x="310" y="795" width="160" height="28" rx="6" fill="#E74C3C"/>
+  <text x="390" y="814" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">QC 33%</text>
+  <rect x="470" y="795" width="175" height="28" rx="6" fill="#E74C3C"/>
+  <text x="558" y="814" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">QA 34%</text>
+
+  <!-- Arrow between bars -->
+  <path d="M370,775 L370,793" fill="none" stroke="#78909C" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- ===== KEY MESSAGE ===== -->
+  <rect x="70" y="855" width="600" height="80" rx="10" fill="#F5F5F5" stroke="#DDD" stroke-width="1"/>
+  <text x="370" y="885" text-anchor="middle" font-size="15" font-weight="700" fill="#333">負債の自己診断チェック</text>
+  <text x="130" y="915" font-size="12" fill="#555">□ 特定の人がいないとリリース判定できない（門番化）</text>
+  <text x="130" y="932" font-size="12" fill="#555">□ 要件レビュー・設計レビューにQAが参加していない（上流空白）</text>
+
+  <!-- Bottom note -->
+  <rect x="80" y="950" width="580" height="40" rx="8" fill="#222"/>
+  <text x="370" y="975" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">負債は放置するほど返済コストが上がる。今日が最も安い返済日だ</text>
+
+  <!-- Page reference -->
+  <text x="370" y="1030" text-anchor="middle" font-size="11" fill="#AAA">『QA＝テストではない』第2章</text>
+</svg>

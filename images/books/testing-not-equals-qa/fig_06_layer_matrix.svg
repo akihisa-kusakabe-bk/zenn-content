@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 380" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <rect width="740" height="380" fill="#ffffff"/>
+
+  <text x="370" y="35" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">AI時代の3層モデル</text>
+
+  <!-- Header row -->
+  <rect x="50" y="65" width="130" height="50" fill="#7E57C2"/>
+  <text x="115" y="96" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">レイヤー</text>
+
+  <rect x="185" y="65" width="170" height="50" fill="#7E57C2"/>
+  <text x="270" y="96" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">Dev</text>
+
+  <rect x="360" y="65" width="170" height="50" fill="#7E57C2"/>
+  <text x="445" y="96" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">QA</text>
+
+  <rect x="535" y="65" width="170" height="50" fill="#7E57C2"/>
+  <text x="620" y="96" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">PO</text>
+
+  <!-- Row 1: Design -->
+  <rect x="50" y="120" width="130" height="60" fill="#F9A825"/>
+  <text x="115" y="156" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">設計</text>
+
+  <rect x="185" y="120" width="170" height="60" fill="#FFF8E1"/>
+  <text x="270" y="156" text-anchor="middle" font-size="14" fill="#333">アーキテクチャ</text>
+
+  <rect x="360" y="120" width="170" height="60" fill="#FFF8E1"/>
+  <text x="445" y="156" text-anchor="middle" font-size="14" fill="#333">品質戦略</text>
+
+  <rect x="535" y="120" width="170" height="60" fill="#FFF8E1"/>
+  <text x="620" y="156" text-anchor="middle" font-size="14" fill="#333">ビジョン</text>
+
+  <!-- Row 2: Judgment -->
+  <rect x="50" y="185" width="130" height="60" fill="#2980B9"/>
+  <text x="115" y="221" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">判断</text>
+
+  <rect x="185" y="185" width="170" height="60" fill="#F5F5F5"/>
+  <text x="270" y="221" text-anchor="middle" font-size="14" fill="#333">コードレビュー</text>
+
+  <rect x="360" y="185" width="170" height="60" fill="#F5F5F5"/>
+  <text x="445" y="221" text-anchor="middle" font-size="14" fill="#333">テスト設計</text>
+
+  <rect x="535" y="185" width="170" height="60" fill="#F5F5F5"/>
+  <text x="620" y="221" text-anchor="middle" font-size="14" fill="#333">優先度判断</text>
+
+  <!-- AI boundary -->
+  <line x1="185" y1="248" x2="705" y2="248" stroke="#7E57C2" stroke-width="3" stroke-dasharray="8,4"/>
+  <text x="720" y="253" font-size="12" fill="#333">← AI境界</text>
+
+  <!-- Row 3: Execution -->
+  <rect x="50" y="250" width="130" height="60" fill="#7E57C2"/>
+  <text x="115" y="286" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">実行</text>
+
+  <rect x="185" y="250" width="170" height="60" fill="#F5F5F5"/>
+  <text x="270" y="286" text-anchor="middle" font-size="14" fill="#444">コーディング</text>
+
+  <rect x="360" y="250" width="170" height="60" fill="#F5F5F5"/>
+  <text x="445" y="286" text-anchor="middle" font-size="14" fill="#444">テスト実行</text>
+
+  <rect x="535" y="250" width="170" height="60" fill="#F5F5F5"/>
+  <text x="620" y="286" text-anchor="middle" font-size="14" fill="#444">要件記述</text>
+
+  <text x="370" y="350" text-anchor="middle" font-size="15" fill="#555">AI境界線はロールを横断して水平に走る</text>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 560" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#555"/>
+    </marker>
+  </defs>
+
+  <rect width="780" height="560" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="390" y="36" text-anchor="middle" font-size="21" font-weight="bold" fill="#1a1a1a">品質サイクル全体像</text>
+
+  <!-- Outer frame -->
+  <rect x="30" y="55" width="720" height="410" rx="12" fill="none" stroke="#F9A825" stroke-width="2"/>
+  <text x="390" y="80" text-anchor="middle" font-size="14" font-weight="bold" fill="#555">品質サイクル</text>
+
+  <!-- Central hub -->
+  <rect x="290" y="180" width="200" height="60" rx="8" fill="#E8F5E9" stroke="#F9A825" stroke-width="2"/>
+  <text x="390" y="207" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">テスト観点カタログ</text>
+  <text x="390" y="227" text-anchor="middle" font-size="11" fill="#666">（ハブ）</text>
+
+  <!-- Test loop (left) -->
+  <text x="160" y="110" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">テストループ</text>
+  <text x="160" y="128" text-anchor="middle" font-size="12" fill="#666">= 測る</text>
+
+  <rect x="80" y="150" width="130" height="44" rx="6" fill="#F5F5F5" stroke="#78909C" stroke-width="1.5"/>
+  <text x="145" y="177" text-anchor="middle" font-size="13" fill="#1a1a1a">テスト設計</text>
+
+  <rect x="80" y="270" width="130" height="44" rx="6" fill="#F5F5F5" stroke="#78909C" stroke-width="1.5"/>
+  <text x="145" y="297" text-anchor="middle" font-size="13" fill="#1a1a1a">テスト実行</text>
+
+  <!-- テスト設計 → テスト実行 -->
+  <line x1="120" y1="194" x2="120" y2="270" stroke="#78909C" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- テスト実行 → テスト設計 (loop back) -->
+  <path d="M 170 270 L 170 194" fill="none" stroke="#78909C" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Hub ← テストループ -->
+  <line x1="210" y1="200" x2="290" y2="205" stroke="#78909C" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+
+  <!-- QC loop (right) -->
+  <text x="620" y="110" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">QCループ</text>
+  <text x="620" y="128" text-anchor="middle" font-size="12" fill="#666">= 診る</text>
+
+  <rect x="570" y="150" width="130" height="44" rx="6" fill="#F5F5F5" stroke="#78909C" stroke-width="1.5"/>
+  <text x="635" y="177" text-anchor="middle" font-size="13" fill="#1a1a1a">バグ報告</text>
+
+  <rect x="570" y="270" width="130" height="44" rx="6" fill="#f0f0f0" stroke="#78909C" stroke-width="1.5"/>
+  <text x="635" y="297" text-anchor="middle" font-size="13" fill="#1a1a1a">原因分析</text>
+
+  <!-- バグ報告 → 原因分析 -->
+  <line x1="610" y1="194" x2="610" y2="270" stroke="#78909C" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- 原因分析 → バグ報告 (loop back) -->
+  <path d="M 660 270 L 660 194" fill="none" stroke="#78909C" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Hub ← QCループ -->
+  <line x1="570" y1="200" x2="490" y2="205" stroke="#78909C" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+
+  <!-- Connecting テスト実行 → バグ報告 -->
+  <path d="M 210 292 L 390 340 L 570 172" fill="none" stroke="#78909C" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="390" y="358" text-anchor="middle" font-size="11" fill="#666">バグ発見時</text>
+
+  <!-- QA activity (bottom) -->
+  <rect x="180" y="390" width="420" height="55" rx="8" fill="#E8F5E9" stroke="#F9A825" stroke-width="2"/>
+  <text x="390" y="415" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">QA活動（仕込む）</text>
+  <text x="390" y="435" text-anchor="middle" font-size="12" fill="#555">= サイクル全体を回す力</text>
+
+  <!-- QA → loops -->
+  <line x1="250" y1="390" x2="160" y2="314" stroke="#78909C" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="530" y1="390" x2="620" y2="314" stroke="#78909C" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="390" y1="390" x2="390" y2="240" stroke="#78909C" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Legend -->
+  <rect x="120" y="490" width="540" height="40" rx="6" fill="#FFF8E1" stroke="#ccc" stroke-width="1"/>
+  <text x="195" y="515" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">テスト = 測る</text>
+  <line x1="270" y1="498" x2="270" y2="520" stroke="#ccc" stroke-width="1"/>
+  <text x="360" y="515" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">QC = 診る</text>
+  <line x1="445" y1="498" x2="445" y2="520" stroke="#ccc" stroke-width="1"/>
+  <text x="545" y="515" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">QA = 仕込む</text>
+</svg>

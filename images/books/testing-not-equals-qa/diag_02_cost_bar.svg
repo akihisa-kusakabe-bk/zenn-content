@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 420" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <rect width="750" height="420" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="375" y="36" text-anchor="middle" font-size="21" font-weight="bold" fill="#1a1a1a">バグ修正コストの工程差</text>
+
+  <!-- Y axis -->
+  <line x1="100" y1="60" x2="100" y2="360" stroke="#E74C3C" stroke-width="1.5"/>
+  <text x="50" y="210" text-anchor="middle" font-size="12" fill="#555" transform="rotate(-90, 50, 210)">修正コスト（相対値）</text>
+
+  <!-- X axis -->
+  <line x1="100" y1="360" x2="700" y2="360" stroke="#E74C3C" stroke-width="1.5"/>
+
+  <!-- Y axis scale marks (log-like visual) -->
+  <!-- 1x line -->
+  <line x1="95" y1="340" x2="100" y2="340" stroke="#E74C3C" stroke-width="1"/>
+  <text x="88" y="344" text-anchor="end" font-size="11" fill="#555">1x</text>
+
+  <!-- 5x line -->
+  <line x1="95" y1="295" x2="700" y2="295" stroke="#eee" stroke-width="1"/>
+  <text x="88" y="299" text-anchor="end" font-size="11" fill="#555">5x</text>
+
+  <!-- 10x line -->
+  <line x1="95" y1="250" x2="700" y2="250" stroke="#eee" stroke-width="1"/>
+  <text x="88" y="254" text-anchor="end" font-size="11" fill="#555">10x</text>
+
+  <!-- 30x line -->
+  <line x1="95" y1="170" x2="700" y2="170" stroke="#eee" stroke-width="1"/>
+  <text x="88" y="174" text-anchor="end" font-size="11" fill="#555">30x</text>
+
+  <!-- 100x line -->
+  <line x1="95" y1="80" x2="700" y2="80" stroke="#eee" stroke-width="1"/>
+  <text x="88" y="84" text-anchor="end" font-size="11" fill="#555">100x</text>
+
+  <!-- Bars -->
+  <!-- Requirements: 1x, height=20 -->
+  <rect x="140" y="340" width="80" height="20" fill="#E74C3C" rx="2"/>
+  <text x="180" y="333" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">1x</text>
+
+  <!-- Design: 5x, height=65 -->
+  <rect x="260" y="295" width="80" height="65" fill="#E74C3C" rx="2"/>
+  <text x="300" y="288" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">5x</text>
+
+  <!-- Implementation: 10x, height=110 -->
+  <rect x="380" y="250" width="80" height="110" fill="#E74C3C" rx="2"/>
+  <text x="420" y="243" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">10x</text>
+
+  <!-- Test: 30x, height=190 -->
+  <rect x="500" y="170" width="80" height="190" fill="#E74C3C" rx="2"/>
+  <text x="540" y="163" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">30x</text>
+
+  <!-- Post-release: 100x, height=280 -->
+  <rect x="620" y="80" width="80" height="280" fill="#78909C" rx="2"/>
+  <text x="660" y="73" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a1a">100x</text>
+
+  <!-- X axis labels -->
+  <text x="180" y="385" text-anchor="middle" font-size="13" fill="#333">要件</text>
+  <text x="300" y="385" text-anchor="middle" font-size="13" fill="#333">設計</text>
+  <text x="420" y="385" text-anchor="middle" font-size="13" fill="#333">実装</text>
+  <text x="540" y="385" text-anchor="middle" font-size="13" fill="#333">テスト</text>
+  <text x="660" y="385" text-anchor="middle" font-size="13" fill="#333">リリース後</text>
+
+  <!-- Source note -->
+  <text x="375" y="412" text-anchor="middle" font-size="11" fill="#999">出典: Boehm (1981), NIST (2002) をもとに作成</text>
+</svg>

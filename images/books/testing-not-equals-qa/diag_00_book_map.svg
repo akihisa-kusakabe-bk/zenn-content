@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 480" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#27AE60"/>
+    </marker>
+  </defs>
+
+  <rect width="750" height="480" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="375" y="36" text-anchor="middle" font-size="21" font-weight="bold" fill="#1a1a1a">本書の全体マップ</text>
+
+  <!-- Column headers -->
+  <text x="310" y="72" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">理解する</text>
+  <text x="570" y="72" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">実践する</text>
+
+  <!-- Column header line -->
+  <line x1="180" y1="82" x2="720" y2="82" stroke="#27AE60" stroke-width="1.5"/>
+
+  <!-- Row labels -->
+  <text x="100" y="140" text-anchor="middle" font-size="13" fill="#555">抽象的</text>
+  <text x="100" y="156" text-anchor="middle" font-size="13" fill="#555">Why</text>
+
+  <text x="100" y="260" text-anchor="middle" font-size="13" fill="#555">具体的</text>
+  <text x="100" y="276" text-anchor="middle" font-size="13" fill="#555">How</text>
+
+  <text x="100" y="400" text-anchor="middle" font-size="13" fill="#555">未来</text>
+
+  <!-- Row label line -->
+  <line x1="170" y1="82" x2="170" y2="460" stroke="#27AE60" stroke-width="1.5"/>
+
+  <!-- Horizontal dividers -->
+  <line x1="170" y1="200" x2="720" y2="200" stroke="#ddd" stroke-width="1"/>
+  <line x1="170" y1="340" x2="720" y2="340" stroke="#ddd" stroke-width="1"/>
+
+  <!-- Vertical divider -->
+  <line x1="440" y1="82" x2="440" y2="460" stroke="#ddd" stroke-width="1"/>
+
+  <!-- Row 1: Abstract/Why -->
+  <!-- Ch1 -->
+  <rect x="195" y="100" width="220" height="80" rx="6" fill="#E8F5E9" stroke="#27AE60" stroke-width="1.5"/>
+  <text x="305" y="132" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">第1章</text>
+  <text x="305" y="155" text-anchor="middle" font-size="13" fill="#333">QA ≠ テストの定義</text>
+
+  <!-- Ch3 -->
+  <rect x="465" y="100" width="230" height="80" rx="6" fill="#E8F5E9" stroke="#27AE60" stroke-width="1.5"/>
+  <text x="580" y="132" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">第3章</text>
+  <text x="580" y="155" text-anchor="middle" font-size="13" fill="#333">QA活動カタログ</text>
+
+  <!-- Row 2: Concrete/How -->
+  <!-- Ch2 -->
+  <rect x="195" y="220" width="220" height="80" rx="6" fill="#E8F5E9" stroke="#27AE60" stroke-width="1.5"/>
+  <text x="305" y="252" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">第2章</text>
+  <text x="305" y="275" text-anchor="middle" font-size="13" fill="#333">構造的負債</text>
+
+  <!-- Ch4 -->
+  <rect x="465" y="220" width="110" height="80" rx="6" fill="#f0f0f0" stroke="#27AE60" stroke-width="1.5"/>
+  <text x="520" y="248" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">第4章</text>
+  <text x="520" y="268" text-anchor="middle" font-size="12" fill="#333">品質定義</text>
+  <text x="520" y="284" text-anchor="middle" font-size="12" fill="#333">ワーク</text>
+
+  <!-- Ch5 -->
+  <rect x="585" y="220" width="110" height="80" rx="6" fill="#f0f0f0" stroke="#27AE60" stroke-width="1.5"/>
+  <text x="640" y="248" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">第5章</text>
+  <text x="640" y="268" text-anchor="middle" font-size="12" fill="#333">テスト戦略</text>
+  <text x="640" y="284" text-anchor="middle" font-size="12" fill="#333">・設計</text>
+
+  <!-- Row 3: Future -->
+  <!-- Ch6 -->
+  <rect x="195" y="360" width="220" height="80" rx="6" fill="#f0f0f0" stroke="#27AE60" stroke-width="1.5"/>
+  <text x="305" y="392" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">第6章</text>
+  <text x="305" y="415" text-anchor="middle" font-size="13" fill="#333">AI時代</text>
+
+  <!-- Ch7 -->
+  <rect x="465" y="360" width="230" height="80" rx="6" fill="#f0f0f0" stroke="#27AE60" stroke-width="1.5"/>
+  <text x="580" y="392" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">第7章</text>
+  <text x="580" y="415" text-anchor="middle" font-size="13" fill="#333">品質組織のつくり方</text>
+</svg>

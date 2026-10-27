@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 520" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <rect width="750" height="520" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="375" y="40" text-anchor="middle" font-size="21" font-weight="bold" fill="#1a1a1a">リスクマトリクス</text>
+
+  <!-- Column header label -->
+  <text x="460" y="75" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">影響度</text>
+
+  <!-- Row header label -->
+  <text x="100" y="250" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" transform="rotate(-90, 68, 280)">発生確率</text>
+
+  <!-- Column headers -->
+  <text x="280" y="110" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">低</text>
+  <text x="430" y="110" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">中</text>
+  <text x="580" y="110" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">高</text>
+
+  <!-- Row headers -->
+  <text x="140" y="195" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">高</text>
+  <text x="140" y="315" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">中</text>
+  <text x="140" y="435" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">低</text>
+
+  <!-- Grid: Row 1 (発生確率=高) -->
+  <!-- 高×低: 通常テスト -->
+  <rect x="190" y="130" width="180" height="120" fill="#d4d4d4" stroke="#F9A825" stroke-width="1.5" rx="3"/>
+  <text x="280" y="195" text-anchor="middle" font-size="14" fill="#1a1a1a">通常テスト</text>
+
+  <!-- 高×中: 重点テスト -->
+  <rect x="370" y="130" width="180" height="120" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.5" rx="3"/>
+  <text x="460" y="195" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">重点テスト</text>
+
+  <!-- 高×高: 最重点テスト -->
+  <rect x="550" y="130" width="180" height="120" fill="#666666" stroke="#F9A825" stroke-width="1.5" rx="3"/>
+  <text x="640" y="195" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">最重点テスト</text>
+
+  <!-- Grid: Row 2 (発生確率=中) -->
+  <!-- 中×低: 最低限 -->
+  <rect x="190" y="250" width="180" height="120" fill="#F5F5F5" stroke="#F9A825" stroke-width="1.5" rx="3"/>
+  <text x="280" y="315" text-anchor="middle" font-size="14" fill="#1a1a1a">最低限</text>
+
+  <!-- 中×中: 通常テスト -->
+  <rect x="370" y="250" width="180" height="120" fill="#d4d4d4" stroke="#F9A825" stroke-width="1.5" rx="3"/>
+  <text x="460" y="315" text-anchor="middle" font-size="14" fill="#1a1a1a">通常テスト</text>
+
+  <!-- 中×高: 重点テスト -->
+  <rect x="550" y="250" width="180" height="120" fill="#FFF8E1" stroke="#F9A825" stroke-width="1.5" rx="3"/>
+  <text x="640" y="315" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">重点テスト</text>
+
+  <!-- Grid: Row 3 (発生確率=低) -->
+  <!-- 低×低: テスト省略 -->
+  <rect x="190" y="370" width="180" height="120" fill="#f5f5f5" stroke="#F9A825" stroke-width="1.5" rx="3"/>
+  <text x="280" y="435" text-anchor="middle" font-size="14" fill="#666">テスト省略</text>
+
+  <!-- 低×中: 最低限 -->
+  <rect x="370" y="370" width="180" height="120" fill="#F5F5F5" stroke="#F9A825" stroke-width="1.5" rx="3"/>
+  <text x="460" y="435" text-anchor="middle" font-size="14" fill="#1a1a1a">最低限</text>
+
+  <!-- 低×高: 通常テスト -->
+  <rect x="550" y="370" width="180" height="120" fill="#d4d4d4" stroke="#F9A825" stroke-width="1.5" rx="3"/>
+  <text x="640" y="435" text-anchor="middle" font-size="14" fill="#1a1a1a">通常テスト</text>
+</svg>

@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 1050" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif">
+  <defs>
+    <style>
+      .title { font-size: 26px; font-weight: 700; fill: #111; }
+      .section-label { font-size: 13px; fill: #888; font-weight: 500; }
+    </style>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2980B9"/>
+    </marker>
+  </defs>
+
+  <rect width="740" height="1050" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="370" y="48" text-anchor="middle" class="title">QA活動カタログ 全14種マップ</text>
+  <text x="370" y="75" text-anchor="middle" class="section-label">— 第3章の核心：テスト以外にできることは13種類ある —</text>
+
+  <!-- ===== TIMELINE HEADER ===== -->
+  <rect x="30" y="100" width="680" height="40" rx="8" fill="#F5F5F5" stroke="#DDD" stroke-width="1"/>
+  <text x="370" y="126" text-anchor="middle" font-size="14" font-weight="700" fill="#333">開発ライフサイクルにおけるQA活動の配置</text>
+
+  <!-- Phase labels -->
+  <rect x="30" y="155" width="160" height="35" rx="6" fill="#222"/>
+  <text x="110" y="178" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">上流</text>
+  <rect x="210" y="155" width="160" height="35" rx="6" fill="#2980B9"/>
+  <text x="290" y="178" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">中流</text>
+  <rect x="390" y="155" width="160" height="35" rx="6" fill="#FFF8E1"/>
+  <text x="470" y="178" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">下流</text>
+  <rect x="570" y="155" width="140" height="35" rx="6" fill="#27AE60"/>
+  <text x="640" y="178" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">横断</text>
+
+  <!-- Timeline arrow -->
+  <line x1="30" y1="200" x2="550" y2="200" stroke="#AAA" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="290" y="215" text-anchor="middle" font-size="10" fill="#AAA">開発の時間軸</text>
+
+  <!-- ===== UPSTREAM ACTIVITIES ===== -->
+  <text x="110" y="245" text-anchor="middle" font-size="13" font-weight="700" fill="#333">上流（企画〜設計）</text>
+
+  <rect x="30" y="260" width="320" height="55" rx="10" fill="#E8E8E8" stroke="#CCC" stroke-width="1"/>
+  <text x="50" y="282" font-size="14" font-weight="700" fill="#333">1. 要件レビュー（品質観点）</text>
+  <text x="50" y="302" font-size="11" fill="#666">要件定義の段階で「テストできるか」「曖昧さはないか」を確認</text>
+
+  <rect x="30" y="325" width="320" height="55" rx="10" fill="#E8E8E8" stroke="#CCC" stroke-width="1"/>
+  <text x="50" y="347" font-size="14" font-weight="700" fill="#333">2. 設計レビュー（テスト可能性）</text>
+  <text x="50" y="367" font-size="11" fill="#666">設計の段階でテスト可能性・保守性を評価する</text>
+
+  <rect x="30" y="390" width="320" height="55" rx="10" fill="#E8E8E8" stroke="#CCC" stroke-width="1"/>
+  <text x="50" y="412" font-size="14" font-weight="700" fill="#333">3. リスク分析</text>
+  <text x="50" y="432" font-size="11" fill="#666">発生確率×影響度でリスクを可視化し、優先順位を決める</text>
+
+  <rect x="30" y="455" width="320" height="55" rx="10" fill="#E8E8E8" stroke="#CCC" stroke-width="1"/>
+  <text x="50" y="477" font-size="14" font-weight="700" fill="#333">4. 品質定義ワークショップ</text>
+  <text x="50" y="497" font-size="11" fill="#666">チームで「品質とは何か」を定義する → 第4章で詳述</text>
+
+  <rect x="30" y="520" width="320" height="55" rx="10" fill="#E8E8E8" stroke="#CCC" stroke-width="1"/>
+  <text x="50" y="542" font-size="14" font-weight="700" fill="#333">5. テスト戦略の策定</text>
+  <text x="50" y="562" font-size="11" fill="#666">何を重点的にテストし、何を省くか → 第5章で詳述</text>
+
+  <!-- ===== MIDSTREAM ACTIVITIES ===== -->
+  <text x="550" y="245" text-anchor="middle" font-size="13" font-weight="700" fill="#333">中流（実装〜テスト）</text>
+
+  <rect x="390" y="260" width="320" height="55" rx="10" fill="#FFF8E1" stroke="#BBB" stroke-width="1"/>
+  <text x="410" y="282" font-size="14" font-weight="700" fill="#333">6. 品質ゲート設計</text>
+  <text x="410" y="302" font-size="11" fill="#555">各工程の品質基準を設け、通過条件を定義する</text>
+
+  <rect x="390" y="325" width="320" height="55" rx="10" fill="#FFF8E1" stroke="#BBB" stroke-width="1"/>
+  <text x="410" y="347" font-size="14" font-weight="700" fill="#333">7. CI/CDへの品質指標組み込み</text>
+  <text x="410" y="367" font-size="11" fill="#555">自動テスト・静的解析をパイプラインに組み込む</text>
+
+  <rect x="390" y="390" width="320" height="55" rx="10" fill="#F5F5F5" stroke="#BBB" stroke-width="1"/>
+  <text x="410" y="412" font-size="14" font-weight="700" fill="#333">8. テスト設計（観点の言語化）</text>
+  <text x="410" y="432" font-size="11" fill="#555">テスト観点を明文化し、テストケースの目的を明確にする</text>
+
+  <rect x="390" y="455" width="320" height="55" rx="10" fill="#F5F5F5" stroke="#BBB" stroke-width="1"/>
+  <text x="410" y="477" font-size="14" font-weight="700" fill="#333">9. 探索的テスト</text>
+  <text x="410" y="497" font-size="11" fill="#555">スクリプトに頼らず、学習しながら欠陥を探す</text>
+
+  <!-- ===== DOWNSTREAM ACTIVITIES ===== -->
+  <text x="190" y="610" text-anchor="middle" font-size="13" font-weight="700" fill="#333">下流（リリース後）</text>
+
+  <rect x="30" y="625" width="320" height="55" rx="10" fill="#FFF8E1" stroke="#AAA" stroke-width="1"/>
+  <text x="50" y="647" font-size="14" font-weight="700" fill="#333">10. バグ分析（RCA）</text>
+  <text x="50" y="667" font-size="11" fill="#444">根本原因分析で「なぜ」を5回掘り、再発を防ぐ</text>
+
+  <!-- ===== CROSS-CUTTING ACTIVITIES ===== -->
+  <text x="550" y="610" text-anchor="middle" font-size="13" font-weight="700" fill="#333">横断（常時）</text>
+
+  <rect x="390" y="625" width="320" height="55" rx="10" fill="#E0E0E0" stroke="#CCC" stroke-width="1"/>
+  <text x="410" y="647" font-size="14" font-weight="700" fill="#222">11. メトリクス設計と可視化</text>
+  <text x="410" y="667" font-size="11" fill="#555">品質を数値で測り、ダッシュボードで可視化</text>
+
+  <rect x="390" y="690" width="320" height="55" rx="10" fill="#E0E0E0" stroke="#CCC" stroke-width="1"/>
+  <text x="410" y="712" font-size="14" font-weight="700" fill="#222">12. テスト観点カタログの構築</text>
+  <text x="410" y="732" font-size="11" fill="#555">チームの品質ナレッジを言語化して蓄積</text>
+
+  <rect x="390" y="755" width="320" height="55" rx="10" fill="#E0E0E0" stroke="#CCC" stroke-width="1"/>
+  <text x="410" y="777" font-size="14" font-weight="700" fill="#222">13. ナレッジ共有</text>
+  <text x="410" y="797" font-size="11" fill="#555">品質活動の知見をチーム全体で共有する仕組み</text>
+
+  <rect x="390" y="820" width="320" height="55" rx="10" fill="#E0E0E0" stroke="#CCC" stroke-width="1"/>
+  <text x="410" y="842" font-size="14" font-weight="700" fill="#222">14. プロセス改善（ふりかえり）</text>
+  <text x="410" y="862" font-size="11" fill="#555">品質活動自体を振り返り、継続的に改善</text>
+
+  <!-- ===== HIGHLIGHT: テスト実行 is just ONE of 14 ===== -->
+  <rect x="30" y="700" width="320" height="60" rx="10" fill="#FFF8E1" stroke="#F9A825" stroke-width="2"/>
+  <text x="190" y="725" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">テスト実行</text>
+  <text x="190" y="745" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.8)">多くの組織が「これだけ」に集中している</text>
+
+  <!-- Arrow pointing to test execution -->
+  <text x="190" y="690" text-anchor="middle" font-size="11" fill="#F5F5F5">▼ 14種のうち、たった1つ</text>
+
+  <!-- ===== KEY MESSAGE ===== -->
+  <rect x="70" y="910" width="600" height="60" rx="10" fill="#222"/>
+  <text x="370" y="937" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">テスト実行は14種のQA活動のうち、たった1種</text>
+  <text x="370" y="958" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.8)">残り13種に目を向けることが、QA≠テストの第一歩</text>
+
+  <!-- Page reference -->
+  <text x="370" y="1030" text-anchor="middle" font-size="11" fill="#AAA">『QA＝テストではない』第3章</text>
+</svg>

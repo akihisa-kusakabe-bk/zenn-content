@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 440" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <rect width="740" height="440" fill="#ffffff"/>
+
+  <text x="370" y="40" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">3つの品質負債の悪循環</text>
+
+  <!-- Debt 1: Top center -->
+  <rect x="230" y="70" width="280" height="80" rx="10" fill="#F9A825"/>
+  <text x="370" y="105" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">負債1：門番化</text>
+  <text x="370" y="130" text-anchor="middle" font-size="14" fill="#F5F5F5">QAが品質の最終判断者になる</text>
+
+  <!-- Debt 2: Bottom left -->
+  <rect x="40" y="280" width="280" height="80" rx="10" fill="#78909C"/>
+  <text x="180" y="315" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">負債2：上流空白</text>
+  <text x="180" y="340" text-anchor="middle" font-size="14" fill="#FDE8E8">設計の問題が下流で爆発する</text>
+
+  <!-- Debt 3: Bottom right -->
+  <rect x="420" y="280" width="280" height="80" rx="10" fill="#E74C3C"/>
+  <text x="560" y="315" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">負債3：工数誤認</text>
+  <text x="560" y="340" text-anchor="middle" font-size="14" fill="#FDE8E8">テスト量＝品質投資と思い込む</text>
+
+  <!-- Arrows -->
+  <path d="M270 150 L160 280" stroke="#E74C3C" stroke-width="2.5" fill="none" marker-end="url(#a1)"/>
+  <path d="M320 330 L420 330" stroke="#E74C3C" stroke-width="2.5" fill="none" marker-end="url(#a1)"/>
+  <path d="M600 280 L480 150" stroke="#E74C3C" stroke-width="2.5" fill="none" marker-end="url(#a1)"/>
+
+  <defs>
+    <marker id="a1" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#E74C3C"/>
+    </marker>
+  </defs>
+
+  <!-- Center -->
+  <circle cx="370" cy="240" r="35" fill="#fff" stroke="#E74C3C" stroke-width="2"/>
+  <text x="370" y="237" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">悪循環</text>
+  <text x="370" y="255" text-anchor="middle" font-size="12" fill="#666">連鎖する</text>
+
+  <text x="370" y="410" text-anchor="middle" font-size="14" fill="#555">1つの負債は他の2つを引き寄せる</text>
+</svg>

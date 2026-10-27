@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 340" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <rect width="740" height="340" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="370" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a1a">レイヤー比率の自己診断</text>
+  <text x="370" y="58" text-anchor="middle" font-size="13" fill="#666">1週間の業務をざっくり振り分けてみよう</text>
+
+  <!-- Pattern 1: Dangerous -->
+  <text x="55" y="105" text-anchor="end" font-size="12" fill="#999">危険</text>
+  <rect x="70" y="85" width="416" height="32" rx="3" fill="#7E57C2"/>
+  <text x="278" y="107" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">実行 80%</text>
+  <rect x="486" y="85" width="78" height="32" rx="3" fill="#2980B9"/>
+  <text x="525" y="107" text-anchor="middle" font-size="11" fill="#fff">判断 15%</text>
+  <rect x="564" y="85" width="26" height="32" rx="3" fill="#F9A825"/>
+  <text x="605" y="107" font-size="11" fill="#555">設計 5%</text>
+
+  <!-- Pattern 2: Balanced -->
+  <text x="55" y="165" text-anchor="end" font-size="12" fill="#666">均衡</text>
+  <rect x="70" y="145" width="208" height="32" rx="3" fill="#7E57C2"/>
+  <text x="174" y="167" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">実行 40%</text>
+  <rect x="278" y="145" width="208" height="32" rx="3" fill="#2980B9"/>
+  <text x="382" y="167" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">判断 40%</text>
+  <rect x="486" y="145" width="104" height="32" rx="3" fill="#F9A825"/>
+  <text x="538" y="167" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">設計 20%</text>
+
+  <!-- Pattern 3: Strong -->
+  <text x="55" y="225" text-anchor="end" font-size="12" fill="#333">強い</text>
+  <rect x="70" y="205" width="104" height="32" rx="3" fill="#7E57C2"/>
+  <text x="122" y="227" text-anchor="middle" font-size="11" fill="#fff">実行 20%</text>
+  <rect x="174" y="205" width="208" height="32" rx="3" fill="#2980B9"/>
+  <text x="278" y="227" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">判断 40%</text>
+  <rect x="382" y="205" width="208" height="32" rx="3" fill="#2980B9"/>
+  <text x="486" y="227" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">設計 40%</text>
+
+  <!-- Arrow on left -->
+  <path d="M30 95 L30 225" stroke="#7E57C2" stroke-width="1.5" marker-end="url(#arr3)"/>
+  <text x="18" y="160" text-anchor="middle" font-size="11" fill="#555" transform="rotate(-90,18,160)">AI時代に強い</text>
+
+  <defs>
+    <marker id="arr3" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7E57C2"/>
+    </marker>
+  </defs>
+
+  <!-- Note -->
+  <text x="370" y="275" text-anchor="middle" font-size="12" fill="#555">この比率は年次や役職で決まるものではない</text>
+  <text x="370" y="295" text-anchor="middle" font-size="12" fill="#555">若手でも設計レイヤーの業務を持てるし、</text>
+  <text x="370" y="315" text-anchor="middle" font-size="12" fill="#555">ベテランでも実行レイヤーに偏ることがある</text>
+</svg>

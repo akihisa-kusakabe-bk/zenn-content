@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 440" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <rect width="750" height="440" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="375" y="36" text-anchor="middle" font-size="21" font-weight="bold" fill="#1a1a1a">テスト自動化ピラミッド</text>
+
+  <!-- Layer 1 (top): 手動テスト -->
+  <polygon points="300,65 450,65 470,145 280,145" fill="#F5F5F5" stroke="#F9A825" stroke-width="2" stroke-linejoin="round"/>
+  <text x="375" y="100" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">手動テスト</text>
+  <text x="375" y="118" text-anchor="middle" font-size="11" fill="#F5F5F5">（少量）</text>
+  <!-- Annotation -->
+  <line x1="470" y1="105" x2="520" y2="105" stroke="#F9A825" stroke-width="1"/>
+  <text x="530" y="100" font-size="12" fill="#666">探索的テスト</text>
+  <text x="530" y="116" font-size="12" fill="#666">UIの使い勝手</text>
+
+  <!-- Layer 2: E2Eテスト -->
+  <polygon points="280,150 470,150 500,230 250,230" fill="#2980B9" stroke="#F9A825" stroke-width="2" stroke-linejoin="round"/>
+  <text x="375" y="185" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">E2Eテスト</text>
+  <text x="375" y="203" text-anchor="middle" font-size="11" fill="#F5F5F5">（適量）</text>
+  <!-- Annotation -->
+  <line x1="500" y1="190" x2="530" y2="190" stroke="#F9A825" stroke-width="1"/>
+  <text x="540" y="195" font-size="12" fill="#666">ユーザーフローの確認</text>
+
+  <!-- Layer 3: 結合テスト -->
+  <polygon points="250,235 500,235 540,315 210,315" fill="#F5F5F5" stroke="#F9A825" stroke-width="2" stroke-linejoin="round"/>
+  <text x="375" y="270" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">結合テスト</text>
+  <text x="375" y="288" text-anchor="middle" font-size="11" fill="#555">（中量）</text>
+  <!-- Annotation -->
+  <line x1="540" y1="275" x2="560" y2="275" stroke="#F9A825" stroke-width="1"/>
+  <text x="570" y="280" font-size="12" fill="#666">API、DB連携の確認</text>
+
+  <!-- Layer 4 (bottom): 単体テスト -->
+  <polygon points="210,320 540,320 580,400 170,400" fill="#E8F5E9" stroke="#F9A825" stroke-width="2" stroke-linejoin="round"/>
+  <text x="375" y="355" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">単体テスト</text>
+  <text x="375" y="373" text-anchor="middle" font-size="11" fill="#555">（大量）</text>
+  <!-- Annotation -->
+  <line x1="580" y1="360" x2="600" y2="360" stroke="#F9A825" stroke-width="1"/>
+  <text x="610" y="355" font-size="12" fill="#666">ロジック</text>
+  <text x="610" y="371" font-size="12" fill="#666">バリデーション</text>
+
+  <!-- Side labels -->
+  <text x="130" y="110" text-anchor="end" font-size="12" fill="#F5F5F5">遅い</text>
+  <text x="130" y="126" text-anchor="end" font-size="12" fill="#E8F5E9">高コスト</text>
+  <text x="130" y="370" text-anchor="end" font-size="12" fill="#E8F5E9">速い</text>
+  <text x="130" y="386" text-anchor="end" font-size="12" fill="#888">低コスト</text>
+
+  <!-- Vertical arrow on left side -->
+  <line x1="145" y1="140" x2="145" y2="355" stroke="#78909C" stroke-width="1.5" marker-end="url(#arrowdown)"/>
+  <defs>
+    <marker id="arrowdown" viewBox="0 0 10 10" refX="5" refY="10" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 0 L 5 10 z" fill="#aaa"/>
+    </marker>
+    <marker id="arrowup" viewBox="0 0 10 10" refX="5" refY="0" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 10 L 10 10 L 5 0 z" fill="#aaa"/>
+    </marker>
+  </defs>
+  <line x1="155" y1="355" x2="155" y2="140" stroke="#78909C" stroke-width="1.5" marker-end="url(#arrowup)"/>
+</svg>

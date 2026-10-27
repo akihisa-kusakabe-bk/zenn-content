@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 400" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <rect width="750" height="400" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="375" y="36" text-anchor="middle" font-size="21" font-weight="bold" fill="#1a1a1a">QA / QC / テスト 三層構造</text>
+
+  <!-- Outermost: QA -->
+  <rect x="60" y="60" width="630" height="310" rx="16" fill="#FFF3E0" stroke="#E67E22" stroke-width="2"/>
+  <text x="90" y="90" font-size="16" font-weight="bold" fill="#1a1a1a">QA（品質保証）</text>
+  <text x="90" y="112" font-size="13" fill="#555">「仕込む」＝ 未来を見る</text>
+
+  <!-- Middle: QC -->
+  <rect x="120" y="130" width="510" height="220" rx="12" fill="#E8F5E9" stroke="#27AE60" stroke-width="1.5"/>
+  <text x="150" y="160" font-size="16" font-weight="bold" fill="#1a1a1a">QC（品質管理）</text>
+  <text x="150" y="182" font-size="13" fill="#555">「診る」＝ 品質の状態を把握し制御する</text>
+
+  <!-- Innermost: Test -->
+  <rect x="180" y="200" width="390" height="130" rx="10" fill="#E3F2FD" stroke="#2980B9" stroke-width="1.5"/>
+  <text x="375" y="255" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a1a">テスト</text>
+  <text x="375" y="280" text-anchor="middle" font-size="13" fill="#555">「測る」＝ 今を見る</text>
+</svg>

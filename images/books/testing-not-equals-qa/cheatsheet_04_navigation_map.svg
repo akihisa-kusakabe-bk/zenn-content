@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 1050" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif">
+  <defs>
+    <style>
+      .title { font-size: 26px; font-weight: 700; fill: #111; }
+      .section-label { font-size: 13px; fill: #888; font-weight: 500; }
+      .ch-num { font-size: 20px; font-weight: 700; fill: #fff; }
+      .ch-num-dark { font-size: 20px; font-weight: 700; fill: #222; }
+      .ch-desc { font-size: 10px; fill: rgba(255,255,255,0.85); }
+      .ch-desc-dark { font-size: 10px; fill: #555; }
+      .phase-label { font-size: 14px; font-weight: 700; }
+      .route-label { font-size: 13px; font-weight: 700; }
+      .route-step { font-size: 11px; font-weight: 600; }
+    </style>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#F9A825"/>
+    </marker>
+    <marker id="arrDash" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#AAA"/>
+    </marker>
+    <marker id="arrW" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#fff"/>
+    </marker>
+  </defs>
+
+  <rect width="740" height="1050" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="370" y="45" text-anchor="middle" class="title">本書ナビゲーションマップ</text>
+  <text x="370" y="70" text-anchor="middle" class="section-label">— 7章の全体像と読み順ガイド —</text>
+
+  <!-- ===== 明日からできる3つ (top-right callout) ===== -->
+  <rect x="470" y="85" width="250" height="105" rx="10" fill="#F5F5F5" stroke="#CCC" stroke-width="1.5"/>
+  <polygon points="470,120 455,130 470,140" fill="#F5F5F5" stroke="#CCC" stroke-width="1.5" stroke-linejoin="round"/>
+  <polygon points="470,120 470,140 475,130" fill="#F5F5F5" stroke="#F5F5F5" stroke-width="2"/>
+  <text x="595" y="108" text-anchor="middle" font-size="13" font-weight="700" fill="#333">明日からできる3つ</text>
+  <line x1="490" y1="116" x2="700" y2="116" stroke="#DDD" stroke-width="1"/>
+  <text x="500" y="138" font-size="12" fill="#444">1. 「テスト」と「QA」を使い分ける</text>
+  <text x="500" y="158" font-size="12" fill="#444">2. バグ1件の根本原因を分析する</text>
+  <text x="500" y="178" font-size="12" fill="#444">3. A4一枚のテスト戦略を書く</text>
+
+  <!-- ===== PHASE 1: 気づく ===== -->
+  <rect x="30" y="210" width="200" height="370" rx="12" fill="#ECECEC"/>
+  <text x="130" y="240" text-anchor="middle" class="phase-label" fill="#666">気づく</text>
+
+  <!-- Ch1 -->
+  <rect x="55" y="260" width="150" height="80" rx="10" fill="#F9A825"/>
+  <text x="130" y="290" text-anchor="middle" class="ch-num">第1章</text>
+  <text x="130" y="310" text-anchor="middle" class="ch-desc">テストは測る</text>
+  <text x="130" y="324" text-anchor="middle" class="ch-desc">QCは診る、QAは仕込む</text>
+
+  <!-- Ch2 -->
+  <rect x="55" y="370" width="150" height="80" rx="10" fill="#F9A825"/>
+  <text x="130" y="400" text-anchor="middle" class="ch-num">第2章</text>
+  <text x="130" y="420" text-anchor="middle" class="ch-desc">混同は連鎖する構造負債</text>
+
+  <!-- Ch1 → Ch2 arrow -->
+  <line x1="130" y1="340" x2="130" y2="370" stroke="#78909C" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- ===== PHASE 2: 知る・決める ===== -->
+  <rect x="250" y="210" width="230" height="370" rx="12" fill="#F5F5F5"/>
+  <text x="365" y="240" text-anchor="middle" class="phase-label" fill="#555">知る・決める</text>
+
+  <!-- Ch3 -->
+  <rect x="265" y="260" width="95" height="80" rx="10" fill="#27AE60"/>
+  <text x="312" y="290" text-anchor="middle" class="ch-num">第3章</text>
+  <text x="312" y="310" text-anchor="middle" class="ch-desc">テスト以外の</text>
+  <text x="312" y="324" text-anchor="middle" class="ch-desc">QA活動は14種類</text>
+
+  <!-- Ch4 -->
+  <rect x="375" y="260" width="95" height="80" rx="10" fill="#27AE60"/>
+  <text x="422" y="290" text-anchor="middle" class="ch-num">第4章</text>
+  <text x="422" y="310" text-anchor="middle" class="ch-desc">品質を定義</text>
+  <text x="422" y="324" text-anchor="middle" class="ch-desc">しないと守れない</text>
+
+  <!-- Ch5 -->
+  <rect x="290" y="380" width="150" height="80" rx="10" fill="#27AE60"/>
+  <text x="365" y="410" text-anchor="middle" class="ch-num">第5章</text>
+  <text x="365" y="430" text-anchor="middle" class="ch-desc">戦略が先、計画が後</text>
+
+  <!-- Ch3 → Ch5, Ch4 → Ch5 arrows -->
+  <path d="M312,340 Q312,360 340,380" fill="none" stroke="#78909C" stroke-width="2" marker-end="url(#arr)"/>
+  <path d="M422,340 Q422,360 395,380" fill="none" stroke="#78909C" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Ch2 → Ch3 arrow (cross phase) -->
+  <path d="M205,410 Q235,370 265,300" fill="none" stroke="#78909C" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- ===== PHASE 3: 変わる ===== -->
+  <rect x="500" y="210" width="210" height="370" rx="12" fill="#F5F5F5"/>
+  <text x="605" y="240" text-anchor="middle" class="phase-label" fill="#444">変わる</text>
+
+  <!-- Ch6 -->
+  <rect x="525" y="260" width="160" height="80" rx="10" fill="#EC407A"/>
+  <text x="605" y="290" text-anchor="middle" class="ch-num">第6章</text>
+  <text x="605" y="310" text-anchor="middle" class="ch-desc">AIが飲み込むのは</text>
+  <text x="605" y="324" text-anchor="middle" class="ch-desc">レイヤー</text>
+
+  <!-- Ch7 -->
+  <rect x="525" y="380" width="160" height="80" rx="10" fill="#222"/>
+  <text x="605" y="410" text-anchor="middle" class="ch-num">第7章</text>
+  <text x="605" y="430" text-anchor="middle" class="ch-desc">実践は「測る」から始まり</text>
+  <text x="605" y="444" text-anchor="middle" class="ch-desc">「測る」に戻る</text>
+
+  <!-- Ch5 → Ch6, Ch5 → Ch7 arrows -->
+  <path d="M440,410 Q480,370 525,300" fill="none" stroke="#78909C" stroke-width="2" marker-end="url(#arr)"/>
+  <path d="M440,430 Q480,430 525,420" fill="none" stroke="#78909C" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Ch6 → Ch7 arrow -->
+  <line x1="605" y1="340" x2="605" y2="380" stroke="#78909C" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Ch7 → Ch1 cycle arrow (dashed) -->
+  <path d="M525,460 Q30,550 55,340" fill="none" stroke="#AAA" stroke-width="2" stroke-dasharray="8,4" marker-end="url(#arrDash)"/>
+  <text x="250" y="530" text-anchor="middle" font-size="11" fill="#999">サイクル: 実践→再定義</text>
+
+  <!-- ===== BOTTOM: 読者ルート ===== -->
+  <text x="370" y="620" text-anchor="middle" font-size="17" font-weight="700" fill="#333">読者ルート — 目的に応じた読み順</text>
+
+  <!-- Route 1: 速習 -->
+  <rect x="40" y="650" width="660" height="65" rx="10" fill="#F5F5F5" stroke="#DDD" stroke-width="1"/>
+  <text x="65" y="675" class="route-label" fill="#555">速習（30分）</text>
+
+  <rect x="195" y="660" width="65" height="35" rx="6" fill="#F9A825"/>
+  <text x="227" y="683" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Ch1</text>
+  <line x1="260" y1="678" x2="300" y2="678" stroke="#78909C" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="308" y="660" width="120" height="35" rx="6" fill="#EC407A"/>
+  <text x="368" y="683" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">チートシート</text>
+  <text x="490" y="683" font-size="11" fill="#F5F5F5">→ 全体像を30分で把握</text>
+
+  <!-- Route 2: 実践 -->
+  <rect x="40" y="730" width="660" height="65" rx="10" fill="#EDEDED" stroke="#DDD" stroke-width="1"/>
+  <text x="65" y="755" class="route-label" fill="#444">実践（3時間）</text>
+
+  <rect x="195" y="740" width="50" height="35" rx="6" fill="#F9A825"/>
+  <text x="220" y="763" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Ch1</text>
+  <line x1="245" y1="758" x2="265" y2="758" stroke="#78909C" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="273" y="740" width="50" height="35" rx="6" fill="#27AE60"/>
+  <text x="298" y="763" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Ch3</text>
+  <line x1="323" y1="758" x2="343" y2="758" stroke="#78909C" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="351" y="740" width="50" height="35" rx="6" fill="#27AE60"/>
+  <text x="376" y="763" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Ch5</text>
+  <line x1="401" y1="758" x2="421" y2="758" stroke="#78909C" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="429" y="740" width="50" height="35" rx="6" fill="#222"/>
+  <text x="454" y="763" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Ch7</text>
+  <text x="500" y="763" font-size="11" fill="#F5F5F5">→ 明日から動ける</text>
+
+  <!-- Route 3: 通読 -->
+  <rect x="40" y="810" width="660" height="70" rx="10" fill="#E0E0E0" stroke="#DDD" stroke-width="1"/>
+  <text x="65" y="838" class="route-label" fill="#333">通読（5時間）</text>
+
+  <rect x="175" y="822" width="50" height="38" rx="6" fill="#F9A825"/>
+  <text x="200" y="846" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Ch1</text>
+  <line x1="225" y1="841" x2="237" y2="841" stroke="#78909C" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="245" y="822" width="50" height="38" rx="6" fill="#F9A825"/>
+  <text x="270" y="846" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Ch2</text>
+  <line x1="295" y1="841" x2="307" y2="841" stroke="#78909C" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="315" y="822" width="50" height="38" rx="6" fill="#27AE60"/>
+  <text x="340" y="846" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Ch3</text>
+  <line x1="365" y1="841" x2="377" y2="841" stroke="#78909C" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="385" y="822" width="50" height="38" rx="6" fill="#27AE60"/>
+  <text x="410" y="846" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Ch4</text>
+  <line x1="435" y1="841" x2="447" y2="841" stroke="#78909C" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="455" y="822" width="50" height="38" rx="6" fill="#27AE60"/>
+  <text x="480" y="846" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Ch5</text>
+  <line x1="505" y1="841" x2="517" y2="841" stroke="#78909C" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="525" y="822" width="50" height="38" rx="6" fill="#EC407A"/>
+  <text x="550" y="846" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Ch6</text>
+  <line x1="575" y1="841" x2="587" y2="841" stroke="#78909C" stroke-width="1.5" marker-end="url(#arr)"/>
+  <rect x="595" y="822" width="50" height="38" rx="6" fill="#222"/>
+  <text x="620" y="846" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Ch7</text>
+
+  <!-- Bottom message -->
+  <rect x="70" y="900" width="600" height="50" rx="10" fill="#F5F5F5" stroke="#DDD" stroke-width="1"/>
+  <text x="370" y="922" text-anchor="middle" font-size="14" font-weight="700" fill="#333">どのルートから始めても、必ず第1章が出発点。</text>
+  <text x="370" y="942" text-anchor="middle" font-size="13" fill="#555">3層の区別がすべての議論の土台になる</text>
+
+  <!-- Legend -->
+  <line x1="110" y1="975" x2="145" y2="975" stroke="#78909C" stroke-width="2"/>
+  <text x="155" y="979" font-size="11" fill="#E8F5E9">依存（実線）</text>
+  <line x1="280" y1="975" x2="315" y2="975" stroke="#AAA" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="325" y="979" font-size="11" fill="#E8F5E9">サイクル（破線）</text>
+  <rect x="450" y="966" width="18" height="18" rx="3" fill="#ECECEC"/>
+  <text x="478" y="979" font-size="11" fill="#888">薄→濃 = フェーズの深まり</text>
+
+  <!-- Page reference -->
+  <text x="370" y="1025" text-anchor="middle" font-size="11" fill="#AAA">『QA＝テストではない』チートシート ④</text>
+</svg>

@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 1050" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif">
+  <defs>
+    <style>
+      .title { font-size: 28px; font-weight: 700; fill: #111; }
+      .subtitle { font-size: 14px; fill: #666; }
+      .loop-title { font-size: 18px; font-weight: 700; }
+      .node { font-size: 14px; font-weight: 600; fill: #fff; }
+      .node-dark { font-size: 14px; font-weight: 600; fill: #222; }
+      .hub-title { font-size: 20px; font-weight: 700; fill: #fff; }
+      .hub-sub { font-size: 12px; fill: rgba(255,255,255,0.8); }
+      .qa-title { font-size: 16px; font-weight: 700; fill: #fff; }
+      .qa-item { font-size: 12px; fill: rgba(255,255,255,0.85); }
+      .annotation { font-size: 12px; fill: #666; }
+      .arrow-label { font-size: 11px; fill: #888; }
+      .note { font-size: 14px; fill: #444; }
+      .section-label { font-size: 13px; fill: #888; font-weight: 500; }
+    </style>
+    <marker id="arrowB" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#F9A825"/>
+    </marker>
+    <marker id="arrowG" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#F5F5F5"/>
+    </marker>
+    <marker id="arrowW" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#fff"/>
+    </marker>
+  </defs>
+
+  <rect width="740" height="1050" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="370" y="50" text-anchor="middle" class="title">品質サイクル全体図</text>
+  <text x="370" y="75" text-anchor="middle" class="section-label">— 第5章の核心：テスト観点カタログを中心に品質を回す —</text>
+
+  <!-- ===== TEST LOOP (Left) ===== -->
+  <rect x="30" y="120" width="310" height="380" rx="16" fill="#E8E8E8"/>
+  <text x="185" y="155" text-anchor="middle" class="loop-title" fill="#444">テストループ（測る）</text>
+
+  <!-- Test loop nodes -->
+  <rect x="120" y="180" width="130" height="42" rx="8" fill="#78909C"/>
+  <text x="185" y="207" text-anchor="middle" class="node">テスト設計</text>
+
+  <rect x="220" y="270" width="100" height="42" rx="8" fill="#78909C"/>
+  <text x="270" y="297" text-anchor="middle" class="node">実行</text>
+
+  <rect x="120" y="360" width="130" height="42" rx="8" fill="#78909C"/>
+  <text x="185" y="387" text-anchor="middle" class="node">結果記録</text>
+
+  <rect x="50" y="270" width="100" height="42" rx="8" fill="#78909C"/>
+  <text x="100" y="297" text-anchor="middle" class="node">観点更新</text>
+
+  <!-- Test loop arrows (clockwise) -->
+  <path d="M250,210 Q290,230 290,270" fill="none" stroke="#78909C" stroke-width="2" marker-end="url(#arrowB)"/>
+  <path d="M270,312 Q270,340 250,360" fill="none" stroke="#78909C" stroke-width="2" marker-end="url(#arrowB)"/>
+  <path d="M120,380 Q80,370 80,312" fill="none" stroke="#78909C" stroke-width="2" marker-end="url(#arrowB)"/>
+  <path d="M100,270 Q100,240 120,220" fill="none" stroke="#78909C" stroke-width="2" marker-end="url(#arrowB)"/>
+
+  <!-- Arrow from test loop to hub -->
+  <path d="M240,460 L340,530" fill="none" stroke="#78909C" stroke-width="2.5" marker-end="url(#arrowB)"/>
+  <text x="250" y="505" class="arrow-label" transform="rotate(20,250,505)">有効な観点が蓄積</text>
+
+  <!-- ===== QC LOOP (Right) ===== -->
+  <rect x="400" y="120" width="310" height="380" rx="16" fill="#F5F5F5"/>
+  <text x="555" y="155" text-anchor="middle" class="loop-title" fill="#333">QCループ（診る）</text>
+
+  <!-- QC loop nodes -->
+  <rect x="490" y="180" width="130" height="42" rx="8" fill="#F9A825"/>
+  <text x="555" y="207" text-anchor="middle" class="node">バグ報告</text>
+
+  <rect x="570" y="270" width="110" height="42" rx="8" fill="#F9A825"/>
+  <text x="625" y="297" text-anchor="middle" class="node">原因分析</text>
+
+  <rect x="490" y="360" width="130" height="42" rx="8" fill="#F9A825"/>
+  <text x="555" y="387" text-anchor="middle" class="node">バグ修正</text>
+
+  <rect x="420" y="270" width="100" height="42" rx="8" fill="#F9A825"/>
+  <text x="470" y="297" text-anchor="middle" class="node">再テスト</text>
+
+  <!-- QC loop arrows (clockwise) -->
+  <path d="M620,210 Q660,230 650,270" fill="none" stroke="#444" stroke-width="2" marker-end="url(#arrowB)"/>
+  <path d="M630,312 Q620,345 620,360" fill="none" stroke="#444" stroke-width="2" marker-end="url(#arrowB)"/>
+  <path d="M490,380 Q450,370 450,312" fill="none" stroke="#444" stroke-width="2" marker-end="url(#arrowB)"/>
+  <path d="M470,270 Q470,240 490,220" fill="none" stroke="#444" stroke-width="2" marker-end="url(#arrowB)"/>
+
+  <!-- Arrow from QC loop to hub -->
+  <path d="M500,460 L400,530" fill="none" stroke="#78909C" stroke-width="2.5" marker-end="url(#arrowB)"/>
+  <text x="415" y="490" class="arrow-label" transform="rotate(-20,415,490)">根本原因が観点に変換</text>
+
+  <!-- ===== HUB (Center) ===== -->
+  <rect x="220" y="520" width="300" height="120" rx="16" fill="#E74C3C"/>
+  <rect x="220" y="520" width="300" height="120" rx="16" fill="none" stroke="#111" stroke-width="2"/>
+  <text x="370" y="560" text-anchor="middle" class="hub-title">テスト観点カタログ</text>
+  <text x="370" y="582" text-anchor="middle" class="hub-sub">— 品質活動のハブ —</text>
+  <text x="370" y="625" text-anchor="middle" class="hub-sub">観点ID ／ 観点名 ／ 優先度 ／ カテゴリ ／ 最終バグ日</text>
+
+  <!-- ===== QA FOUNDATION (Bottom) ===== -->
+  <rect x="50" y="700" width="640" height="140" rx="16" fill="#222"/>
+  <text x="370" y="740" text-anchor="middle" class="qa-title">QA活動（仕込む）</text>
+  <line x1="100" y1="755" x2="640" y2="755" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+
+  <!-- QA activity items in 2 rows -->
+  <rect x="80" y="770" width="130" height="30" rx="6" fill="rgba(255,255,255,0.12)"/>
+  <text x="145" y="790" text-anchor="middle" class="qa-item">品質方針の策定</text>
+
+  <rect x="225" y="770" width="120" height="30" rx="6" fill="rgba(255,255,255,0.12)"/>
+  <text x="285" y="790" text-anchor="middle" class="qa-item">リスク分析</text>
+
+  <rect x="360" y="770" width="130" height="30" rx="6" fill="rgba(255,255,255,0.12)"/>
+  <text x="425" y="790" text-anchor="middle" class="qa-item">プロセス改善</text>
+
+  <rect x="505" y="770" width="155" height="30" rx="6" fill="rgba(255,255,255,0.12)"/>
+  <text x="582" y="790" text-anchor="middle" class="qa-item">品質ゲート設計</text>
+
+  <rect x="120" y="810" width="160" height="30" rx="6" fill="rgba(255,255,255,0.12)"/>
+  <text x="200" y="830" text-anchor="middle" class="qa-item">テスト戦略の策定</text>
+
+  <rect x="295" y="810" width="170" height="30" rx="6" fill="rgba(255,255,255,0.12)"/>
+  <text x="380" y="830" text-anchor="middle" class="qa-item">メトリクス設計と可視化</text>
+
+  <rect x="480" y="810" width="150" height="30" rx="6" fill="rgba(255,255,255,0.12)"/>
+  <text x="555" y="830" text-anchor="middle" class="qa-item">ナレッジ共有</text>
+
+  <!-- Arrow from QA to hub -->
+  <path d="M370,700 L370,645" fill="none" stroke="#78909C" stroke-width="2.5" marker-end="url(#arrowG)"/>
+  <text x="395" y="680" class="arrow-label">仕組みがカタログを育てる</text>
+
+  <!-- Bottom note -->
+  <rect x="70" y="880" width="600" height="60" rx="10" fill="#F5F5F5" stroke="#DDD" stroke-width="1"/>
+  <text x="370" y="908" text-anchor="middle" class="note">2つのループが回るたびにカタログが育ち、</text>
+  <text x="370" y="928" text-anchor="middle" class="note">テストの「量」ではなく「質」で品質を守る状態になる</text>
+
+  <!-- Ch1 connection labels -->
+  <rect x="30" y="460" width="65" height="24" rx="4" fill="#E8E8E8" stroke="#BBB" stroke-width="1"/>
+  <text x="62" y="477" text-anchor="middle" font-size="11" fill="#555" font-weight="600">測る</text>
+
+  <rect x="645" y="460" width="65" height="24" rx="4" fill="#F5F5F5" stroke="#AAA" stroke-width="1"/>
+  <text x="677" y="477" text-anchor="middle" font-size="11" fill="#444" font-weight="600">診る</text>
+
+  <rect x="10" y="755" width="35" height="24" rx="4" fill="#222" stroke="#444" stroke-width="1"/>
+  <text x="27" y="772" text-anchor="middle" font-size="10" fill="#fff" font-weight="600">仕込む</text>
+
+  <!-- Page reference -->
+  <text x="370" y="1000" text-anchor="middle" font-size="11" fill="#AAA">『QA＝テストではない』チートシート ②</text>
+</svg>

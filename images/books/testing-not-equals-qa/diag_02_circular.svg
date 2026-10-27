@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#F9A825"/>
+    </marker>
+  </defs>
+
+  <rect width="750" height="500" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="375" y="36" text-anchor="middle" font-size="21" font-weight="bold" fill="#1a1a1a">3つの負債の循環構造</text>
+
+  <!-- Box 1: Debt 2 (top) -->
+  <rect x="200" y="70" width="350" height="90" rx="8" fill="#F5F5F5" stroke="#E74C3C" stroke-width="2"/>
+  <text x="375" y="100" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">負債2: 上流の品質活動が空白</text>
+  <text x="375" y="125" text-anchor="middle" font-size="13" fill="#555">要件・設計段階での品質確認がない</text>
+  <text x="375" y="145" text-anchor="middle" font-size="13" fill="#555">→ バグが下流に流出する</text>
+
+  <!-- Arrow down (Debt2 → Debt3) -->
+  <line x1="375" y1="160" x2="375" y2="200" stroke="#78909C" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Box 2: Debt 3 (middle) -->
+  <rect x="200" y="210" width="350" height="90" rx="8" fill="#F5F5F5" stroke="#E74C3C" stroke-width="2"/>
+  <text x="375" y="240" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">負債3: テスト工数＝品質投資の誤認</text>
+  <text x="375" y="265" text-anchor="middle" font-size="13" fill="#555">テストを増やせば品質が上がると信じる</text>
+  <text x="375" y="285" text-anchor="middle" font-size="13" fill="#555">→ テスト工数だけが膨張する</text>
+
+  <!-- Arrow down (Debt3 → Debt1) -->
+  <line x1="375" y1="300" x2="375" y2="340" stroke="#78909C" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Box 3: Debt 1 (bottom) -->
+  <rect x="200" y="350" width="350" height="90" rx="8" fill="#F5F5F5" stroke="#E74C3C" stroke-width="2"/>
+  <text x="375" y="380" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">負債1: QAが最後の門番に</text>
+  <text x="375" y="405" text-anchor="middle" font-size="13" fill="#555">品質＝QAの仕事という固定観念</text>
+  <text x="375" y="425" text-anchor="middle" font-size="13" fill="#555">→ 開発チームが品質を他人事にする</text>
+
+  <!-- Arrow looping back up (Debt1 → Debt2) -->
+  <!-- Right side going up -->
+  <path d="M 550 395 L 600 395 L 600 115 L 555 115" fill="none" stroke="#78909C" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Loop label -->
+  <text x="628" y="260" text-anchor="middle" font-size="13" font-weight="bold" fill="#999" transform="rotate(-90, 628, 260)">悪循環</text>
+</svg>

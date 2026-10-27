@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 300" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <rect width="740" height="300" fill="#ffffff"/>
+
+  <text x="370" y="35" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">3段階シフト</text>
+
+  <!-- Step 1 -->
+  <rect x="30" y="70" width="200" height="100" rx="8" fill="#7E57C2" stroke="#7E57C2" stroke-width="2"/>
+  <text x="130" y="105" text-anchor="middle" font-size="13" fill="#EDE7F6">Step 1 ─ 今日から</text>
+  <text x="130" y="135" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">テスト実行</text>
+  <text x="130" y="158" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">→ テスト設計</text>
+
+  <!-- Arrow -->
+  <text x="250" y="128" font-size="28" fill="#333">→</text>
+
+  <!-- Step 2 -->
+  <rect x="270" y="70" width="200" height="100" rx="8" fill="#7E57C2" stroke="#7E57C2" stroke-width="2"/>
+  <text x="370" y="105" text-anchor="middle" font-size="13" fill="#F5F5F5">Step 2 ─ 3ヶ月後</text>
+  <text x="370" y="135" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">テスト設計</text>
+  <text x="370" y="158" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">→ テスト戦略</text>
+
+  <!-- Arrow -->
+  <text x="490" y="128" font-size="28" fill="#333">→</text>
+
+  <!-- Step 3 -->
+  <rect x="510" y="70" width="200" height="100" rx="8" fill="#2980B9" stroke="#7E57C2" stroke-width="2"/>
+  <text x="610" y="105" text-anchor="middle" font-size="13" fill="#aaa">Step 3 ─ 1年後</text>
+  <text x="610" y="135" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">テスト戦略</text>
+  <text x="610" y="158" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">→ 品質戦略</text>
+
+  <!-- Layer labels -->
+  <text x="130" y="210" text-anchor="middle" font-size="14" fill="#666">実行 → 判断</text>
+  <text x="370" y="210" text-anchor="middle" font-size="14" fill="#666">判断 → 設計</text>
+  <text x="610" y="210" text-anchor="middle" font-size="14" fill="#666">設計 → 仕組み</text>
+
+  <line x1="60" y1="240" x2="680" y2="240" stroke="#ddd" stroke-width="1"/>
+
+  <text x="370" y="270" text-anchor="middle" font-size="14" fill="#555">各ステップで「学ぶこと」と「やること」を分けて進める</text>
+</svg>

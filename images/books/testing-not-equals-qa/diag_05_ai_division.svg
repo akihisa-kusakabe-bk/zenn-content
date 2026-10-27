@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 520" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <rect width="750" height="520" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="375" y="36" text-anchor="middle" font-size="21" font-weight="bold" fill="#1a1a1a">AI時代のテスト設計における分業</text>
+
+  <!-- Box 1: 人間がやること -->
+  <rect x="40" y="60" width="670" height="130" rx="8" fill="#E8F5E9" stroke="#F9A825" stroke-width="2"/>
+  <text x="375" y="88" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">人間がやること</text>
+  <line x1="60" y1="100" x2="690" y2="100" stroke="#78909C" stroke-width="1"/>
+  <circle cx="75" cy="122" r="4" fill="#27AE60"/>
+  <text x="90" y="127" font-size="13" fill="#333">テスト戦略の策定</text>
+  <circle cx="75" cy="147" r="4" fill="#27AE60"/>
+  <text x="90" y="152" font-size="13" fill="#333">品質方針との接続</text>
+  <circle cx="75" cy="172" r="4" fill="#27AE60"/>
+  <text x="90" y="177" font-size="13" fill="#333">削る判断</text>
+  <circle cx="340" cy="122" r="4" fill="#27AE60"/>
+  <text x="355" y="127" font-size="13" fill="#333">探索的テスト</text>
+  <circle cx="340" cy="147" r="4" fill="#27AE60"/>
+  <text x="355" y="152" font-size="13" fill="#333">品質の最終判断</text>
+
+  <!-- Box 2: AIに任せること -->
+  <rect x="40" y="210" width="670" height="130" rx="8" fill="#F5F5F5" stroke="#78909C" stroke-width="1.5"/>
+  <text x="375" y="238" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">AIに任せること</text>
+  <line x1="60" y1="250" x2="690" y2="250" stroke="#ccc" stroke-width="1"/>
+  <circle cx="75" cy="272" r="4" fill="#F5F5F5"/>
+  <text x="90" y="277" font-size="13" fill="#333">テスト観点の網羅的列挙</text>
+  <circle cx="75" cy="297" r="4" fill="#F5F5F5"/>
+  <text x="90" y="302" font-size="13" fill="#333">テストケースのパターン生成</text>
+  <circle cx="400" cy="272" r="4" fill="#E8F5E9"/>
+  <text x="415" y="277" font-size="13" fill="#333">テストデータの自動生成</text>
+  <circle cx="400" cy="297" r="4" fill="#E8F5E9"/>
+  <text x="415" y="302" font-size="13" fill="#333">テストコードの下書き</text>
+
+  <!-- Box 3: 人間×AIで協働 -->
+  <rect x="40" y="360" width="670" height="130" rx="8" fill="#FFF8E1" stroke="#78909C" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="375" y="388" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">人間 x AI で協働</text>
+  <line x1="60" y1="400" x2="690" y2="400" stroke="#ccc" stroke-width="1"/>
+  <circle cx="75" cy="425" r="4" fill="#2980B9"/>
+  <text x="90" y="430" font-size="13" fill="#333">テスト設計レビュー</text>
+  <circle cx="75" cy="455" r="4" fill="#2980B9"/>
+  <text x="90" y="460" font-size="13" fill="#333">バグの根本原因分析</text>
+  <circle cx="400" cy="425" r="4" fill="#2980B9"/>
+  <text x="415" y="430" font-size="13" fill="#333">テスト観点カタログの更新</text>
+</svg>

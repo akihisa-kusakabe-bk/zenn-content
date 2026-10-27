@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 520" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <rect width="750" height="520" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#F9A825"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="375" y="36" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a1a">AI × 人間の分業マトリクス</text>
+
+  <!-- Header labels -->
+  <text x="160" y="68" text-anchor="middle" font-size="14" font-weight="bold" fill="#555">← AI向き</text>
+  <text x="600" y="68" text-anchor="middle" font-size="14" font-weight="bold" fill="#555">人間向き →</text>
+
+  <!-- Bar area -->
+  <g transform="translate(130, 80)">
+    <!-- Row 1: 観点の列挙 — AI 80% -->
+    <text x="-10" y="18" text-anchor="end" font-size="14" fill="#1a1a1a">観点の列挙</text>
+    <rect x="0" y="4" width="390" height="24" rx="3" fill="#F5F5F5"/>
+    <rect x="390" y="4" width="98" height="24" rx="3" fill="#F5F5F5"/>
+    <text x="195" y="21" text-anchor="middle" font-size="11" fill="#fff">AI</text>
+    <text x="439" y="21" text-anchor="middle" font-size="11" fill="#555">人間</text>
+    <text x="0" y="46" font-size="11" fill="#777">AIが網羅的に出す</text>
+
+    <!-- Row 2: テストレベル分類 — AI 65% -->
+    <text x="-10" y="88" text-anchor="end" font-size="14" fill="#1a1a1a">テストレベル分類</text>
+    <rect x="0" y="74" width="317" height="24" rx="3" fill="#F5F5F5"/>
+    <rect x="317" y="74" width="171" height="24" rx="3" fill="#F5F5F5"/>
+    <text x="158" y="91" text-anchor="middle" font-size="11" fill="#fff">AI</text>
+    <text x="402" y="91" text-anchor="middle" font-size="11" fill="#555">人間</text>
+    <text x="0" y="116" font-size="11" fill="#777">標準分類はAIが得意</text>
+
+    <!-- Row 3: 削る判断 — Human 80% -->
+    <text x="-10" y="158" text-anchor="end" font-size="14" fill="#1a1a1a">削る判断</text>
+    <rect x="0" y="144" width="98" height="24" rx="3" fill="#E8F5E9"/>
+    <rect x="98" y="144" width="390" height="24" rx="3" fill="#F5F5F5"/>
+    <text x="49" y="161" text-anchor="middle" font-size="11" fill="#fff">AI</text>
+    <text x="293" y="161" text-anchor="middle" font-size="11" fill="#555">人間</text>
+    <text x="0" y="186" font-size="11" fill="#777">リスク判断は人間の領域</text>
+
+    <!-- Row 4: テストケース作成 — AI 80% -->
+    <text x="-10" y="228" text-anchor="end" font-size="14" fill="#1a1a1a">テストケース作成</text>
+    <rect x="0" y="214" width="390" height="24" rx="3" fill="#E8F5E9"/>
+    <rect x="390" y="214" width="98" height="24" rx="3" fill="#F5F5F5"/>
+    <text x="195" y="231" text-anchor="middle" font-size="11" fill="#fff">AI</text>
+    <text x="439" y="231" text-anchor="middle" font-size="11" fill="#555">人間</text>
+    <text x="0" y="256" font-size="11" fill="#777">手順化はAIの独壇場</text>
+
+    <!-- Row 5: 探索的テスト — Human 85% -->
+    <text x="-10" y="298" text-anchor="end" font-size="14" fill="#1a1a1a">探索的テスト</text>
+    <rect x="0" y="284" width="73" height="24" rx="3" fill="#27AE60"/>
+    <rect x="73" y="284" width="415" height="24" rx="3" fill="#F5F5F5"/>
+    <text x="36" y="301" text-anchor="middle" font-size="11" fill="#fff">AI</text>
+    <text x="280" y="301" text-anchor="middle" font-size="11" fill="#555">人間</text>
+    <text x="0" y="326" font-size="11" fill="#777">直感と文脈理解が必要</text>
+
+    <!-- Row 6: 品質判断 — Human 90% -->
+    <text x="-10" y="368" text-anchor="end" font-size="14" fill="#1a1a1a">品質判断</text>
+    <rect x="0" y="354" width="49" height="24" rx="3" fill="#27AE60"/>
+    <rect x="49" y="354" width="439" height="24" rx="3" fill="#ddd"/>
+    <text x="24" y="371" text-anchor="middle" font-size="10" fill="#fff">AI</text>
+    <text x="268" y="371" text-anchor="middle" font-size="11" fill="#555">人間</text>
+    <text x="0" y="396" font-size="11" fill="#777">出荷判断は人間が担う</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(280, 490)">
+    <rect x="0" y="-12" width="16" height="12" rx="2" fill="#27AE60"/>
+    <text x="20" y="-2" font-size="12" fill="#555">AI領域</text>
+    <rect x="90" y="-12" width="16" height="12" rx="2" fill="#ddd"/>
+    <text x="110" y="-2" font-size="12" fill="#555">人間領域</text>
+  </g>
+</svg>

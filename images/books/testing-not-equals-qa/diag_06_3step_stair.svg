@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 440" font-family="'Hiragino Kaku Gothic ProN', 'YuGothic', sans-serif">
+  <rect width="750" height="440" fill="#ffffff"/>
+  <defs>
+    <marker id="arrowUp" markerWidth="8" markerHeight="8" refX="4" refY="0" orient="auto">
+      <polygon points="0,8 4,0 8,8" fill="#2980B9"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="375" y="38" text-anchor="middle" font-size="21" font-weight="bold" fill="#1a1a1a">3段階シフトロードマップ</text>
+
+  <g transform="translate(60, 60)">
+    <!-- Upward arrow on left -->
+    <line x1="30" y1="350" x2="30" y2="50" stroke="#444" stroke-width="1.5" marker-end="url(#arrowUp)"/>
+    <text x="22" y="200" text-anchor="middle" font-size="13" fill="#444" transform="rotate(-90, 22, 200)">スキルレベル</text>
+
+    <!-- Base level: テスト実行 -->
+    <rect x="60" y="310" width="580" height="50" rx="5" fill="#F5F5F5" stroke="#444" stroke-width="1.5"/>
+    <text x="350" y="341" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">テスト実行</text>
+
+    <!-- Annotation for base -->
+    <text x="350" y="392" text-anchor="middle" font-size="14" fill="#444">↑ 本書はここから上への旅のガイド</text>
+
+    <!-- Step 1: テスト設計 -->
+    <rect x="60" y="230" width="440" height="60" rx="5" fill="#F5F5F5" stroke="#444" stroke-width="1.5"/>
+    <text x="280" y="258" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">Step 1: テスト設計</text>
+    <text x="280" y="278" text-anchor="middle" font-size="13" fill="#444">Ch5</text>
+    <!-- Time label -->
+    <rect x="510" y="242" width="100" height="28" rx="14" fill="#F5F5F5" stroke="#78909C" stroke-width="1"/>
+    <text x="560" y="261" text-anchor="middle" font-size="13" fill="#444">今日から</text>
+
+    <!-- Step 2: テスト戦略 -->
+    <rect x="60" y="140" width="340" height="60" rx="5" fill="#F5F5F5" stroke="#444" stroke-width="1.5"/>
+    <text x="230" y="168" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">Step 2: テスト戦略</text>
+    <text x="230" y="188" text-anchor="middle" font-size="13" fill="#444">Ch3 + Ch4</text>
+    <!-- Time label -->
+    <rect x="410" y="152" width="100" height="28" rx="14" fill="#F5F5F5" stroke="#78909C" stroke-width="1"/>
+    <text x="460" y="171" text-anchor="middle" font-size="13" fill="#444">3ヶ月後</text>
+
+    <!-- Step 3: QA -->
+    <rect x="60" y="50" width="240" height="60" rx="5" fill="#F5F5F5" stroke="#444" stroke-width="1.5"/>
+    <text x="180" y="74" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">Step 3: QA</text>
+    <text x="180" y="94" text-anchor="middle" font-size="13" fill="#444">Ch1 + Ch2 + Ch7</text>
+    <!-- Time label -->
+    <rect x="310" y="62" width="100" height="28" rx="14" fill="#F5F5F5" stroke="#78909C" stroke-width="1"/>
+    <text x="360" y="81" text-anchor="middle" font-size="13" fill="#444">1年後</text>
+
+    <!-- Step 3 subtitle -->
+    <text x="180" y="38" text-anchor="middle" font-size="13" fill="#666">品質の仕組みを設計する</text>
+  </g>
+</svg>

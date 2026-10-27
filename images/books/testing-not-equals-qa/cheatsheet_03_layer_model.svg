@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 1050" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif">
+  <defs>
+    <style>
+      .title { font-size: 26px; font-weight: 700; fill: #111; }
+      .section-label { font-size: 13px; fill: #888; font-weight: 500; }
+    </style>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2980B9"/>
+    </marker>
+  </defs>
+
+  <rect width="740" height="1050" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="370" y="48" text-anchor="middle" class="title">AI時代のレイヤーモデル × 3段階シフト</text>
+  <text x="370" y="73" text-anchor="middle" class="section-label">— 第6章の核心：問われるのは「ロール」ではなく「レイヤー」 —</text>
+
+  <!-- ===== LEFT: MATRIX ===== -->
+  <text x="250" y="110" text-anchor="middle" font-size="16" font-weight="700" fill="#333">ロール × レイヤー マトリクス</text>
+
+  <!-- Matrix grid -->
+  <!-- Header row -->
+  <rect x="30" y="130" width="90" height="45" fill="#27AE60"/>
+  <text x="75" y="150" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">ロール</text>
+  <text x="75" y="166" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">＼レイヤー</text>
+
+  <rect x="120" y="130" width="130" height="45" fill="#27AE60"/>
+  <text x="185" y="152" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">実行</text>
+  <text x="185" y="168" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.8)">AI化進行中</text>
+
+  <rect x="250" y="130" width="130" height="45" fill="#27AE60"/>
+  <text x="315" y="152" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">判断</text>
+  <text x="315" y="168" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.8)">人間＋AI</text>
+
+  <rect x="380" y="130" width="130" height="45" fill="#27AE60"/>
+  <text x="445" y="152" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">設計</text>
+  <text x="445" y="168" text-anchor="middle" font-size="10" fill="rgba(255,255,255,0.8)">人間固有</text>
+
+  <!-- Dev row -->
+  <rect x="30" y="175" width="90" height="75" fill="#E0E0E0"/>
+  <text x="75" y="218" text-anchor="middle" font-size="15" font-weight="700" fill="#333">Dev</text>
+
+  <rect x="120" y="175" width="130" height="75" fill="#F0F0F0" stroke="#DDD" stroke-width="1"/>
+  <text x="185" y="200" text-anchor="middle" font-size="11" fill="#555">コーディング</text>
+  <text x="185" y="218" text-anchor="middle" font-size="11" fill="#555">テストコード生成</text>
+  <text x="185" y="236" text-anchor="middle" font-size="11" fill="#555">環境構築</text>
+
+  <rect x="250" y="175" width="130" height="75" fill="#FAFAFA" stroke="#DDD" stroke-width="1"/>
+  <text x="315" y="200" text-anchor="middle" font-size="11" fill="#555">コードレビュー</text>
+  <text x="315" y="218" text-anchor="middle" font-size="11" fill="#555">障害対応の判断</text>
+  <text x="315" y="236" text-anchor="middle" font-size="11" fill="#555">技術的意思決定</text>
+
+  <rect x="380" y="175" width="130" height="75" fill="#FAFAFA" stroke="#DDD" stroke-width="1"/>
+  <text x="445" y="200" text-anchor="middle" font-size="11" fill="#555">アーキテクチャ設計</text>
+  <text x="445" y="218" text-anchor="middle" font-size="11" fill="#555">技術選定</text>
+  <text x="445" y="236" text-anchor="middle" font-size="11" fill="#555">設計方針の策定</text>
+
+  <!-- QA row -->
+  <rect x="30" y="250" width="90" height="75" fill="#FFF8E1"/>
+  <text x="75" y="293" text-anchor="middle" font-size="15" font-weight="700" fill="#333">QA</text>
+
+  <rect x="120" y="250" width="130" height="75" fill="#F0F0F0" stroke="#DDD" stroke-width="1"/>
+  <text x="185" y="275" text-anchor="middle" font-size="11" fill="#555">テスト実行</text>
+  <text x="185" y="293" text-anchor="middle" font-size="11" fill="#555">テストデータ生成</text>
+  <text x="185" y="311" text-anchor="middle" font-size="11" fill="#555">バグ報告作成</text>
+
+  <rect x="250" y="250" width="130" height="75" fill="#FAFAFA" stroke="#DDD" stroke-width="1"/>
+  <text x="315" y="275" text-anchor="middle" font-size="11" fill="#555">リスク評価</text>
+  <text x="315" y="293" text-anchor="middle" font-size="11" fill="#555">品質判断</text>
+  <text x="315" y="311" text-anchor="middle" font-size="11" fill="#555">リリース判定支援</text>
+
+  <rect x="380" y="250" width="130" height="75" fill="#FAFAFA" stroke="#DDD" stroke-width="1"/>
+  <text x="445" y="275" text-anchor="middle" font-size="11" fill="#555">テスト戦略策定</text>
+  <text x="445" y="293" text-anchor="middle" font-size="11" fill="#555">品質方針の設計</text>
+  <text x="445" y="311" text-anchor="middle" font-size="11" fill="#555">品質の仕組みづくり</text>
+
+  <!-- PO row -->
+  <rect x="30" y="325" width="90" height="75" fill="#FFF8E1"/>
+  <text x="75" y="368" text-anchor="middle" font-size="15" font-weight="700" fill="#333">PO</text>
+
+  <rect x="120" y="325" width="130" height="75" fill="#F0F0F0" stroke="#DDD" stroke-width="1"/>
+  <text x="185" y="350" text-anchor="middle" font-size="11" fill="#555">データ収集</text>
+  <text x="185" y="368" text-anchor="middle" font-size="11" fill="#555">議事録作成</text>
+  <text x="185" y="386" text-anchor="middle" font-size="11" fill="#555">ユーザー調査実施</text>
+
+  <rect x="250" y="325" width="130" height="75" fill="#FAFAFA" stroke="#DDD" stroke-width="1"/>
+  <text x="315" y="350" text-anchor="middle" font-size="11" fill="#555">優先順位の判断</text>
+  <text x="315" y="368" text-anchor="middle" font-size="11" fill="#555">リリース判定</text>
+  <text x="315" y="386" text-anchor="middle" font-size="11" fill="#555">ステークホルダー交渉</text>
+
+  <rect x="380" y="325" width="130" height="75" fill="#FAFAFA" stroke="#DDD" stroke-width="1"/>
+  <text x="445" y="350" text-anchor="middle" font-size="11" fill="#555">プロダクトビジョン</text>
+  <text x="445" y="368" text-anchor="middle" font-size="11" fill="#555">ロードマップ策定</text>
+  <text x="445" y="386" text-anchor="middle" font-size="11" fill="#555">ビジネス戦略</text>
+
+  <!-- AI boundary line -->
+  <line x1="115" y1="130" x2="115" y2="400" stroke="#C00" stroke-width="3" stroke-dasharray="8,4"/>
+  <rect x="518" y="260" width="100" height="22" rx="4" fill="#C00"/>
+  <text x="568" y="276" text-anchor="middle" font-size="10" font-weight="600" fill="#fff">← AI境界線</text>
+
+  <!-- AI label area -->
+  <rect x="530" y="175" width="80" height="25" rx="4" fill="#E8E8E8"/>
+  <text x="570" y="193" text-anchor="middle" font-size="11" font-weight="600" fill="#666">AI領域</text>
+  <line x1="510" y1="187" x2="530" y2="187" stroke="#AAA" stroke-width="1" marker-end="url(#arr)"/>
+
+  <rect x="530" y="340" width="80" height="25" rx="4" fill="#27AE60"/>
+  <text x="570" y="358" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">人間領域</text>
+  <line x1="510" y1="352" x2="530" y2="352" stroke="#AAA" stroke-width="1" marker-end="url(#arr)"/>
+
+  <!-- Key message -->
+  <rect x="30" y="420" width="600" height="40" rx="8" fill="#F5F5F5" stroke="#DDD" stroke-width="1"/>
+  <text x="330" y="445" text-anchor="middle" font-size="14" font-weight="700" fill="#333">AIが飲み込む境界線はロールを横断して水平に走る</text>
+
+  <!-- ===== BOTTOM: 3-STEP SHIFT ===== -->
+  <text x="370" y="510" text-anchor="middle" font-size="18" font-weight="700" fill="#333">3段階シフト — 読者のアクションガイド</text>
+
+  <!-- Step 3 (top of stairs) -->
+  <rect x="420" y="545" width="280" height="110" rx="12" fill="#222"/>
+  <text x="560" y="575" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">Step 3 ：1年後</text>
+  <text x="560" y="600" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.9)">テスト戦略 → QA</text>
+  <line x1="450" y1="615" x2="670" y2="615" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <text x="560" y="638" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.7)">参照: 第1章＋第2章＋第7章</text>
+
+  <!-- Step 2 (middle of stairs) -->
+  <rect x="220" y="670" width="280" height="110" rx="12" fill="#2980B9"/>
+  <text x="360" y="700" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">Step 2 ：3ヶ月後</text>
+  <text x="360" y="725" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.9)">テスト設計 → テスト戦略</text>
+  <line x1="250" y1="740" x2="470" y2="740" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <text x="360" y="763" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.7)">参照: 第3章＋第4章＋第5章</text>
+
+  <!-- Step 1 (bottom of stairs) -->
+  <rect x="40" y="795" width="280" height="110" rx="12" fill="#27AE60"/>
+  <text x="180" y="825" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">Step 1 ：今日から</text>
+  <text x="180" y="850" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.9)">テスト実行 → テスト設計</text>
+  <line x1="70" y1="865" x2="290" y2="865" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <text x="180" y="888" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.7)">参照: 第5章</text>
+
+  <!-- Stair arrows -->
+  <path d="M310,830 Q370,790 380,770" fill="none" stroke="#F9A825" stroke-width="2.5" marker-end="url(#arr)"/>
+  <path d="M490,710 Q530,670 530,655" fill="none" stroke="#F9A825" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <!-- "Start here" indicator -->
+  <text x="50" y="930" font-size="13" font-weight="600" fill="#FFF8E1">▲ ここから始める</text>
+  <path d="M110,918 L110,905 L180,905" fill="none" stroke="#AAA" stroke-width="1.5"/>
+
+  <!-- Bottom note -->
+  <rect x="70" y="945" width="600" height="40" rx="8" fill="#F5F5F5" stroke="#DDD" stroke-width="1"/>
+  <text x="370" y="970" text-anchor="middle" font-size="13" font-weight="600" fill="#444">シフトは今日から始められる。Step 1だけでもテスト設計の属人化が解消する</text>
+
+  <!-- Page reference -->
+  <text x="370" y="1025" text-anchor="middle" font-size="11" fill="#AAA">『QA＝テストではない』チートシート ③</text>
+</svg>

@@ -4,3 +4,19 @@ topics: ["QA", "テスト", "品質", "ソフトウェアテスト", "AI"]
 published: false
 price: 0
 toc_depth: 2
+chapters:
+  - preface
+  - chapter1
+  - chapter2
+  - chapter3_1
+  - chapter3_2
+  - chapter3_3
+  - chapter4
+  - chapter5_1
+  - chapter5_2
+  - chapter5_3
+  - chapter6
+  - chapter7
+  - chapter8_work
+  - appendix
+  - postface

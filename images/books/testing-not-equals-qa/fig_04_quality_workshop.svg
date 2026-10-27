@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 1050" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif">
+  <defs>
+    <style>
+      .title { font-size: 26px; font-weight: 700; fill: #111; }
+      .section-label { font-size: 13px; fill: #888; font-weight: 500; }
+    </style>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#F9A825"/>
+    </marker>
+    <marker id="arrW" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#fff"/>
+    </marker>
+  </defs>
+
+  <rect width="740" height="1050" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="370" y="48" text-anchor="middle" class="title">品質定義ワークショップ全体図</text>
+  <text x="370" y="75" text-anchor="middle" class="section-label">— 第4章の核心：品質を定義しないと守れない —</text>
+
+  <!-- ===== WORKSHOP FLOW ===== -->
+  <text x="370" y="115" text-anchor="middle" font-size="16" font-weight="700" fill="#333">ワークショップの流れ（90分）</text>
+
+  <!-- Step 1 -->
+  <rect x="40" y="140" width="200" height="100" rx="12" fill="#EC407A"/>
+  <text x="140" y="170" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">Step 1</text>
+  <text x="140" y="192" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.9)">品質特性の選択</text>
+  <text x="140" y="212" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.65)">ISO 25010から重要な</text>
+  <text x="140" y="228" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.65)">特性を選ぶ（20分）</text>
+
+  <!-- Arrow -->
+  <line x1="240" y1="190" x2="270" y2="190" stroke="#78909C" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <!-- Step 2 -->
+  <rect x="275" y="140" width="200" height="100" rx="12" fill="#F9A825"/>
+  <text x="375" y="170" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">Step 2</text>
+  <text x="375" y="192" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.9)">優先度の投票</text>
+  <text x="375" y="212" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.65)">ドット投票で</text>
+  <text x="375" y="228" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.65)">チーム合意（30分）</text>
+
+  <!-- Arrow -->
+  <line x1="475" y1="190" x2="505" y2="190" stroke="#78909C" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <!-- Step 3 -->
+  <rect x="510" y="140" width="200" height="100" rx="12" fill="#27AE60"/>
+  <text x="610" y="170" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">Step 3</text>
+  <text x="610" y="192" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.9)">品質方針の策定</text>
+  <text x="610" y="212" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.65)">A4一枚に品質方針を</text>
+  <text x="610" y="228" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.65)">まとめる（40分）</text>
+
+  <!-- ===== ISO 25010 GRID ===== -->
+  <text x="370" y="290" text-anchor="middle" font-size="16" font-weight="700" fill="#333">ISO 25010 品質特性（8つの問い）</text>
+
+  <!-- Grid: 2 rows × 4 columns -->
+  <!-- Row 1 -->
+  <rect x="40" y="310" width="160" height="75" rx="8" fill="#E8E8E8" stroke="#CCC" stroke-width="1"/>
+  <text x="120" y="335" text-anchor="middle" font-size="13" font-weight="700" fill="#333">1. 機能適合性</text>
+  <text x="120" y="355" text-anchor="middle" font-size="12" fill="#666">やるべきことを</text>
+  <text x="120" y="372" text-anchor="middle" font-size="12" fill="#666">やるか？</text>
+
+  <rect x="210" y="310" width="160" height="75" rx="8" fill="#E8E8E8" stroke="#CCC" stroke-width="1"/>
+  <text x="290" y="335" text-anchor="middle" font-size="13" font-weight="700" fill="#333">2. 性能効率性</text>
+  <text x="290" y="355" text-anchor="middle" font-size="12" fill="#666">速いか？</text>
+  <text x="290" y="372" text-anchor="middle" font-size="12" fill="#666">軽いか？</text>
+
+  <rect x="380" y="310" width="160" height="75" rx="8" fill="#E8E8E8" stroke="#CCC" stroke-width="1"/>
+  <text x="460" y="335" text-anchor="middle" font-size="13" font-weight="700" fill="#333">3. 互換性</text>
+  <text x="460" y="355" text-anchor="middle" font-size="12" fill="#666">他と一緒に</text>
+  <text x="460" y="372" text-anchor="middle" font-size="12" fill="#666">動くか？</text>
+
+  <rect x="550" y="310" width="160" height="75" rx="8" fill="#E8E8E8" stroke="#CCC" stroke-width="1"/>
+  <text x="630" y="335" text-anchor="middle" font-size="13" font-weight="700" fill="#333">4. 使用性</text>
+  <text x="630" y="355" text-anchor="middle" font-size="12" fill="#666">使いやすいか？</text>
+
+  <!-- Row 2 -->
+  <rect x="40" y="395" width="160" height="75" rx="8" fill="#F5F5F5" stroke="#BBB" stroke-width="1"/>
+  <text x="120" y="420" text-anchor="middle" font-size="13" font-weight="700" fill="#333">5. 信頼性</text>
+  <text x="120" y="440" text-anchor="middle" font-size="12" fill="#555">壊れないか？</text>
+  <text x="120" y="457" text-anchor="middle" font-size="12" fill="#555">戻るか？</text>
+
+  <rect x="210" y="395" width="160" height="75" rx="8" fill="#F5F5F5" stroke="#BBB" stroke-width="1"/>
+  <text x="290" y="420" text-anchor="middle" font-size="13" font-weight="700" fill="#333">6. セキュリティ</text>
+  <text x="290" y="440" text-anchor="middle" font-size="12" fill="#555">守られて</text>
+  <text x="290" y="457" text-anchor="middle" font-size="12" fill="#555">いるか？</text>
+
+  <rect x="380" y="395" width="160" height="75" rx="8" fill="#E8F5E9" stroke="#BBB" stroke-width="1"/>
+  <text x="460" y="420" text-anchor="middle" font-size="13" font-weight="700" fill="#333">7. 保守性</text>
+  <text x="460" y="440" text-anchor="middle" font-size="12" fill="#555">直しやすいか？</text>
+  <text x="460" y="457" text-anchor="middle" font-size="12" fill="#555">変えやすいか？</text>
+
+  <rect x="550" y="395" width="160" height="75" rx="8" fill="#E8F5E9" stroke="#BBB" stroke-width="1"/>
+  <text x="630" y="420" text-anchor="middle" font-size="13" font-weight="700" fill="#333">8. 移植性</text>
+  <text x="630" y="440" text-anchor="middle" font-size="12" fill="#555">別の環境に</text>
+  <text x="630" y="457" text-anchor="middle" font-size="12" fill="#555">持っていけるか？</text>
+
+  <!-- ===== PRIORITY VOTING EXAMPLE ===== -->
+  <text x="370" y="520" text-anchor="middle" font-size="16" font-weight="700" fill="#333">優先度の投票結果（例）</text>
+
+  <!-- Voting bars -->
+  <text x="40" y="555" font-size="12" font-weight="600" fill="#555">信頼性</text>
+  <rect x="130" y="540" width="420" height="22" rx="4" fill="#EC407A"/>
+  <text x="540" y="556" font-size="11" fill="#fff" text-anchor="end">●●●●●●● 7票</text>
+
+  <text x="40" y="585" font-size="12" font-weight="600" fill="#555">セキュリティ</text>
+  <rect x="130" y="570" width="360" height="22" rx="4" fill="#F9A825"/>
+  <text x="480" y="586" font-size="11" fill="#fff" text-anchor="end">●●●●●● 6票</text>
+
+  <text x="40" y="615" font-size="12" font-weight="600" fill="#555">機能適合性</text>
+  <rect x="130" y="600" width="300" height="22" rx="4" fill="#27AE60"/>
+  <text x="420" y="616" font-size="11" fill="#fff" text-anchor="end">●●●●● 5票</text>
+
+  <text x="40" y="645" font-size="12" font-weight="600" fill="#555">使用性</text>
+  <rect x="130" y="630" width="180" height="22" rx="4" fill="#EC407A"/>
+  <text x="300" y="646" font-size="11" fill="#fff" text-anchor="end">●●● 3票</text>
+
+  <text x="40" y="675" font-size="12" font-weight="600" fill="#555">性能効率性</text>
+  <rect x="130" y="660" width="120" height="22" rx="4" fill="#AAA"/>
+  <text x="240" y="676" font-size="11" fill="#333" text-anchor="end">●● 2票</text>
+
+  <text x="40" y="705" font-size="12" font-weight="600" fill="#555">その他</text>
+  <rect x="130" y="690" width="60" height="22" rx="4" fill="#CCC"/>
+  <text x="185" y="706" font-size="11" fill="#555">● 1票</text>
+
+  <!-- ===== OUTPUT: 品質方針 A4 one-pager ===== -->
+  <text x="370" y="755" text-anchor="middle" font-size="16" font-weight="700" fill="#333">アウトプット：品質方針（A4一枚）</text>
+
+  <rect x="100" y="770" width="540" height="180" rx="12" fill="#F5F5F5" stroke="#EC407A" stroke-width="2"/>
+
+  <!-- Simulated A4 content -->
+  <text x="370" y="798" text-anchor="middle" font-size="14" font-weight="700" fill="#222">プロダクト品質方針</text>
+  <line x1="140" y1="808" x2="600" y2="808" stroke="#DDD" stroke-width="1"/>
+
+  <text x="140" y="832" font-size="12" font-weight="600" fill="#333">最優先品質特性：</text>
+  <text x="290" y="832" font-size="12" fill="#555">信頼性 ＞ セキュリティ ＞ 機能適合性</text>
+
+  <text x="140" y="858" font-size="12" font-weight="600" fill="#333">品質方針：</text>
+  <text x="220" y="858" font-size="12" fill="#555">「壊れない」を最優先に、安全で正しい動作を保証する</text>
+
+  <text x="140" y="884" font-size="12" font-weight="600" fill="#333">判断基準：</text>
+  <text x="220" y="884" font-size="12" fill="#555">信頼性に影響するバグはリリースブロッカー</text>
+
+  <text x="140" y="910" font-size="12" font-weight="600" fill="#333">テスト重点：</text>
+  <text x="220" y="910" font-size="12" fill="#555">障害回復・可用性テストに工数の40%を配分</text>
+
+  <text x="140" y="936" font-size="12" font-weight="600" fill="#333">見直し頻度：</text>
+  <text x="220" y="936" font-size="12" fill="#555">四半期ごとに品質特性の優先度を再投票</text>
+
+  <!-- ===== KEY MESSAGE ===== -->
+  <rect x="80" y="970" width="580" height="40" rx="8" fill="#222"/>
+  <text x="370" y="995" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">品質方針がなければ、すべてのバグが等しく重要に見えてしまう</text>
+
+  <!-- Page reference -->
+  <text x="370" y="1035" text-anchor="middle" font-size="11" fill="#AAA">『QA＝テストではない』第4章</text>
+</svg>
