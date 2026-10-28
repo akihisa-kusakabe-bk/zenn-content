@@ -493,4 +493,4 @@ HW品証チームが「品質保証」の説明を始めた。信頼性試験、
 
 - 『チームトポロジー』（Matthew Skeltonさん、Manuel Paisさん著）：品質チームの組織設計の参考に。品質戦略室は「Enabling Team」（他のチームの能力を引き上げるチーム）として位置づけている。テスト実行を抱えるStream-aligned Teamではなく、品質の仕組みで他チームを支援するEnabling Teamとして機能する
 - 『LeanとDevOpsの科学』（Nicole Forsgren、Jez Humble、Gene Kimさん著）：データドリブンな組織改善の方法論。品質メトリクスの設計と活用の理論的背景。本章の品質ダッシュボードは、この本の「測定可能な改善」の考え方に基づいている
-- 『Embedded Testing with Finite Automata』（Bart Broekhuis著）：組込みソフトウェアのテスト設計。IoTプロダクトの品質に関心がある人は、ファームウェアテストの手法を学ぶ参考になる
+- 『Testing Embedded Software』（Bart Broekman、Edwin Notenboom著）：組込みソフトウェアのテスト設計。IoTプロダクトの品質に関心がある人は、ファームウェアテストの手法を学ぶ参考になる

@@ -123,10 +123,10 @@ title: "📋 索引・テンプレート・チートシート・ロードマッ�
 | Ch5 | 『ソフトウェアテスト技法ドリル』 | 秋山浩一さん |
 | Ch5 | 『Agile Testing』 | Lisa Crispin、Janet Gregoryさん |
 | Ch5 | 『テスト駆動開発』 | Kent Beckさん |
-| Ch6 | 『Humans vs Machines』 | Toyer Mamoojeeさん |
+| Ch6 | 『システムテスト自動化 標準ガイド』 | Mark Fewster、Dorothy Grahamさん（テスト自動化研究会訳） |
 | Ch7 | 『チームトポロジー』 | Matthew Skelton、Manuel Paisさん |
 | Ch7 | 『LeanとDevOpsの科学』 | Nicole Forsgren、Jez Humble、Gene Kimさん |
-| Ch7 | 『Embedded Testing with Finite Automata』 | Bart Broekhuisさん |
+| Ch7 | 『Testing Embedded Software』 | Bart Broekman、Edwin Notenboomさん |
 
 
 ## D. 本書チートシート
