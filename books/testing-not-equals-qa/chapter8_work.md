@@ -18,7 +18,7 @@ title: "✏️ セルフコンサル・ワーク集"
 ## 8-1. 業務レイヤー分析（Ch1 + Ch6 連動）
 
 
-[第1章](/books/testing-not-equals-qa/chapter1)のワーク「活動の仕分け」と、[第6章](/books/testing-not-equals-qa/chapter6)のワーク「レイヤー仕分け」を統合して深掘りする。
+[第1章](/93ch/books/testing-not-equals-qa/viewer/chapter1)のワーク「活動の仕分け」と、[第6章](/93ch/books/testing-not-equals-qa/viewer/chapter6)のワーク「レイヤー仕分け」を統合して深掘りする。
 
 
 ### Step 1: 業務の棚卸し（15分）
@@ -43,7 +43,7 @@ title: "✏️ セルフコンサル・ワーク集"
 
 書き出した業務を、2つの軸で分類する。
 
-**軸1: テスト / QC / QA（[第1章](/books/testing-not-equals-qa/chapter1)）**
+**軸1: テスト / QC / QA（[第1章](/93ch/books/testing-not-equals-qa/viewer/chapter1)）**
 
 | 分類 | 定義 | 例 |
 |---|---|---|
@@ -52,7 +52,7 @@ title: "✏️ セルフコンサル・ワーク集"
 | QA（仕込む） | 品質が生まれ続ける仕組みをつくる | テスト戦略策定、品質メトリクス設計、プロセス改善 |
 
 
-**軸2: 実行 / 設計 / 判断（[第6章](/books/testing-not-equals-qa/chapter6)）**
+**軸2: 実行 / 設計 / 判断（[第6章](/93ch/books/testing-not-equals-qa/viewer/chapter6)）**
 
 | 分類 | 定義 | 例 |
 |---|---|---|
@@ -93,10 +93,10 @@ title: "✏️ セルフコンサル・ワーク集"
 | パターン | 読み方 | 次のアクション |
 |---|---|---|
 | テスト×実行が50%超 | テスト実行に時間を取られすぎ | 自動化 or 外部委託で実行を減らす |
-| QA列がほぼ0% | 「仕込む」活動ができていない | [第3章](/books/testing-not-equals-qa/chapter3_1)の活動カタログから1つ始める |
-| 実行行が70%超 | 実行に偏りすぎ。AI時代に脆い | [第6章](/books/testing-not-equals-qa/chapter6)の3段階シフトで設計・判断へ移行 |
-| 判断行が30%超 | バランスが良い。次は質を上げる | [第7章](/books/testing-not-equals-qa/chapter7)の品質戦略キャンバスで精度を上げる |
-| QC列が最大 | 火消しモード。負債が溜まっている | [第2章](/books/testing-not-equals-qa/chapter2)の負債診断→根本原因に手を打つ |
+| QA列がほぼ0% | 「仕込む」活動ができていない | [第3章](/93ch/books/testing-not-equals-qa/viewer/chapter3_1)の活動カタログから1つ始める |
+| 実行行が70%超 | 実行に偏りすぎ。AI時代に脆い | [第6章](/93ch/books/testing-not-equals-qa/viewer/chapter6)の3段階シフトで設計・判断へ移行 |
+| 判断行が30%超 | バランスが良い。次は質を上げる | [第7章](/93ch/books/testing-not-equals-qa/viewer/chapter7)の品質戦略キャンバスで精度を上げる |
+| QC列が最大 | 火消しモード。負債が溜まっている | [第2章](/93ch/books/testing-not-equals-qa/viewer/chapter2)の負債診断→根本原因に手を打つ |
 
 
 ### Step 5: 理想比率を設定する（10分）
@@ -122,7 +122,7 @@ title: "✏️ セルフコンサル・ワーク集"
 ## 8-2. 品質負債スコアリング（Ch2 連動）
 
 
-[第2章](/books/testing-not-equals-qa/chapter2)のワーク「負債の診断」を数値化する。
+[第2章](/93ch/books/testing-not-equals-qa/viewer/chapter2)のワーク「負債の診断」を数値化する。
 
 
 ### Step 1: 3つの負債を5段階で評価する（15分）
@@ -186,7 +186,7 @@ title: "✏️ セルフコンサル・ワーク集"
 | 0-3 | 軽微 | 品質保証活動の基盤はある。個別の弱点を補強する |
 | 4-7 | 中程度 | 特定の負債が溜まっている。集中的に対処する |
 | 8-11 | 深刻 | 複数の負債が絡み合っている。優先順位をつけて1つずつ |
-| 12-15 | 危機的 | QA＝テストが深く根付いている。[第1章](/books/testing-not-equals-qa/chapter1)の定義から始める |
+| 12-15 | 危機的 | QA＝テストが深く根付いている。[第1章](/93ch/books/testing-not-equals-qa/viewer/chapter1)の定義から始める |
 
 
 ### Step 3: 処方箋の選択（10分）
@@ -196,9 +196,9 @@ title: "✏️ セルフコンサル・ワーク集"
 
 | 最高スコアの負債 | 処方箋 | 対応章 |
 |---|---|---|
-| 負債1: 門番 | テスト以外の品質保証活動を1つ始める | [第3章](/books/testing-not-equals-qa/chapter3_1) 活動カタログ |
-| 負債2: 上流空白 | 品質方針を作る | [第4章](/books/testing-not-equals-qa/chapter4) 品質定義ワークショップ |
-| 負債3: 工数誤認 | 品質コストの可視化を始める | [第5章](/books/testing-not-equals-qa/chapter5_1) テスト戦略 |
+| 負債1: 門番 | テスト以外の品質保証活動を1つ始める | [第3章](/93ch/books/testing-not-equals-qa/viewer/chapter3_1) 活動カタログ |
+| 負債2: 上流空白 | 品質方針を作る | [第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4) 品質定義ワークショップ |
+| 負債3: 工数誤認 | 品質コストの可視化を始める | [第5章](/93ch/books/testing-not-equals-qa/viewer/chapter5_1) テスト戦略 |
 
 
 ### Step 4: 改善ロードマップ（20分）
@@ -214,7 +214,7 @@ title: "✏️ セルフコンサル・ワーク集"
 ## 8-3. QA活動成熟度マッピング（Ch3 連動）
 
 
-[第3章](/books/testing-not-equals-qa/chapter3_1)のワーク「QA活動棚卸し」を成熟度評価に拡張する。
+[第3章](/93ch/books/testing-not-equals-qa/viewer/chapter3_1)のワーク「QA活動棚卸し」を成熟度評価に拡張する。
 
 
 ### Step 1: 14の活動の成熟度を4段階で評価する（20分）
@@ -261,7 +261,7 @@ title: "✏️ セルフコンサル・ワーク集"
 
 | パターン | 読み方 |
 |---|---|
-| Lv0が5個以上 | 品質保証活動の視野が狭い。[第3章](/books/testing-not-equals-qa/chapter3_1)のカタログを読み直す |
+| Lv0が5個以上 | 品質保証活動の視野が狭い。[第3章](/93ch/books/testing-not-equals-qa/viewer/chapter3_1)のカタログを読み直す |
 | Lv1が最多 | 知識はあるが実践に移せていない。「やらない理由」を書き出す |
 | Lv2が最多 | 属人化リスク。その人が抜けたら止まる活動を特定する |
 | Lv3が5個以上 | 品質保証活動の基盤ができている。次は連携と最適化 |
@@ -294,7 +294,7 @@ Lv0とLv1の活動を「効果×導入コスト」で優先順位づけする。
 ## 8-4. テスト戦略セルフレビュー（Ch5 連動）
 
 
-[第5章](/books/testing-not-equals-qa/chapter5_1)のワーク「A4テスト戦略」を書いた後に、自分でレビューするためのチェックシート。
+[第5章](/93ch/books/testing-not-equals-qa/viewer/chapter5_1)のワーク「A4テスト戦略」を書いた後に、自分でレビューするためのチェックシート。
 
 
 ### 戦略文書の品質チェック（20分）
@@ -318,7 +318,7 @@ Lv0とLv1の活動を「効果×導入コスト」で優先順位づけする。
 |---|---|---|
 | 15-18 | 実用レベル。チームで運用を始められる | 1ヶ月後にこのチェックで再評価 |
 | 10-14 | 骨格はある。弱い項目を補強する | 1-2点の項目を1つずつ改善 |
-| 6-9 | テスト計画であって、テスト戦略になっていない可能性 | 品質方針の確認（[第4章](/books/testing-not-equals-qa/chapter4)）から始め、[第5章](/books/testing-not-equals-qa/chapter5_1)の5-1「戦略と計画は違う」を読み直して書き直す |
+| 6-9 | テスト計画であって、テスト戦略になっていない可能性 | 品質方針の確認（[第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4)）から始め、[第5章](/93ch/books/testing-not-equals-qa/viewer/chapter5_1)の5-1「戦略と計画は違う」を読み直して書き直す |
 
 
 ### テスト観点の網羅性チェック（20分）
@@ -344,7 +344,7 @@ YESが6個以上ならカタログは機能している。4-5個なら運用の�
 ## 8-5. AI移行シミュレーション（Ch6 連動）
 
 
-[第6章](/books/testing-not-equals-qa/chapter6)のワーク「レイヤー仕分け」を発展させて、AI時代のキャリア移行計画を作る。
+[第6章](/93ch/books/testing-not-equals-qa/viewer/chapter6)のワーク「レイヤー仕分け」を発展させて、AI時代のキャリア移行計画を作る。
 
 
 ### Step 1: AI置換可能性の評価（15分）
@@ -394,10 +394,10 @@ YESが6個以上ならカタログは機能している。4-5個なら運用の�
 
 | 移行先の業務 | 必要なスキル | 現在のレベル | 学習方法 |
 |---|---|---|---|
-| テスト戦略の策定 | リスク分析、優先順位づけ | 初級/中級/上級 | [第5章](/books/testing-not-equals-qa/chapter5_1) + 推薦書籍 |
-| 品質メトリクスの設計 | データ分析、可視化 | 初級/中級/上級 | [第7章](/books/testing-not-equals-qa/chapter7) + ダッシュボード構築 |
-| 品質方針の策定 | ファシリテーション、合意形成 | 初級/中級/上級 | [第4章](/books/testing-not-equals-qa/chapter4)のワークショップを主催 |
-| プロセス改善 | 根本原因分析、システム思考 | 初級/中級/上級 | [第2章](/books/testing-not-equals-qa/chapter2) + [第3章](/books/testing-not-equals-qa/chapter3_1)の活動#6 |
+| テスト戦略の策定 | リスク分析、優先順位づけ | 初級/中級/上級 | [第5章](/93ch/books/testing-not-equals-qa/viewer/chapter5_1) + 推薦書籍 |
+| 品質メトリクスの設計 | データ分析、可視化 | 初級/中級/上級 | [第7章](/93ch/books/testing-not-equals-qa/viewer/chapter7) + ダッシュボード構築 |
+| 品質方針の策定 | ファシリテーション、合意形成 | 初級/中級/上級 | [第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4)のワークショップを主催 |
+| プロセス改善 | 根本原因分析、システム思考 | 初級/中級/上級 | [第2章](/93ch/books/testing-not-equals-qa/viewer/chapter2) + [第3章](/93ch/books/testing-not-equals-qa/viewer/chapter3_1)の活動#6 |
 
 
 ### Step 4: 12ヶ月学習ロードマップ（20分）
@@ -417,7 +417,7 @@ YESが6個以上ならカタログは機能している。4-5個なら運用の�
 ## 8-6. 品質組織設計シミュレーション（Ch7 連動）
 
 
-[第7章](/books/testing-not-equals-qa/chapter7)のワーク「品質戦略キャンバス」を、組織設計レベルに発展させる。
+[第7章](/93ch/books/testing-not-equals-qa/viewer/chapter7)のワーク「品質戦略キャンバス」を、組織設計レベルに発展させる。
 
 
 ### Step 1: 現状の品質体制マッピング（15分）
@@ -433,7 +433,7 @@ YESが6個以上ならカタログは機能している。4-5個なら運用の�
 | 実際にやっていることとのギャップ |  |
 
 
-### Step 2: [第7章](/books/testing-not-equals-qa/chapter7)の指標で自己採点（15分）
+### Step 2: [第7章](/93ch/books/testing-not-equals-qa/viewer/chapter7)の指標で自己採点（15分）
 
 
 | 指標 | 現状の数値・状態 | 評価 |
@@ -446,7 +446,7 @@ YESが6個以上ならカタログは機能している。4-5個なら運用の�
 | 品質方針の文書化 |  | ある/ドラフト中/ない |
 
 
-「計測していない」が3個以上なら、まず「測る」から始める（[第7章](/books/testing-not-equals-qa/chapter7)の7-2）。
+「計測していない」が3個以上なら、まず「測る」から始める（[第7章](/93ch/books/testing-not-equals-qa/viewer/chapter7)の7-2）。
 
 
 ### Step 3: 理想の品質体制を描く（20分）
