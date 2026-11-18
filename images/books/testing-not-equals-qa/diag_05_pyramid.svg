@@ -14,9 +14,9 @@
   <text x="530" y="116" font-size="12" fill="#666">UIの使い勝手</text>
 
   <!-- Layer 2: E2Eテスト -->
-  <polygon points="280,150 470,150 500,230 250,230" fill="#2980B9" stroke="#F9A825" stroke-width="2" stroke-linejoin="round"/>
-  <text x="375" y="185" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">E2Eテスト</text>
-  <text x="375" y="203" text-anchor="middle" font-size="11" fill="#F5F5F5">（適量）</text>
+  <polygon points="280,150 470,150 500,230 250,230" fill="#F5F5F5" stroke="#F9A825" stroke-width="2" stroke-linejoin="round"/>
+  <text x="375" y="185" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">E2Eテスト</text>
+  <text x="375" y="203" text-anchor="middle" font-size="11" fill="#555">（適量）</text>
   <!-- Annotation -->
   <line x1="500" y1="190" x2="530" y2="190" stroke="#F9A825" stroke-width="1"/>
   <text x="540" y="195" font-size="12" fill="#666">ユーザーフローの確認</text>

@@ -15,7 +15,7 @@
 
   <!-- Debt 3: Bottom right -->
   <rect x="420" y="280" width="280" height="80" rx="10" fill="#E74C3C"/>
-  <text x="560" y="315" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">負債3：工数誤認</text>
+  <text x="560" y="315" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">負債3：テスト工数誤認</text>
   <text x="560" y="340" text-anchor="middle" font-size="14" fill="#FDE8E8">テスト量＝品質投資と思い込む</text>
 
   <!-- Arrows -->
