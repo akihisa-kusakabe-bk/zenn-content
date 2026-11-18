@@ -14,7 +14,7 @@ title: "📋 索引・テンプレート・チートシート・ロードマッ�
 | BLE（Bluetooth Low Energy） | Ch7 | 省電力近距離無線通信規格 |
 | CI/CD（Continuous Integration / Continuous Delivery） | Ch3 | コード統合・デリバリーの自動化 |
 | GitHub Copilot | Ch6 | コード補完・生成を行うAIツール |
-| ISO 25010（ISO/IEC 25010:2023） | Ch4 | ソフトウェア品質特性の国際標準 |
+| ISO 25010（ISO/IEC 25010:2011） | Ch4 | ソフトウェア品質特性の国際標準 |
 | IoT（Internet of Things） | Ch7 | モノのインターネット |
 | LLM（Large Language Model） | Ch6 | 大規模言語モデル |
 | MTTR（Mean Time To Recovery） | Ch4 | 平均復旧時間 |
@@ -107,26 +107,26 @@ title: "📋 索引・テンプレート・チートシート・ロードマッ�
 
 | 章 | 書籍 | 著者 |
 |---|---|---|
-| Ch1 | 『知識ゼロから学ぶソフトウェアテスト 改訂版』 | 高橋寿一さん |
+| Ch1 | 『知識ゼロから学ぶソフトウェアテスト 改訂版』 | 高橋寿一 |
 | Ch1 | 『SQuBOK Guide V3』 | SQuBOK策定部会 |
-| Ch2 | 『Accelerate』 | Nicole Forsgren、Jez Humble、Gene Kimさん |
-| Ch2 | 『レガシーコードからの脱却』 | David Scott Bernsteinさん |
-| Ch3 | 『Agile Testing Condensed』 | Janet Gregory、Lisa Crispinさん |
-| Ch3 | 『継続的デリバリー』 | Jez Humble、David Farleyさん |
-| Ch3 | 『ソフトウェアテストの教科書 増補改訂第2版』 | 石原一宏、田中英和さん |
-| Ch3 | 『A Practical Guide to Testing in DevOps』 | Katrina Clokieさん |
-| Ch4 | 『ユーザーストーリーマッピング』 | Jeff Pattonさん |
-| Ch4 | ISO/IEC 25010:2023 | ISO/IEC JTC 1/SC 7 |
-| Ch4 | 『SRE サイトリライアビリティエンジニアリング』 | Betsy Beyerさんほか |
-| Ch4 | 『プロダクトマネジメント』 | Melissa Perriさん |
-| Ch5 | 『はじめて学ぶソフトウェアのテスト技法』 | Lee Copelandさん |
-| Ch5 | 『ソフトウェアテスト技法ドリル』 | 秋山浩一さん |
-| Ch5 | 『Agile Testing』 | Lisa Crispin、Janet Gregoryさん |
-| Ch5 | 『テスト駆動開発』 | Kent Beckさん |
-| Ch6 | 『システムテスト自動化 標準ガイド』 | Mark Fewster、Dorothy Grahamさん（テスト自動化研究会訳） |
-| Ch7 | 『チームトポロジー』 | Matthew Skelton、Manuel Paisさん |
-| Ch7 | 『LeanとDevOpsの科学』 | Nicole Forsgren、Jez Humble、Gene Kimさん |
-| Ch7 | 『Testing Embedded Software』 | Bart Broekman、Edwin Notenboomさん |
+| Ch2 | 『LeanとDevOpsの科学（原題: Accelerate）』 | Nicole Forsgren、Jez Humble、Gene Kim |
+| Ch2 | 『レガシーコードからの脱却』 | David Scott Bernstein |
+| Ch3 | 『Agile Testing Condensed』 | Janet Gregory、Lisa Crispin |
+| Ch3 | 『継続的デリバリー』 | Jez Humble、David Farley |
+| Ch3 | 『ソフトウェアテストの教科書 増補改訂第2版』 | 石原一宏、田中英和 |
+| Ch3 | 『A Practical Guide to Testing in DevOps』 | Katrina Clokie |
+| Ch4 | 『ユーザーストーリーマッピング』 | Jeff Patton |
+| Ch4 | ISO/IEC 25010:2011 | ISO/IEC JTC 1/SC 7 |
+| Ch4 | 『SRE サイトリライアビリティエンジニアリング』 | Betsy Beyerほか |
+| Ch4 | 『プロダクトマネジメント』 | Melissa Perri |
+| Ch5 | 『はじめて学ぶソフトウェアのテスト技法』 | Lee Copeland |
+| Ch5 | 『ソフトウェアテスト技法ドリル』 | 秋山浩一 |
+| Ch5 | 『Agile Testing』 | Lisa Crispin、Janet Gregory |
+| Ch5 | 『テスト駆動開発』 | Kent Beck |
+| Ch6 | 『システムテスト自動化 標準ガイド』 | Mark Fewster、Dorothy Graham（テスト自動化研究会訳） |
+| Ch7 | 『チームトポロジー』 | Matthew Skelton、Manuel Pais |
+| Ch7 | 『LeanとDevOpsの科学（原題: Accelerate）』 | Nicole Forsgren、Jez Humble、Gene Kim |
+| Ch7 | 『Testing Embedded Software』 | Bart Broekman、Edwin Notenboom |
 
 
 ## D. 本書チートシート
@@ -148,17 +148,7 @@ QA = 仕込む（良いものが生まれる仕組みをつくる）
 ### ② 品質サイクル
 
 
-```
-テストループ（測る） QCループ（診る）
- ↓ ↓
-テスト設計 → 実行 バグ報告 → 原因分析
- ↑ ↓ ↑ ↓
- 観点更新 ← 記録 再テスト ← 修正
- ↘ ↙
- テスト観点カタログ（ハブ）
- ↑
- QA活動（仕込む）
-```
+![品質サイクル全体像](/images/books/testing-not-equals-qa/diag_05_quality_cycle.png)
 
 
 ### ③ 3段階シフト
@@ -182,7 +172,7 @@ Ch4 品質を定義しないと守れない
 Ch5 戦略が先、計画が後
 Ch6 AIが飲み込むのはレイヤー
 Ch7 品質組織は「測る」から始まり「測る」に戻る
-Ch8 各章ワークの精度を上げて自己コンサルする
+Ch8 各章ワークの精度を上げてセルフコンサルする
 ```
 
 
