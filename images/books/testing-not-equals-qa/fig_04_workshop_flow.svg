@@ -1,52 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 320" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
-  <rect width="740" height="320" fill="#ffffff"/>
-
-  <!-- Title -->
-  <text x="370" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a1a">品質定義ワークショップ（90分）</text>
-
-  <!-- Step 1 -->
-  <rect x="40" y="70" width="190" height="160" rx="8" fill="#F9A825" stroke="#EC407A" stroke-width="2"/>
-  <text x="135" y="98" text-anchor="middle" font-size="11" fill="#F5F5F5">STEP 1（30分）</text>
-  <text x="135" y="122" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">品質特性を</text>
-  <text x="135" y="144" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">知る</text>
-  <text x="135" y="172" text-anchor="middle" font-size="11" fill="#F5F5F5">ISO 25010の</text>
-  <text x="135" y="188" text-anchor="middle" font-size="11" fill="#F5F5F5">8つの品質特性を</text>
-  <text x="135" y="204" text-anchor="middle" font-size="11" fill="#F5F5F5">自プロダクトで解釈</text>
-
-  <!-- Arrow 1→2 -->
-  <path d="M240 150 L270 150" stroke="#EC407A" stroke-width="2.5" marker-end="url(#arr2)"/>
-
-  <!-- Step 2 -->
-  <rect x="275" y="70" width="190" height="160" rx="8" fill="#27AE60" stroke="#EC407A" stroke-width="2"/>
-  <text x="370" y="98" text-anchor="middle" font-size="11" fill="#F5F5F5">STEP 2（30分）</text>
-  <text x="370" y="122" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">優先順位を</text>
-  <text x="370" y="144" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">決める</text>
-  <text x="370" y="172" text-anchor="middle" font-size="11" fill="#F5F5F5">チームで投票して</text>
-  <text x="370" y="188" text-anchor="middle" font-size="11" fill="#ddd">Top 3を選ぶ</text>
-  <text x="370" y="204" text-anchor="middle" font-size="11" fill="#ddd">（ドット投票）</text>
-
-  <!-- Arrow 2→3 -->
-  <path d="M475 150 L505 150" stroke="#EC407A" stroke-width="2.5" marker-end="url(#arr2)"/>
-
-  <!-- Step 3 -->
-  <rect x="510" y="70" width="190" height="160" rx="8" fill="#EC407A" stroke="#EC407A" stroke-width="2"/>
-  <text x="605" y="98" text-anchor="middle" font-size="11" fill="#FCE4EC">STEP 3（30分）</text>
-  <text x="605" y="122" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">品質方針を</text>
-  <text x="605" y="144" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">書く</text>
-  <text x="605" y="172" text-anchor="middle" font-size="11" fill="#FCE4EC">A4一枚の</text>
-  <text x="605" y="188" text-anchor="middle" font-size="11" fill="#FCE4EC">品質方針を</text>
-  <text x="605" y="204" text-anchor="middle" font-size="11" fill="#eee">チームで言語化</text>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
   <defs>
-    <marker id="arr2" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+    <marker id="arr2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" fill="#EC407A"/>
     </marker>
   </defs>
+  <rect width="1000" height="360" fill="#ffffff"/>
+  <text x="500" y="38" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">品質定義ワークショップ（90分）</text>
 
+  <!-- Start -->
+  <rect x="20" y="130" width="80" height="75" rx="8" fill="#F5F5F5" stroke="#999" stroke-width="1.5"/>
+  <text x="60" y="160" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a1a">開始</text>
+  <text x="60" y="184" text-anchor="middle" font-size="14" fill="#555">5分</text>
+  <rect x="124" y="80" width="170" height="175" rx="8" fill="#F9A825" stroke="#EC407A" stroke-width="2"/>
+  <text x="209" y="104" text-anchor="middle" font-size="13" fill="#4a3000">STEP 1（35分）</text>
+  <text x="209" y="130" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a1a">品質観の</text>
+  <text x="209" y="152" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a1a">可視化</text>
+  <text x="209" y="184" text-anchor="middle" font-size="14" fill="#1a1a1a">付箋に書き出し</text>
+  <text x="209" y="203" text-anchor="middle" font-size="14" fill="#1a1a1a">→ 共有</text>
+  <text x="209" y="222" text-anchor="middle" font-size="14" fill="#1a1a1a">→ ISO 25010</text>
+  <text x="209" y="241" text-anchor="middle" font-size="14" fill="#1a1a1a">ヒントカード</text>
+  <rect x="318" y="80" width="170" height="175" rx="8" fill="#27AE60" stroke="#EC407A" stroke-width="2"/>
+  <text x="403" y="104" text-anchor="middle" font-size="13" fill="#F5F5F5">STEP 2（10分）</text>
+  <text x="403" y="130" text-anchor="middle" font-size="17" font-weight="bold" fill="#fff">優先順位づけ</text>
+  <text x="403" y="162" text-anchor="middle" font-size="14" fill="#fff">ドット投票</text>
+  <text x="403" y="181" text-anchor="middle" font-size="14" fill="#fff">（1人3票）</text>
+  <rect x="512" y="80" width="170" height="175" rx="8" fill="#EC407A" stroke="#EC407A" stroke-width="2"/>
+  <text x="597" y="104" text-anchor="middle" font-size="13" fill="#FCE4EC">STEP 3（20分）</text>
+  <text x="597" y="130" text-anchor="middle" font-size="17" font-weight="bold" fill="#fff">合意形成</text>
+  <text x="597" y="162" text-anchor="middle" font-size="14" fill="#fff">上位3つを</text>
+  <text x="597" y="181" text-anchor="middle" font-size="14" fill="#fff">品質方針の</text>
+  <text x="597" y="200" text-anchor="middle" font-size="14" fill="#fff">文言にする</text>
+  <rect x="706" y="80" width="170" height="175" rx="8" fill="#2980B9" stroke="#EC407A" stroke-width="2"/>
+  <text x="791" y="104" text-anchor="middle" font-size="13" fill="#E3F2FD">STEP 4（15分）</text>
+  <text x="791" y="130" text-anchor="middle" font-size="17" font-weight="bold" fill="#fff">目標への</text>
+  <text x="791" y="152" text-anchor="middle" font-size="17" font-weight="bold" fill="#fff">落とし込み</text>
+  <text x="791" y="184" text-anchor="middle" font-size="14" fill="#fff">各方針に</text>
+  <text x="791" y="203" text-anchor="middle" font-size="14" fill="#fff">測定可能な</text>
+  <text x="791" y="222" text-anchor="middle" font-size="14" fill="#fff">目標を設定</text>
+
+  <!-- End -->
+  <rect x="900" y="130" width="80" height="75" rx="8" fill="#F5F5F5" stroke="#999" stroke-width="1.5"/>
+  <text x="940" y="160" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a1a">締め</text>
+  <text x="940" y="184" text-anchor="middle" font-size="14" fill="#555">5分</text>
+
+  <!-- Arrows -->
+  <path d="M103 167 L122 167" stroke="#EC407A" stroke-width="2.5" marker-end="url(#arr2)"/>
+  <path d="M297 167 L316 167" stroke="#EC407A" stroke-width="2.5" marker-end="url(#arr2)"/>
+  <path d="M491 167 L510 167" stroke="#EC407A" stroke-width="2.5" marker-end="url(#arr2)"/>
+  <path d="M685 167 L704 167" stroke="#EC407A" stroke-width="2.5" marker-end="url(#arr2)"/>
+  <path d="M879 167 L898 167" stroke="#EC407A" stroke-width="2.5" marker-end="url(#arr2)"/>
   <!-- Output -->
-  <rect x="220" y="255" width="300" height="40" rx="6" fill="#EC407A"/>
-  <text x="370" y="281" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">成果物: A4一枚の品質方針</text>
-
-  <!-- Arrow from Step3 to Output -->
-  <path d="M605 230 L605 260 L520 275" stroke="#EC407A" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <path d="M791 255 L791 290" stroke="#EC407A" stroke-width="2.5" marker-end="url(#arr2)"/>
+  <rect x="440" y="295" width="436" height="42" rx="6" fill="#EC407A"/>
+  <text x="658" y="322" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">成果物: 品質方針（上位3つ）と測定可能な目標</text>
 </svg>

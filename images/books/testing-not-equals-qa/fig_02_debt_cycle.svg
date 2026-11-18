@@ -5,8 +5,8 @@
 
   <!-- Debt 1: Top center -->
   <rect x="230" y="70" width="280" height="80" rx="10" fill="#F9A825"/>
-  <text x="370" y="105" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">負債1：門番化</text>
-  <text x="370" y="130" text-anchor="middle" font-size="14" fill="#F5F5F5">QAが品質の最終判断者になる</text>
+  <text x="370" y="105" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a1a1a">負債1：門番化</text>
+  <text x="370" y="130" text-anchor="middle" font-size="14" fill="#4E342E">QAが品質の最終判断者になる</text>
 
   <!-- Debt 2: Bottom left -->
   <rect x="40" y="280" width="280" height="80" rx="10" fill="#78909C"/>

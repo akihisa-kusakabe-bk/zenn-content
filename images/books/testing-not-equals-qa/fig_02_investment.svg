@@ -1,39 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 300" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
-  <rect width="740" height="300" fill="#ffffff"/>
-
-  <!-- Title -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 340" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
+  <rect width="740" height="340" fill="#ffffff"/>
   <text x="370" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a1a">投資配分の比較</text>
-
-  <!-- Debt-laden org -->
-  <text x="80" y="92" font-size="14" font-weight="bold" fill="#333">負債あり</text>
-  <rect x="170" y="72" width="468" height="36" rx="3" fill="#2980B9"/>
-  <text x="404" y="96" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">テスト実行 90%</text>
-  <rect x="638" y="72" width="52" height="36" rx="3" fill="#27AE60"/>
-  <text x="664" y="96" text-anchor="middle" font-size="11" fill="#fff">QC</text>
-
-  <text x="700" y="92" font-size="11" fill="#E67E22">QA 0%</text>
-
-  <!-- Arrow -->
-  <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#E74C3C"/>
-    </marker>
-  </defs>
-  <path d="M370 125 L370 145" stroke="#E74C3C" stroke-width="2" marker-end="url(#arrowhead)"/>
-
-  <!-- Debt-free org -->
-  <text x="80" y="180" font-size="14" font-weight="bold" fill="#333">返済後</text>
-  <rect x="170" y="160" width="170" height="36" rx="3" fill="#2980B9"/>
-  <text x="255" y="184" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">テスト 33%</text>
-  <rect x="340" y="160" width="170" height="36" rx="3" fill="#27AE60"/>
-  <text x="425" y="184" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">QC 33%</text>
-  <rect x="510" y="160" width="180" height="36" rx="3" fill="#E67E22"/>
-  <text x="600" y="184" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">QA 34%</text>
-
-  <!-- Explanation -->
-  <text x="370" y="230" text-anchor="middle" font-size="13" fill="#555">負債のある組織: リソースの大半がテスト実行に吸い込まれる</text>
-  <text x="370" y="253" text-anchor="middle" font-size="13" fill="#555">返済した組織: テスト・QC・QAにバランスよく投資できる</text>
-
-  <!-- Note -->
-  <text x="370" y="285" text-anchor="middle" font-size="11" fill="#999">※「正解」の配分はチームやプロダクトの状況で変わる</text>
+  <rect x="40" y="56" width="12" height="12" rx="2" fill="#2980B9"/>
+  <text x="57" y="67" font-size="12" fill="#333">テスト実行</text>
+  <rect x="140" y="56" width="12" height="12" rx="2" fill="#27AE60"/>
+  <text x="157" y="67" font-size="12" fill="#333">テスト設計</text>
+  <rect x="240" y="56" width="12" height="12" rx="2" fill="#E67E22"/>
+  <text x="257" y="67" font-size="12" fill="#333">要件・設計レビュー</text>
+  <rect x="395" y="56" width="12" height="12" rx="2" fill="#8E44AD"/>
+  <text x="412" y="67" font-size="12" fill="#333">バグ分析・傾向分析</text>
+  <rect x="545" y="56" width="12" height="12" rx="2" fill="#00897B"/>
+  <text x="562" y="67" font-size="12" fill="#333">プロセス改善</text>
+  <text x="40" y="107" font-size="14" font-weight="bold" fill="#333">QA＝テストの組織</text>
+  <rect x="40.0" y="115" width="528.0" height="40" fill="#2980B9"/>
+  <text x="304.0" y="141" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">80%</text>
+  <rect x="568.0" y="115" width="99.0" height="40" fill="#27AE60"/>
+  <text x="617.5" y="141" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">15%</text>
+  <rect x="667.0" y="115" width="19.8" height="40" fill="#8E44AD"/>
+  <rect x="686.8" y="115" width="13.2" height="40" fill="#00897B"/>
+  <line x1="677" y1="155" x2="677" y2="170" stroke="#8E44AD" stroke-width="1.5"/>
+  <line x1="693.4" y1="155" x2="693.4" y2="170" stroke="#00897B" stroke-width="1.5"/>
+  <text x="700" y="186" text-anchor="end" font-size="12" fill="#444">バグ分析 3%・プロセス改善 2%　／　<tspan fill="#E67E22" font-weight="bold">要件・設計レビュー 0%</tspan></text>
+  <text x="40" y="227" font-size="14" font-weight="bold" fill="#333">負債を意識した組織</text>
+  <rect x="40.0" y="235" width="264.0" height="40" fill="#2980B9"/>
+  <text x="172.0" y="261" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">40%</text>
+  <rect x="304.0" y="235" width="165.0" height="40" fill="#27AE60"/>
+  <text x="386.5" y="261" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">25%</text>
+  <rect x="469.0" y="235" width="99.0" height="40" fill="#E67E22"/>
+  <text x="518.5" y="261" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">15%</text>
+  <rect x="568.0" y="235" width="66.0" height="40" fill="#8E44AD"/>
+  <text x="601.0" y="261" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">10%</text>
+  <rect x="634.0" y="235" width="66.0" height="40" fill="#00897B"/>
+  <text x="667.0" y="261" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">10%</text>
+  <text x="370" y="302" text-anchor="middle" font-size="13" fill="#555">QA＝テストの組織: 配分の80%がテスト実行に吸い込まれ、上流の品質活動にほぼ回らない</text>
+  <text x="370" y="324" text-anchor="middle" font-size="11" fill="#999">※「正解」の配分はチームやプロダクトの状況で変わる</text>
 </svg>

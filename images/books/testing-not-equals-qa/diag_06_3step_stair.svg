@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 440" font-family="'Hiragino Kaku Gothic ProN', 'YuGothic', sans-serif">
-  <rect width="750" height="440" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 470" font-family="'Hiragino Kaku Gothic ProN', 'YuGothic', sans-serif">
+  <rect width="750" height="470" fill="#ffffff"/>
   <defs>
-    <marker id="arrowUp" markerWidth="8" markerHeight="8" refX="4" refY="0" orient="auto">
-      <polygon points="0,8 4,0 8,8" fill="#2980B9"/>
+    <marker id="arrowUp" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <polygon points="0,0 8,4 0,8" fill="#2980B9"/>
     </marker>
   </defs>
 
@@ -46,6 +46,6 @@
     <text x="360" y="81" text-anchor="middle" font-size="13" fill="#444">1年後</text>
 
     <!-- Step 3 subtitle -->
-    <text x="180" y="38" text-anchor="middle" font-size="13" fill="#666">品質の仕組みを設計する</text>
+    <text x="180" y="38" text-anchor="middle" font-size="13" fill="#666">品質の仕組みの設計</text>
   </g>
 </svg>
