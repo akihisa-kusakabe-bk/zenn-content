@@ -45,14 +45,14 @@ Zennに記事を書いた。「AIが飲み込むのはロールではなくレ�
 
 | 章 | 一言まとめ |
 |---|---|
-| [第1章](/books/testing-not-equals-qa/chapter1) | テストは測る、QCは診る、QAは仕込む |
-| [第2章](/books/testing-not-equals-qa/chapter2) | 混同は雪だるま式に膨らむ負債になる |
-| [第3章](/books/testing-not-equals-qa/chapter3_1) | テスト以外のQA活動は14種類ある |
-| [第4章](/books/testing-not-equals-qa/chapter4) | 品質を定義しないと守れない |
-| [第5章](/books/testing-not-equals-qa/chapter5_1) | 戦略が先、計画が後。削る力がテスト設計力 |
-| [第6章](/books/testing-not-equals-qa/chapter6) | AIが飲み込むのはロールではなくレイヤー |
-| [第7章](/books/testing-not-equals-qa/chapter7) | 品質組織は「測る」から始まり「測る」に戻る |
-| [第8章](/books/testing-not-equals-qa/chapter8_work) | 各章ワークの精度を上げてセルフコンサルする |
+| [第1章](/93ch/books/testing-not-equals-qa/viewer/chapter1) | テストは測る、QCは診る、QAは仕込む |
+| [第2章](/93ch/books/testing-not-equals-qa/viewer/chapter2) | 混同は雪だるま式に膨らむ負債になる |
+| [第3章](/93ch/books/testing-not-equals-qa/viewer/chapter3_1) | テスト以外のQA活動は14種類ある |
+| [第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4) | 品質を定義しないと守れない |
+| [第5章](/93ch/books/testing-not-equals-qa/viewer/chapter5_1) | 戦略が先、計画が後。削る力がテスト設計力 |
+| [第6章](/93ch/books/testing-not-equals-qa/viewer/chapter6) | AIが飲み込むのはロールではなくレイヤー |
+| [第7章](/93ch/books/testing-not-equals-qa/viewer/chapter7) | 品質組織は「測る」から始まり「測る」に戻る |
+| [第8章](/93ch/books/testing-not-equals-qa/viewer/chapter8_work) | 各章ワークの精度を上げてセルフコンサルする |
 
 
 テスト→QC→QAのシフトは一日で起きるものではない。
@@ -61,7 +61,7 @@ Zennに記事を書いた。「AIが飲み込むのはロールではなくレ�
 
 本書を貫くテーマは1つだけだ。「QA＝テスト」の誤解を解くこと。その先にあるのは「品質を自分たちの手に取り戻す」ことだ。
 
-「テスト以外にQA活動って何があるの？」と聞かれたら、[第3章](/books/testing-not-equals-qa/chapter3_1)の14の活動カタログを見せればいい。「品質って何？」と聞かれたら、[第4章](/books/testing-not-equals-qa/chapter4)のワークショップを提案すればいい。「AIに仕事を取られるの？」と聞かれたら、[第6章](/books/testing-not-equals-qa/chapter6)のレイヤー分業を説明すればいい。
+「テスト以外にQA活動って何があるの？」と聞かれたら、[第3章](/93ch/books/testing-not-equals-qa/viewer/chapter3_1)の14の活動カタログを見せればいい。「品質って何？」と聞かれたら、[第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4)のワークショップを提案すればいい。「AIに仕事を取られるの？」と聞かれたら、[第6章](/93ch/books/testing-not-equals-qa/viewer/chapter6)のレイヤー分業を説明すればいい。
 
 この本は辞書のように使ってほしい。最初から読む必要はない。困ったときに該当する章を開く。それだけで十分だ。
 
@@ -71,11 +71,11 @@ Zennに記事を書いた。「AIが飲み込むのはロールではなくレ�
 
 読んで終わりにしないために。明日できるアクション5つ。
 
-- 「テスト」「QC」「QA」を意識的に使い分ける（5分 / [第1章](/books/testing-not-equals-qa/chapter1)）
+- 「テスト」「QC」「QA」を意識的に使い分ける（5分 / [第1章](/93ch/books/testing-not-equals-qa/viewer/chapter1)）
 - 直近のバグ1件の根本原因を「なぜ？」×3回で分析する（30分 / 第2-3章）
-- [第4章](/books/testing-not-equals-qa/chapter4)の品質定義ワークショップをチームで実施する（90分 / [第4章](/books/testing-not-equals-qa/chapter4)）
-- A4一枚のテスト戦略を書いてみる（60分 / [第5章](/books/testing-not-equals-qa/chapter5_1)）
-- 自分の業務をレイヤー仕分けする（15分 / [第6章](/books/testing-not-equals-qa/chapter6)）
+- [第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4)の品質定義ワークショップをチームで実施する（90分 / [第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4)）
+- A4一枚のテスト戦略を書いてみる（60分 / [第5章](/93ch/books/testing-not-equals-qa/viewer/chapter5_1)）
+- 自分の業務をレイヤー仕分けする（15分 / [第6章](/93ch/books/testing-not-equals-qa/viewer/chapter6)）
 
 どれか1つだけ選んで、今週やってみてほしい。1つだけでいい。
 
@@ -110,11 +110,11 @@ Zennに記事を書いた。「AIが飲み込むのはロールではなくレ�
 
 **問い2: あなたのプロダクトの「品質方針」は、チームの全員が答えられますか？**
 
-答えられないなら、品質の定義がチーム内で揃っていない。[第4章](/books/testing-not-equals-qa/chapter4)のワークショップを試してほしい。90分が難しければ30分版でいい。品質方針が1つでもあれば、リリース判定の景色が変わる。
+答えられないなら、品質の定義がチーム内で揃っていない。[第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4)のワークショップを試してほしい。90分が難しければ30分版でいい。品質方針が1つでもあれば、リリース判定の景色が変わる。
 
 **問い3: あなたは今、テスト/QC/QAのどこにいますか？**
 
-自分の日常業務が「測る」「直す」「仕込む」のどこに集中しているか、振り返ってみてほしい。[第6章](/books/testing-not-equals-qa/chapter6)のレイヤー仕分けワークで自己診断できる。自分の現在地がわかれば、次にどこへ向かうべきかが見える。
+自分の日常業務が「測る」「直す」「仕込む」のどこに集中しているか、振り返ってみてほしい。[第6章](/93ch/books/testing-not-equals-qa/viewer/chapter6)のレイヤー仕分けワークで自己診断できる。自分の現在地がわかれば、次にどこへ向かうべきかが見える。
 
 3つの問いに「今すぐ答えられる」なら、この本は不要だったかもしれない。「答えに詰まる」なら、この本のどこかにヒントがある。1つの言葉の使い分けから始めればいい。
 
@@ -140,9 +140,9 @@ Zennに記事を書いた。「AIが飲み込むのはロールではなくレ�
 
 Zenn記事にフィードバックをくれた読者のみなさん。記事へのコメントや反応が、書籍化の後押しになった。「QA≠テスト」と主張したとき、「うちのチームも同じ課題を抱えている」という声が何件も届いた。あの反応がなければ、1冊の本にまとめる勇気は出なかったかもしれない。
 
-この本を書くにあたり、[第6章](/books/testing-not-equals-qa/chapter6)で取り上げたAIとの協業を自ら実践した。本書の構成設計、草稿の生成、推敲の壁打ちにAIエージェント（Claude）を活用した。AIが書いた文章をそのまま使ったわけではない。AIが出した素案を自分の言葉で書き直し、自分の経験と照合し、「これは自分が本当に伝えたいことか」を毎回確認した。
+この本を書くにあたり、[第6章](/93ch/books/testing-not-equals-qa/viewer/chapter6)で取り上げたAIとの協業を自ら実践した。本書の構成設計、草稿の生成、推敲の壁打ちにAIエージェント（Claude）を活用した。AIが書いた文章をそのまま使ったわけではない。AIが出した素案を自分の言葉で書き直し、自分の経験と照合し、「これは自分が本当に伝えたいことか」を毎回確認した。
 
-AIは実行レイヤーの強力なパートナーだ。しかし、「何を書くか」「誰に向けて書くか」「何を削るか」を判断するのは人間の仕事だ。[第6章](/books/testing-not-equals-qa/chapter6)で書いた「レイヤー分離」を、執筆プロセスで自ら体験した。品質保証活動だけでなく、文章を書く営みにおいても「QA≠テスト」と同じ構造がある。
+AIは実行レイヤーの強力なパートナーだ。しかし、「何を書くか」「誰に向けて書くか」「何を削るか」を判断するのは人間の仕事だ。[第6章](/93ch/books/testing-not-equals-qa/viewer/chapter6)で書いた「レイヤー分離」を、執筆プロセスで自ら体験した。品質保証活動だけでなく、文章を書く営みにおいても「QA≠テスト」と同じ構造がある。
 
 そして、この本を手に取ってくれたあなたへ。
 

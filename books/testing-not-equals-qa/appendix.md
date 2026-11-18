@@ -83,21 +83,21 @@ title: "📋 索引・テンプレート・チートシート・ロードマッ�
 
 | テンプレート | 章 | セクション | 所要時間 |
 |---|---|---|---|
-| 3つの負債 診断チェックリスト | [第2章](/books/testing-not-equals-qa/chapter2) | ワーク | 15分 |
-| QA活動棚卸しシート | [第3章](/books/testing-not-equals-qa/chapter3_1) | ワーク | 30分 |
-| 品質定義ワークシート | [第4章](/books/testing-not-equals-qa/chapter4) | ファシリテーションガイド | 90分 |
-| 品質方針テンプレート | [第4章](/books/testing-not-equals-qa/chapter4) | ファシリテーションガイド | — |
-| A4最小テスト戦略テンプレート | [第5章](/books/testing-not-equals-qa/chapter5_1) | ワーク | 30分 |
-| 観点100→35 削りワーク | [第5章](/books/testing-not-equals-qa/chapter5_1) | ワーク | 45分 |
-| レイヤー仕分けシート | [第6章](/books/testing-not-equals-qa/chapter6) | ワーク | 15分 |
-| 品質戦略キャンバス | [第7章](/books/testing-not-equals-qa/chapter7) | ワーク | 30分 |
-| 業務レイヤー分析（フル版） | [第8章](/books/testing-not-equals-qa/chapter8_work) | 8-1 | 60分 |
-| 品質負債スコアリング | [第8章](/books/testing-not-equals-qa/chapter8_work) | 8-2 | 60分 |
-| QA活動成熟度マッピング | [第8章](/books/testing-not-equals-qa/chapter8_work) | 8-3 | 60分 |
-| テスト戦略セルフレビュー | [第8章](/books/testing-not-equals-qa/chapter8_work) | 8-4 | 40分 |
-| AI移行シミュレーション | [第8章](/books/testing-not-equals-qa/chapter8_work) | 8-5 | 60分 |
-| 品質組織設計シミュレーション | [第8章](/books/testing-not-equals-qa/chapter8_work) | 8-6 | 60分 |
-| 総合診断レポート | [第8章](/books/testing-not-equals-qa/chapter8_work) | 8-7 | 30分 |
+| 3つの負債 診断チェックリスト | [第2章](/93ch/books/testing-not-equals-qa/viewer/chapter2) | ワーク | 15分 |
+| QA活動棚卸しシート | [第3章](/93ch/books/testing-not-equals-qa/viewer/chapter3_1) | ワーク | 30分 |
+| 品質定義ワークシート | [第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4) | ファシリテーションガイド | 90分 |
+| 品質方針テンプレート | [第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4) | ファシリテーションガイド | — |
+| A4最小テスト戦略テンプレート | [第5章](/93ch/books/testing-not-equals-qa/viewer/chapter5_1) | ワーク | 30分 |
+| 観点100→35 削りワーク | [第5章](/93ch/books/testing-not-equals-qa/viewer/chapter5_1) | ワーク | 45分 |
+| レイヤー仕分けシート | [第6章](/93ch/books/testing-not-equals-qa/viewer/chapter6) | ワーク | 15分 |
+| 品質戦略キャンバス | [第7章](/93ch/books/testing-not-equals-qa/viewer/chapter7) | ワーク | 30分 |
+| 業務レイヤー分析（フル版） | [第8章](/93ch/books/testing-not-equals-qa/viewer/chapter8_work) | 8-1 | 60分 |
+| 品質負債スコアリング | [第8章](/93ch/books/testing-not-equals-qa/viewer/chapter8_work) | 8-2 | 60分 |
+| QA活動成熟度マッピング | [第8章](/93ch/books/testing-not-equals-qa/viewer/chapter8_work) | 8-3 | 60分 |
+| テスト戦略セルフレビュー | [第8章](/93ch/books/testing-not-equals-qa/viewer/chapter8_work) | 8-4 | 40分 |
+| AI移行シミュレーション | [第8章](/93ch/books/testing-not-equals-qa/viewer/chapter8_work) | 8-5 | 60分 |
+| 品質組織設計シミュレーション | [第8章](/93ch/books/testing-not-equals-qa/viewer/chapter8_work) | 8-6 | 60分 |
+| 総合診断レポート | [第8章](/93ch/books/testing-not-equals-qa/viewer/chapter8_work) | 8-7 | 30分 |
 
 
 ## C. 推薦書籍一覧
@@ -197,13 +197,13 @@ Ch8 各章ワークの精度を上げてセルフコンサルする
 
 | 目的 | 読む章 | 所要時間の目安 |
 |---|---|---|
-| 「QA≠テスト」の概要を知りたい | [第1章](/books/testing-not-equals-qa/chapter1) + チートシート（付録D） | 30分 |
-| テスト以外に何ができるか知りたい | [第3章](/books/testing-not-equals-qa/chapter3_1)のカタログ | 45分 |
-| チームで品質を定義したい | [第4章](/books/testing-not-equals-qa/chapter4)（ワークショップ含む） | 90分（読む）+ 90分（実施） |
-| テスト戦略を書きたい | [第5章](/books/testing-not-equals-qa/chapter5_1) 5-1 + ワーク | 60分 |
-| AI時代の品質を考えたい | [第6章](/books/testing-not-equals-qa/chapter6) | 45分 |
-| 実践事例を見たい | [第7章](/books/testing-not-equals-qa/chapter7) | 30分 |
-| 全体を通して理解したい | [第1章](/books/testing-not-equals-qa/chapter1)→[第7章](/books/testing-not-equals-qa/chapter7) + あとがき | 4〜5時間 |
+| 「QA≠テスト」の概要を知りたい | [第1章](/93ch/books/testing-not-equals-qa/viewer/chapter1) + チートシート（付録D） | 30分 |
+| テスト以外に何ができるか知りたい | [第3章](/93ch/books/testing-not-equals-qa/viewer/chapter3_1)のカタログ | 45分 |
+| チームで品質を定義したい | [第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4)（ワークショップ含む） | 90分（読む）+ 90分（実施） |
+| テスト戦略を書きたい | [第5章](/93ch/books/testing-not-equals-qa/viewer/chapter5_1) 5-1 + ワーク | 60分 |
+| AI時代の品質を考えたい | [第6章](/93ch/books/testing-not-equals-qa/viewer/chapter6) | 45分 |
+| 実践事例を見たい | [第7章](/93ch/books/testing-not-equals-qa/viewer/chapter7) | 30分 |
+| 全体を通して理解したい | [第1章](/93ch/books/testing-not-equals-qa/viewer/chapter1)→[第7章](/93ch/books/testing-not-equals-qa/viewer/chapter7) + あとがき | 4〜5時間 |
 
 
 ### ロール別のおすすめ
@@ -212,10 +212,10 @@ Ch8 各章ワークの精度を上げてセルフコンサルする
 | ロール | 特に読んでほしい章 | 理由 |
 |---|---|---|
 | QAエンジニア | 全章 | 品質保証活動の全体像を体系的に学べる |
-| 開発エンジニア | [第1章](/books/testing-not-equals-qa/chapter1)、[第3章](/books/testing-not-equals-qa/chapter3_1)、[第4章](/books/testing-not-equals-qa/chapter4) | テストとQAの違い、設計レビューの価値、品質方針の重要性 |
-| プロダクトマネージャー | [第2章](/books/testing-not-equals-qa/chapter2)、[第4章](/books/testing-not-equals-qa/chapter4) | 品質負債のコスト、品質定義ワークショップのファシリ |
-| エンジニアリングマネージャー | [第2章](/books/testing-not-equals-qa/chapter2)、[第6章](/books/testing-not-equals-qa/chapter6)、[第7章](/books/testing-not-equals-qa/chapter7) | 組織的な品質課題、AI時代の人材戦略、品質組織の立ち上げ |
-| テスト実行担当 | [第1章](/books/testing-not-equals-qa/chapter1)、[第3章](/books/testing-not-equals-qa/chapter3_1)、[第6章](/books/testing-not-equals-qa/chapter6) | 自分の仕事の位置づけ、テスト以外の活動、レイヤーシフト |
+| 開発エンジニア | [第1章](/93ch/books/testing-not-equals-qa/viewer/chapter1)、[第3章](/93ch/books/testing-not-equals-qa/viewer/chapter3_1)、[第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4) | テストとQAの違い、設計レビューの価値、品質方針の重要性 |
+| プロダクトマネージャー | [第2章](/93ch/books/testing-not-equals-qa/viewer/chapter2)、[第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4) | 品質負債のコスト、品質定義ワークショップのファシリ |
+| エンジニアリングマネージャー | [第2章](/93ch/books/testing-not-equals-qa/viewer/chapter2)、[第6章](/93ch/books/testing-not-equals-qa/viewer/chapter6)、[第7章](/93ch/books/testing-not-equals-qa/viewer/chapter7) | 組織的な品質課題、AI時代の人材戦略、品質組織の立ち上げ |
+| テスト実行担当 | [第1章](/93ch/books/testing-not-equals-qa/viewer/chapter1)、[第3章](/93ch/books/testing-not-equals-qa/viewer/chapter3_1)、[第6章](/93ch/books/testing-not-equals-qa/viewer/chapter6) | 自分の仕事の位置づけ、テスト以外の活動、レイヤーシフト |
 
 
 ### 再読のタイミング
@@ -225,18 +225,18 @@ Ch8 各章ワークの精度を上げてセルフコンサルする
 
 | タイミング | 読み返す章 | 理由 |
 |---|---|---|
-| リリース判定が紛糾したとき | [第4章](/books/testing-not-equals-qa/chapter4) | 品質方針を見直す・作るきっかけ |
-| テスト工数が膨らんだとき | [第5章](/books/testing-not-equals-qa/chapter5_3) 5-3 | 「削る力」の実践 |
-| 同じバグが繰り返し出たとき | [第3章](/books/testing-not-equals-qa/chapter3_2)（RCA） | 根本原因を分析する手法 |
-| AIツール導入を検討するとき | [第6章](/books/testing-not-equals-qa/chapter6) | レイヤー分業の考え方 |
-| 品質チームを立ち上げるとき | [第7章](/books/testing-not-equals-qa/chapter7) | ビットキーの立ち上げプロセス |
-| 四半期の品質振り返り | [第2章](/books/testing-not-equals-qa/chapter2) + [第4章](/books/testing-not-equals-qa/chapter4) | 負債の確認と品質方針の見直し |
+| リリース判定が紛糾したとき | [第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4) | 品質方針を見直す・作るきっかけ |
+| テスト工数が膨らんだとき | [第5章](/93ch/books/testing-not-equals-qa/viewer/chapter5_3) 5-3 | 「削る力」の実践 |
+| 同じバグが繰り返し出たとき | [第3章](/93ch/books/testing-not-equals-qa/viewer/chapter3_2)（RCA） | 根本原因を分析する手法 |
+| AIツール導入を検討するとき | [第6章](/93ch/books/testing-not-equals-qa/viewer/chapter6) | レイヤー分業の考え方 |
+| 品質チームを立ち上げるとき | [第7章](/93ch/books/testing-not-equals-qa/viewer/chapter7) | ビットキーの立ち上げプロセス |
+| 四半期の品質振り返り | [第2章](/93ch/books/testing-not-equals-qa/viewer/chapter2) + [第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4) | 負債の確認と品質方針の見直し |
 
 
 ## F. AIでテスト設計・実行する実践ガイド
 
 
-[第6章](/books/testing-not-equals-qa/chapter6)で「AIが飲み込むのはロールではなくレイヤーだ」と書いた。ここではその実践編として、AIをテスト設計・実行に活用するための考え方とプロンプト例を紹介する。
+[第6章](/93ch/books/testing-not-equals-qa/viewer/chapter6)で「AIが飲み込むのはロールではなくレイヤーだ」と書いた。ここではその実践編として、AIをテスト設計・実行に活用するための考え方とプロンプト例を紹介する。
 
 
 ### F-1. AIに任せること・任せないことの判断基準
@@ -249,7 +249,7 @@ Ch8 各章ワークの精度を上げてセルフコンサルする
 | 判断 | データの可視化、傾向の提示 | リリース判定、品質方針の策定、テスト戦略の意思決定 |
 
 
-AIは「候補を出す」のが得意で、「選ぶ」のは人間の仕事だ。テスト観点を100個出させて35個に絞る（[第5章](/books/testing-not-equals-qa/chapter5_3)の「削る力」）。その「100個出す」をAIに任せ、「35個に絞る」を人間がやる。
+AIは「候補を出す」のが得意で、「選ぶ」のは人間の仕事だ。テスト観点を100個出させて35個に絞る（[第5章](/93ch/books/testing-not-equals-qa/viewer/chapter5_3)の「削る力」）。その「100個出す」をAIに任せ、「35個に絞る」を人間がやる。
 
 
 ### F-2. テスト設計にAIを使う
@@ -292,7 +292,7 @@ AIは「候補を出す」のが得意で、「選ぶ」のは人間の仕事だ
 {前のステップで出た観点リスト}
 
 【品質方針】
-{[第4章](/books/testing-not-equals-qa/chapter4)で策定した品質方針}
+{[第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4)で策定した品質方針}
 
 【優先順位の基準】
 1. 品質方針に直結する観点を最優先
@@ -308,7 +308,7 @@ AIは「候補を出す」のが得意で、「選ぶ」のは人間の仕事だ
 ```
 
 
-品質方針を入力に含めるのがコツだ。品質方針がないと、AIは一般的な優先順位しかつけられない。[第4章](/books/testing-not-equals-qa/chapter4)で策定した品質方針が、AI活用の精度を決める。
+品質方針を入力に含めるのがコツだ。品質方針がないと、AIは一般的な優先順位しかつけられない。[第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4)で策定した品質方針が、AI活用の精度を決める。
 
 
 #### テストケースを生成する
@@ -501,13 +501,13 @@ AIを品質保証活動に使うとき、注意すべき点がある。
 | 落とし穴 | 症状 | 対策 |
 |---|---|---|
 | AIの出力をそのまま使う | テストケースの目的が説明できない | 「なぜこのテストが必要か」を人間が言語化してから採用 |
-| 品質方針なしにAIを使う | 一般的なテスト観点しか出ない | [第4章](/books/testing-not-equals-qa/chapter4)の品質方針を入力に含める |
-| AIで量を稼ごうとする | テストケースが膨大になり管理不能 | [第5章](/books/testing-not-equals-qa/chapter5_3)の「削る力」を適用。量より質 |
+| 品質方針なしにAIを使う | 一般的なテスト観点しか出ない | [第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4)の品質方針を入力に含める |
+| AIで量を稼ごうとする | テストケースが膨大になり管理不能 | [第5章](/93ch/books/testing-not-equals-qa/viewer/chapter5_3)の「削る力」を適用。量より質 |
 | AIの分析を鵜呑みにする | RCAが表面的な原因で止まる | AIの候補をたたき台に、人間がコード・ログで裏取り |
 | ツール選定に時間をかける | 活動が始まらない | どのツールでもいいから今日プロンプトを1回試す |
 
 
-AIは品質保証活動の「実行レイヤー」を加速する道具だ。品質を「仕込む」のは人間の仕事。[第1章](/books/testing-not-equals-qa/chapter1)の定義で言えば、AIはテスト（測る）の効率化に強く、QA（仕込む）は人間にしかできない。
+AIは品質保証活動の「実行レイヤー」を加速する道具だ。品質を「仕込む」のは人間の仕事。[第1章](/93ch/books/testing-not-equals-qa/viewer/chapter1)の定義で言えば、AIはテスト（測る）の効率化に強く、QA（仕込む）は人間にしかできない。
 
 
 ## G. 品質保証活動の導入ロードマップ
@@ -521,8 +521,8 @@ AIは品質保証活動の「実行レイヤー」を加速する道具だ。品
 
 | アクション | 所要時間 | 参照章 |
 |---|---|---|
-| 「テスト」「QC」「QA」を意識的に使い分ける | 0分（意識するだけ） | [第1章](/books/testing-not-equals-qa/chapter1) |
-| 直近のバグ1件でRCAを実施する | 30分 | [第3章](/books/testing-not-equals-qa/chapter3_2) |
+| 「テスト」「QC」「QA」を意識的に使い分ける | 0分（意識するだけ） | [第1章](/93ch/books/testing-not-equals-qa/viewer/chapter1) |
+| 直近のバグ1件でRCAを実施する | 30分 | [第3章](/93ch/books/testing-not-equals-qa/viewer/chapter3_2) |
 | 本書のチートシート（付録D）を印刷して壁に貼る | 5分 | 付録D |
 
 
@@ -534,11 +534,11 @@ Phase 1のゴール: QA≠テストを自分の言葉で説明できる状態。
 
 | アクション | 所要時間 | 参照章 |
 |---|---|---|
-| QA活動棚卸しワークを実施する | 30分 | [第3章](/books/testing-not-equals-qa/chapter3_1) |
-| 品質方針ドラフトを1人で書く | 15分 | [第4章](/books/testing-not-equals-qa/chapter4) |
-| 品質定義ワークショップをチームで実施する | 90分 | [第4章](/books/testing-not-equals-qa/chapter4) |
-| テスト観点を10個書き出してカタログの種を作る | 60分 | [第5章](/books/testing-not-equals-qa/chapter5_1) |
-| リリース後バグ率の記録を開始する | 5分/リリース | [第3章](/books/testing-not-equals-qa/chapter3_1) |
+| QA活動棚卸しワークを実施する | 30分 | [第3章](/93ch/books/testing-not-equals-qa/viewer/chapter3_1) |
+| 品質方針ドラフトを1人で書く | 15分 | [第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4) |
+| 品質定義ワークショップをチームで実施する | 90分 | [第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4) |
+| テスト観点を10個書き出してカタログの種を作る | 60分 | [第5章](/93ch/books/testing-not-equals-qa/viewer/chapter5_1) |
+| リリース後バグ率の記録を開始する | 5分/リリース | [第3章](/93ch/books/testing-not-equals-qa/viewer/chapter3_1) |
 
 
 Phase 2のゴール: 品質方針が合意され、社内チャットツールに固定されている状態。
@@ -549,11 +549,11 @@ Phase 2のゴール: 品質方針が合意され、社内チャットツール�
 
 | アクション | 所要時間 | 参照章 |
 |---|---|---|
-| A4一枚のテスト戦略を書く | 60分 | [第5章](/books/testing-not-equals-qa/chapter5_1) |
-| テスト観点カタログを50行以上に育てる | 継続 | [第5章](/books/testing-not-equals-qa/chapter5_1) |
-| 品質メトリクスを3回以上記録する | 継続 | [第3章](/books/testing-not-equals-qa/chapter3_1) |
-| 品質方針に基づくリリース判定を3回以上実施する | 継続 | [第4章](/books/testing-not-equals-qa/chapter4) |
-| 自分の業務のレイヤー比率を確認する | 15分 | [第6章](/books/testing-not-equals-qa/chapter6) |
+| A4一枚のテスト戦略を書く | 60分 | [第5章](/93ch/books/testing-not-equals-qa/viewer/chapter5_1) |
+| テスト観点カタログを50行以上に育てる | 継続 | [第5章](/93ch/books/testing-not-equals-qa/viewer/chapter5_1) |
+| 品質メトリクスを3回以上記録する | 継続 | [第3章](/93ch/books/testing-not-equals-qa/viewer/chapter3_1) |
+| 品質方針に基づくリリース判定を3回以上実施する | 継続 | [第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4) |
+| 自分の業務のレイヤー比率を確認する | 15分 | [第6章](/93ch/books/testing-not-equals-qa/viewer/chapter6) |
 
 
 Phase 3のゴール: 品質サイクルが回り始めている状態。あとがきの「3ヶ月後チェックリスト」が判定基準になる。
@@ -564,4 +564,4 @@ Phase 3のゴール: 品質サイクルが回り始めている状態。あと�
 
 このロードマップは「上から順にやる」リストではない。自分のチームの現在地に合わせて、できるところから始める。Phase 1の3つだけでも、品質への意識が変わる。全部を完璧にやろうとして何も始められないより、1つだけ始める方がはるかに効果がある。
 
-迷ったら、まず[第1章](/books/testing-not-equals-qa/chapter1)を読み返して「テスト/QC/QA」を使い分ける習慣をつけることだ。言葉の使い分けはコストゼロで始められる。次に[第4章](/books/testing-not-equals-qa/chapter4)の品質定義ワークショップ。チームで品質方針を1つ決めるだけで、リリース判定の景色が変わる。Phase 2まで進めば、品質保証活動が「属人的な頑張り」から「チームの仕組み」に変わり始める。
+迷ったら、まず[第1章](/93ch/books/testing-not-equals-qa/viewer/chapter1)を読み返して「テスト/QC/QA」を使い分ける習慣をつけることだ。言葉の使い分けはコストゼロで始められる。次に[第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4)の品質定義ワークショップ。チームで品質方針を1つ決めるだけで、リリース判定の景色が変わる。Phase 2まで進めば、品質保証活動が「属人的な頑張り」から「チームの仕組み」に変わり始める。

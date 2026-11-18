@@ -93,7 +93,7 @@ QAと呼ばれる職業は、ソフトウェアに限らず世界中のいろん
 
 海外では、品質に関わるロールはすでに次の段階に進化している。Quality Engineering（品質工学）、Quality Coach（品質コーチ）、Quality Advocate（品質推進者）。テスト実行から離れ、品質を組織全体に組み込むロールへと変わっている。テスト実行はCI/CDで自動化し、人間が判断・設計に集中する分業が進んでいる。
 
-日本は「QA＝テスト」のまま止まっている。この停滞は、ソフトウェアの品質だけでなく、品質に関わる人のキャリアにも影響している。テスト実行しかしたことがない「QAエンジニア」が、AI時代にどう生き残るのか。[第6章](/books/testing-not-equals-qa/chapter6)で詳しく扱うが、答えの鍵は「QA＝テスト」を卒業することにある。
+日本は「QA＝テスト」のまま止まっている。この停滞は、ソフトウェアの品質だけでなく、品質に関わる人のキャリアにも影響している。テスト実行しかしたことがない「QAエンジニア」が、AI時代にどう生き残るのか。[第6章](/93ch/books/testing-not-equals-qa/viewer/chapter6)で詳しく扱うが、答えの鍵は「QA＝テスト」を卒業することにある。
 
 
 ### なぜ「今」この本なのか
@@ -160,16 +160,16 @@ AIがテストケースを生成する。リグレッションテストを自動
 この本は、品質やテストに関わるすべての人に向けて書いた。ただし、立場によって特に読んでほしい章が違う。
 
 **QAエンジニア・テスター**
-全章を[第1章](/books/testing-not-equals-qa/chapter1)から順番に読むのがおすすめ。自分の仕事を「テスト」「QC」「QA」に仕分けるところから始めて、テストの先にある活動を具体的に学んでいく流れになっている。特に[第3章](/books/testing-not-equals-qa/chapter3_1)のQA活動カタログで「テスト以外に何をすればいいか」が具体的にわかるはずだ。
+全章を[第1章](/93ch/books/testing-not-equals-qa/viewer/chapter1)から順番に読むのがおすすめ。自分の仕事を「テスト」「QC」「QA」に仕分けるところから始めて、テストの先にある活動を具体的に学んでいく流れになっている。特に[第3章](/93ch/books/testing-not-equals-qa/viewer/chapter3_1)のQA活動カタログで「テスト以外に何をすればいいか」が具体的にわかるはずだ。
 
 **開発リード・エンジニアリングマネージャー**
-第1〜2章で「QA＝テスト」の弊害を理解し、[第4章](/books/testing-not-equals-qa/chapter4)の品質定義ワークショップをチームで試してみてほしい。「品質は誰の仕事か」という問いへの答えが変わるはずだ。[第5章](/books/testing-not-equals-qa/chapter5_1)のテスト戦略は、開発プロセスに品質保証活動を組み込む具体的な方法を扱っている。
+第1〜2章で「QA＝テスト」の弊害を理解し、[第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4)の品質定義ワークショップをチームで試してみてほしい。「品質は誰の仕事か」という問いへの答えが変わるはずだ。[第5章](/93ch/books/testing-not-equals-qa/viewer/chapter5_1)のテスト戦略は、開発プロセスに品質保証活動を組み込む具体的な方法を扱っている。
 
 **プロダクトマネージャー**
-[第4章](/books/testing-not-equals-qa/chapter4)の品質定義と[第6章](/books/testing-not-equals-qa/chapter6)のAI時代の話が特に関係する。品質をプロダクト戦略にどう組み込むか、テスト実行の自動化が進む中でQAの予算をどう考えるか、という視点で読んでほしい。
+[第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4)の品質定義と[第6章](/93ch/books/testing-not-equals-qa/viewer/chapter6)のAI時代の話が特に関係する。品質をプロダクト戦略にどう組み込むか、テスト実行の自動化が進む中でQAの予算をどう考えるか、という視点で読んでほしい。
 
 **ソフトウェア開発に関わる初心者**
-[第1章](/books/testing-not-equals-qa/chapter1)から順番に。専門用語には補足解説をつけているので、前提知識がなくても読み進められる。章末のFAQと推薦書籍も活用してほしい。
+[第1章](/93ch/books/testing-not-equals-qa/viewer/chapter1)から順番に。専門用語には補足解説をつけているので、前提知識がなくても読み進められる。章末のFAQと推薦書籍も活用してほしい。
 
 
 ## 0-5. 本書の全体マップ
@@ -181,13 +181,13 @@ AIがテストケースを生成する。リグレッションテストを自動
 ![本書の全体マップ](/images/books/testing-not-equals-qa/diag_00_book_map.png)
 
 
-第1〜2章で「なぜQA＝テストが問題なのか」を理解する。[第1章](/books/testing-not-equals-qa/chapter1)で勉強のたとえを使ってテスト・QC・QAを定義し、[第2章](/books/testing-not-equals-qa/chapter2)でこの等式を放置すると組織に何が起きるかを「構造的負債」として描く。
+第1〜2章で「なぜQA＝テストが問題なのか」を理解する。[第1章](/93ch/books/testing-not-equals-qa/viewer/chapter1)で勉強のたとえを使ってテスト・QC・QAを定義し、[第2章](/93ch/books/testing-not-equals-qa/viewer/chapter2)でこの等式を放置すると組織に何が起きるかを「構造的負債」として描く。
 
-第3〜5章は手を動かすパートだ。[第3章](/books/testing-not-equals-qa/chapter3_1)でテスト以外の品質保証活動を14種類カタログにし、[第4章](/books/testing-not-equals-qa/chapter4)でチームと一緒に「品質とは何か」を合意するワークショップを実践する。[第5章](/books/testing-not-equals-qa/chapter5_1)はテスト戦略の立て方。「何をテストしないか」を決めるプロセスを扱う。ここが本書で最も技術的な章になる。
+第3〜5章は手を動かすパートだ。[第3章](/93ch/books/testing-not-equals-qa/viewer/chapter3_1)でテスト以外の品質保証活動を14種類カタログにし、[第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4)でチームと一緒に「品質とは何か」を合意するワークショップを実践する。[第5章](/93ch/books/testing-not-equals-qa/viewer/chapter5_1)はテスト戦略の立て方。「何をテストしないか」を決めるプロセスを扱う。ここが本書で最も技術的な章になる。
 
-[第6章](/books/testing-not-equals-qa/chapter6)でAI時代に人間が担う品質保証活動を考え、[第7章](/books/testing-not-equals-qa/chapter7)で品質組織のつくり方をビットキーの事例を交えて実践する。理論だけで終わらせたくなかった。
+[第6章](/93ch/books/testing-not-equals-qa/viewer/chapter6)でAI時代に人間が担う品質保証活動を考え、[第7章](/93ch/books/testing-not-equals-qa/viewer/chapter7)で品質組織のつくり方をビットキーの事例を交えて実践する。理論だけで終わらせたくなかった。
 
-各章は独立して読めるように書いてあるので、興味のある章から読んでも構わない。ただし、[第1章](/books/testing-not-equals-qa/chapter1)の「テスト＝測る、QC＝診る、QA＝仕込む」という定義は本書全体の土台になる。ここだけは先に読んでおいてほしい。
+各章は独立して読めるように書いてあるので、興味のある章から読んでも構わない。ただし、[第1章](/93ch/books/testing-not-equals-qa/viewer/chapter1)の「テスト＝測る、QC＝診る、QA＝仕込む」という定義は本書全体の土台になる。ここだけは先に読んでおいてほしい。
 
 各章の末尾には補足セクションを設けた。用語解説、たとえ話・図解、あるあるコラム、やってみようワーク、FAQ、推薦書籍。本文だけだと抽象的になりがちな話を、具体例や手を動かすワークで補っている。
 
@@ -198,17 +198,17 @@ AIがテストケースを生成する。リグレッションテストを自動
 この本は3通りの読み方ができる。自分のスタイルに合うものを選んでほしい。
 
 **通読コース（7時間）**
-[第1章](/books/testing-not-equals-qa/chapter1)から順番に読む。定義から始まり、構造的負債、品質保証活動カタログ、品質定義、テスト戦略、AI時代、実践事例と積み上がっていく。初読はこのコースがおすすめ。各章のワークもやると、自分の現場に引きつけて理解できる。読み終えたあとに全体マップを見返すと、章同士のつながりが見えて二度おいしい。
+[第1章](/93ch/books/testing-not-equals-qa/viewer/chapter1)から順番に読む。定義から始まり、構造的負債、品質保証活動カタログ、品質定義、テスト戦略、AI時代、実践事例と積み上がっていく。初読はこのコースがおすすめ。各章のワークもやると、自分の現場に引きつけて理解できる。読み終えたあとに全体マップを見返すと、章同士のつながりが見えて二度おいしい。
 
 **つまみ食いコース（2〜3時間）**
-時間がない。今すぐ使えるものがほしい。その場合は[第1章](/books/testing-not-equals-qa/chapter1)を読んだあと、[第3章](/books/testing-not-equals-qa/chapter3_1)（QA活動カタログ）と[第4章](/books/testing-not-equals-qa/chapter4)（品質定義ワークショップ）に飛んでほしい。[第3章](/books/testing-not-equals-qa/chapter3_1)で「テスト以外にやれること」の全体像をつかみ、[第4章](/books/testing-not-equals-qa/chapter4)のワークショップを来週のチームミーティングで試す。それだけで景色が変わる。手応えを感じたら[第5章](/books/testing-not-equals-qa/chapter5_1)のテスト戦略に進むと、品質保証活動を日々の開発プロセスに組み込む具体的な方法がわかる。
+時間がない。今すぐ使えるものがほしい。その場合は[第1章](/93ch/books/testing-not-equals-qa/viewer/chapter1)を読んだあと、[第3章](/93ch/books/testing-not-equals-qa/viewer/chapter3_1)（QA活動カタログ）と[第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4)（品質定義ワークショップ）に飛んでほしい。[第3章](/93ch/books/testing-not-equals-qa/viewer/chapter3_1)で「テスト以外にやれること」の全体像をつかみ、[第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4)のワークショップを来週のチームミーティングで試す。それだけで景色が変わる。手応えを感じたら[第5章](/93ch/books/testing-not-equals-qa/viewer/chapter5_1)のテスト戦略に進むと、品質保証活動を日々の開発プロセスに組み込む具体的な方法がわかる。
 
 **キャリア設計コース（3時間）**
-「自分のキャリア、このままでいいんだろうか」がモチベーションなら、[第1章](/books/testing-not-equals-qa/chapter1)→[第2章](/books/testing-not-equals-qa/chapter2)→[第6章](/books/testing-not-equals-qa/chapter6)の順で読む。QA＝テストの構造を理解し、それが組織とキャリアに与えている影響を知り、AI時代にどう動くかを考える。そのあとで[第3章](/books/testing-not-equals-qa/chapter3_1)に戻ると、次に身につけるべきスキルが具体的に見えてくる。[第7章](/books/testing-not-equals-qa/chapter7)の品質組織のつくり方は、ビットキーの事例を交えた実践編として、QA＝テストを卒業した組織がどう動いているかのリアルな参考になる。
+「自分のキャリア、このままでいいんだろうか」がモチベーションなら、[第1章](/93ch/books/testing-not-equals-qa/viewer/chapter1)→[第2章](/93ch/books/testing-not-equals-qa/viewer/chapter2)→[第6章](/93ch/books/testing-not-equals-qa/viewer/chapter6)の順で読む。QA＝テストの構造を理解し、それが組織とキャリアに与えている影響を知り、AI時代にどう動くかを考える。そのあとで[第3章](/93ch/books/testing-not-equals-qa/viewer/chapter3_1)に戻ると、次に身につけるべきスキルが具体的に見えてくる。[第7章](/93ch/books/testing-not-equals-qa/viewer/chapter7)の品質組織のつくり方は、ビットキーの事例を交えた実践編として、QA＝テストを卒業した組織がどう動いているかのリアルな参考になる。
 
-どのコースでも、[第1章](/books/testing-not-equals-qa/chapter1)の「テスト＝測る、QC＝診る、QA＝仕込む」は必ず通る。ここが全章の共通言語だ。
+どのコースでも、[第1章](/93ch/books/testing-not-equals-qa/viewer/chapter1)の「テスト＝測る、QC＝診る、QA＝仕込む」は必ず通る。ここが全章の共通言語だ。
 
-各章にはワークがついている。通読コースでは全部やるのが理想だが、つまみ食いコースやキャリア設計コースでは飛ばしても大丈夫だ。ただし[第4章](/books/testing-not-equals-qa/chapter4)の品質定義ワークショップだけは、どのコースでもやってみてほしい。チームで「品質とは何か」を言語化する体験は、本を読むだけでは得られない。1回やると、品質への解像度が一段上がる。
+各章にはワークがついている。通読コースでは全部やるのが理想だが、つまみ食いコースやキャリア設計コースでは飛ばしても大丈夫だ。ただし[第4章](/93ch/books/testing-not-equals-qa/viewer/chapter4)の品質定義ワークショップだけは、どのコースでもやってみてほしい。チームで「品質とは何か」を言語化する体験は、本を読むだけでは得られない。1回やると、品質への解像度が一段上がる。
 
 章の途中で他の章を参照する箇所には、該当する章番号を明記してある。気になったら先にそちらを読んでもいい。途中で寄り道して、また戻ってくる。そういう読み方も歓迎だ。
 
@@ -242,11 +242,11 @@ AIがテストケースを生成する。リグレッションテストを自動
 :::message
 **結果を見る（自分で考えてから開こう）**
 
-**○が11個以上**: 「QA＝テスト」がかなり定着している。本書はまさにあなたのために書いた。[第1章](/books/testing-not-equals-qa/chapter1)から順番に読み進めてほしい。
+**○が11個以上**: 「QA＝テスト」がかなり定着している。本書はまさにあなたのために書いた。[第1章](/93ch/books/testing-not-equals-qa/viewer/chapter1)から順番に読み進めてほしい。
 
-**○が6〜10個**: テストの先を意識し始めている段階。[第3章](/books/testing-not-equals-qa/chapter3_1)のQA活動カタログが特に効くはずだ。
+**○が6〜10個**: テストの先を意識し始めている段階。[第3章](/93ch/books/testing-not-equals-qa/viewer/chapter3_1)のQA活動カタログが特に効くはずだ。
 
-**○が5個以下**: すでにQA＝テストを卒業しつつある。[第5章](/books/testing-not-equals-qa/chapter5_1)のテスト戦略や[第6章](/books/testing-not-equals-qa/chapter6)のAI時代の話が参考になる。
+**○が5個以下**: すでにQA＝テストを卒業しつつある。[第5章](/93ch/books/testing-not-equals-qa/viewer/chapter5_1)のテスト戦略や[第6章](/93ch/books/testing-not-equals-qa/viewer/chapter6)のAI時代の話が参考になる。
 
 :::
 
@@ -265,4 +265,4 @@ AIがテストケースを生成する。リグレッションテストを自動
 
 チェックリストの結果がどうであれ、この本を手に取った時点であなたは「テストの先」に目を向けている。それだけで、読む前の自分とは違う場所に立っている。
 
-では、[第1章](/books/testing-not-equals-qa/chapter1)から始めよう。
+では、[第1章](/93ch/books/testing-not-equals-qa/viewer/chapter1)から始めよう。
