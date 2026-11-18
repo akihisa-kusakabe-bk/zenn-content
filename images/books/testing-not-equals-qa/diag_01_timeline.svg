@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 200" font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif">
   <defs>
     <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
-      <polygon points="0,0 10,3.5 0,7" fill="#2980B9"/>
+      <polygon points="0,0 10,3.5 0,7" fill="#E67E22"/>
     </marker>
   </defs>
 
@@ -17,13 +17,11 @@
   <circle cx="140" cy="80" r="5" fill="#E67E22"/>
   <circle cx="310" cy="80" r="5" fill="#E67E22"/>
   <circle cx="480" cy="80" r="5" fill="#E67E22"/>
-  <circle cx="640" cy="80" r="5" fill="#E67E22"/>
 
   <!-- Time labels (above) -->
-  <text x="140" y="65" text-anchor="middle" font-size="13" fill="#555">過去</text>
-  <text x="310" y="65" text-anchor="middle" font-size="13" fill="#555">現在</text>
-  <text x="480" y="65" text-anchor="middle" font-size="13" fill="#555">近い未来</text>
-  <text x="640" y="65" text-anchor="middle" font-size="13" fill="#555">遠い未来</text>
+  <text x="140" y="65" text-anchor="middle" font-size="13" fill="#555">今</text>
+  <text x="310" y="65" text-anchor="middle" font-size="13" fill="#555">見つけた後</text>
+  <text x="480" y="65" text-anchor="middle" font-size="13" fill="#555">これから</text>
 
   <!-- Activity labels (below) -->
   <!-- Test -->

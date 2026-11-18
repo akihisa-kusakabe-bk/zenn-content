@@ -15,7 +15,7 @@
   <rect x="306" y="90" width="128" height="50" rx="6" fill="#2980B9"/>
   <text x="370" y="121" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">FW</text>
 
-  <rect x="444" y="90" width="128" height="50" rx="6" fill="#F5F5F5"/>
+  <rect x="444" y="90" width="128" height="50" rx="6" fill="#6D4C41"/>
   <text x="508" y="121" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">HW</text>
 
   <rect x="582" y="90" width="128" height="50" rx="6" fill="#00897B"/>

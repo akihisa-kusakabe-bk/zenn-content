@@ -18,8 +18,8 @@
   <text x="72" y="212" font-size="12" fill="#555">「どこが危ないかわかりません」</text>
 
   <rect x="60" y="235" width="270" height="50" rx="4" fill="#FFF8E1" stroke="#bbb" stroke-width="1"/>
-  <text x="195" y="258" text-anchor="middle" font-size="12" fill="#F5F5F5">「時間が半分になったら？」</text>
-  <text x="195" y="276" text-anchor="middle" font-size="13" font-weight="bold" fill="#F5F5F5">→ 答えられない</text>
+  <text x="195" y="258" text-anchor="middle" font-size="12" fill="#444">「時間が半分になったら？」</text>
+  <text x="195" y="276" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">→ 答えられない</text>
 
   <!-- Right: Has strategy -->
   <rect x="390" y="60" width="310" height="240" rx="8" fill="#f5f5f5" stroke="#78909C" stroke-width="1.5"/>

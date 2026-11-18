@@ -13,7 +13,7 @@
   <text x="350" y="36" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a1a">ロール × レイヤー（簡易版）</text>
 
   <!-- Grid origin -->
-  <g transform="translate(110, 56)">
+  <g transform="translate(55, 56)">
     <!-- Column headers -->
     <rect x="120" y="0" width="150" height="36" rx="4" fill="#F5F5F5" stroke="#78909C" stroke-width="1.5"/>
     <text x="195" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">Dev</text>
@@ -23,38 +23,38 @@
     <text x="495" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a1a">PO</text>
 
     <!-- Row 1: 設計 (lightest) -->
-    <rect x="0" y="40" width="120" height="60" rx="4" fill="#f8f8f8" stroke="#78909C" stroke-width="1.5"/>
+    <rect x="0" y="40" width="120" height="60" rx="4" fill="#FFF3D6" stroke="#78909C" stroke-width="1.5"/>
     <text x="60" y="75" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">設計</text>
-    <rect x="120" y="40" width="150" height="60" rx="4" fill="#f8f8f8" stroke="#78909C" stroke-width="1.5"/>
+    <rect x="120" y="40" width="150" height="60" rx="4" fill="#FFF3D6" stroke="#78909C" stroke-width="1.5"/>
     <text x="195" y="75" text-anchor="middle" font-size="15" fill="#1a1a1a">人間</text>
-    <rect x="270" y="40" width="150" height="60" rx="4" fill="#f8f8f8" stroke="#78909C" stroke-width="1.5"/>
+    <rect x="270" y="40" width="150" height="60" rx="4" fill="#FFF3D6" stroke="#78909C" stroke-width="1.5"/>
     <text x="345" y="75" text-anchor="middle" font-size="15" fill="#1a1a1a">人間</text>
-    <rect x="420" y="40" width="150" height="60" rx="4" fill="#f8f8f8" stroke="#78909C" stroke-width="1.5"/>
+    <rect x="420" y="40" width="150" height="60" rx="4" fill="#FFF3D6" stroke="#78909C" stroke-width="1.5"/>
     <text x="495" y="75" text-anchor="middle" font-size="15" fill="#1a1a1a">人間</text>
 
     <!-- Row 2: 判断 (medium) -->
-    <rect x="0" y="100" width="120" height="60" rx="4" fill="#FFF8E1" stroke="#78909C" stroke-width="1.5"/>
+    <rect x="0" y="100" width="120" height="60" rx="4" fill="#DCEBF7" stroke="#78909C" stroke-width="1.5"/>
     <text x="60" y="135" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">判断</text>
-    <rect x="120" y="100" width="150" height="60" rx="4" fill="#FFF8E1" stroke="#78909C" stroke-width="1.5"/>
+    <rect x="120" y="100" width="150" height="60" rx="4" fill="#DCEBF7" stroke="#78909C" stroke-width="1.5"/>
     <text x="195" y="135" text-anchor="middle" font-size="15" fill="#1a1a1a">人間+AI</text>
-    <rect x="270" y="100" width="150" height="60" rx="4" fill="#FFF8E1" stroke="#78909C" stroke-width="1.5"/>
+    <rect x="270" y="100" width="150" height="60" rx="4" fill="#DCEBF7" stroke="#78909C" stroke-width="1.5"/>
     <text x="345" y="135" text-anchor="middle" font-size="15" fill="#1a1a1a">人間+AI</text>
-    <rect x="420" y="100" width="150" height="60" rx="4" fill="#e8e8e8" stroke="#78909C" stroke-width="1.5"/>
+    <rect x="420" y="100" width="150" height="60" rx="4" fill="#DCEBF7" stroke="#78909C" stroke-width="1.5"/>
     <text x="495" y="135" text-anchor="middle" font-size="15" fill="#1a1a1a">人間+AI</text>
 
     <!-- Row 3: 実行 (darkest) -->
-    <rect x="0" y="160" width="120" height="60" rx="4" fill="#FFF8E1" stroke="#78909C" stroke-width="1.5"/>
+    <rect x="0" y="160" width="120" height="60" rx="4" fill="#E8E0F5" stroke="#78909C" stroke-width="1.5"/>
     <text x="60" y="195" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a1a">実行</text>
-    <rect x="120" y="160" width="150" height="60" rx="4" fill="#FFF8E1" stroke="#78909C" stroke-width="1.5"/>
+    <rect x="120" y="160" width="150" height="60" rx="4" fill="#E8E0F5" stroke="#78909C" stroke-width="1.5"/>
     <text x="195" y="195" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">AI</text>
-    <rect x="270" y="160" width="150" height="60" rx="4" fill="#FFF8E1" stroke="#78909C" stroke-width="1.5"/>
+    <rect x="270" y="160" width="150" height="60" rx="4" fill="#E8E0F5" stroke="#78909C" stroke-width="1.5"/>
     <text x="345" y="195" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">AI</text>
-    <rect x="420" y="160" width="150" height="60" rx="4" fill="#F5F5F5" stroke="#78909C" stroke-width="1.5"/>
+    <rect x="420" y="160" width="150" height="60" rx="4" fill="#E8E0F5" stroke="#78909C" stroke-width="1.5"/>
     <text x="495" y="195" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">AI</text>
 
     <!-- Arrow annotation at bottom -->
-    <line x1="150" y1="250" x2="540" y2="250" stroke="#78909C" stroke-width="1.5" marker-start="url(#arrowL)" marker-end="url(#arrowR)"/>
-    <text x="345" y="275" text-anchor="middle" font-size="13" fill="#555">AIが飲み込む境界線</text>
+    <line x1="150" y1="262" x2="195" y2="262" stroke="#7E57C2" stroke-width="2" stroke-dasharray="6,4"/>
+    <text x="205" y="267" font-size="13" fill="#555">AIが飲み込む境界線（この線より下の実行レイヤーはAIが担う）</text>
 
     <!-- Dashed border between 判断 and 実行 -->
     <line x1="120" y1="160" x2="570" y2="160" stroke="#7E57C2" stroke-width="2" stroke-dasharray="6,4"/>

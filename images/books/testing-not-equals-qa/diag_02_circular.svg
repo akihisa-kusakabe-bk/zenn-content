@@ -17,7 +17,7 @@
   <text x="375" y="145" text-anchor="middle" font-size="13" fill="#555">→ バグが下流に流出する</text>
 
   <!-- Arrow down (Debt2 → Debt3) -->
-  <line x1="375" y1="160" x2="375" y2="200" stroke="#78909C" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="375" y1="160" x2="375" y2="208" stroke="#78909C" stroke-width="1.5" marker-end="url(#arrow)"/>
 
   <!-- Box 2: Debt 3 (middle) -->
   <rect x="200" y="210" width="350" height="90" rx="8" fill="#F5F5F5" stroke="#E74C3C" stroke-width="2"/>
@@ -26,7 +26,7 @@
   <text x="375" y="285" text-anchor="middle" font-size="13" fill="#555">→ テスト工数だけが膨張する</text>
 
   <!-- Arrow down (Debt3 → Debt1) -->
-  <line x1="375" y1="300" x2="375" y2="340" stroke="#78909C" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="375" y1="300" x2="375" y2="348" stroke="#78909C" stroke-width="1.5" marker-end="url(#arrow)"/>
 
   <!-- Box 3: Debt 1 (bottom) -->
   <rect x="200" y="350" width="350" height="90" rx="8" fill="#F5F5F5" stroke="#E74C3C" stroke-width="2"/>
@@ -36,7 +36,7 @@
 
   <!-- Arrow looping back up (Debt1 → Debt2) -->
   <!-- Right side going up -->
-  <path d="M 550 395 L 600 395 L 600 115 L 555 115" fill="none" stroke="#78909C" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M 550 395 L 600 395 L 600 115 L 552 115" fill="none" stroke="#78909C" stroke-width="1.5" marker-end="url(#arrow)"/>
 
   <!-- Loop label -->
   <text x="628" y="260" text-anchor="middle" font-size="13" font-weight="bold" fill="#999" transform="rotate(-90, 628, 260)">悪循環</text>
